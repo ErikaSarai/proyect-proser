@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Configuracion - Manual del Usuario</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Configuracion";
+    var mkdocs_page_input_path = "configuracion.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Manual del Usuario</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Inicio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../home/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../display/">Display</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dashboard/">Dashboard</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../reportes/">Reportes</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Configuracion</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#configuracion">Configuración</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#configuracion-colores">Configuración Colores</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-horas">Configuración de Horas</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-intervalos">Configuración de intervalos</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-lineas">Configuración de Líneas</a></li>
+        
+            <li><a class="toctree-l3" href="#configuraciones-de-supervisores">Configuraciones de Supervisores</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-agentes">Configuración de Agentes</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-roles-de-agentes">Configuración de Roles de Agentes</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-asignaciones">Configuración de Asignaciones</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-auxiliares">Configuración de Auxiliares</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-turnos">Configuración de Turnos</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-dias-por-turnos">Configuración de Días por Turnos</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-calendario">Configuración de Calendario</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-feriados">Configuración de Feriados</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#clientes">Clientes</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-clientes">Configuración de Clientes</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-colas">Configuración de Colas</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-servicios">Configuración de Servicios</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-campanas">Configuración de Campañas</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-de-escalas">Configuración de Escalas</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sistema/">Sistema</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../usuario/">Usuario</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../selector/">Selector</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Manual del Usuario</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Configuracion</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><justify></p>
+<h1 id="configuracion">Configuración</h1>
+<p>Este módulo contiene tres secciones en las cuales el usuario puede realizar diversas configuraciones.  </p>
+<p>Las configuraciones que puede ejecutar el usuario varían de acuerdo al tipo de rol que disponga al iniciar su sesión, puesto que de acuerdo a las normativas de la institución las mismas se realizan por el departamento pertinente.  </p>
+<p>Es apropiado puntualizar que debe tener presente que dentro de la sección <strong>Personas</strong> en la funcionalidades <strong>Auxiliares, Asignaciones Agentes</strong> la importación de datos del call center por tal motivo <strong>no se pueden crear</strong> ningún dato en las funcionalidades mencionadas anteriormente.  </p>
+<p>Del mismo modo es necesario enfatizar que las <strong>Colas</strong> que son también una importación de datos, por tanto esa funcionalidad que se encuentra en la sección de <strong>Operaciones</strong> sólo sirve para modificar y no para crear.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/configuration-main/01configuration.jpg" /></p>
+<h2 id="configuracion-colores">Configuración Colores</h2>
+<p>Este módulo de configuración permite al usuario establecer colores para identificar las diferentes estados en los que puede estar un agente: <em>ocupado, disponible, asignado, auxiliar</em>. Los colores se visualizan en el gráfico del dashboard y display, permitiendo al supervisor reconocer de manera rápida el estado de su personal activo.</p>
+<p>La vista se divide en 3 grandes secciones que son: <em>menú superior, zona de botones y tabla de contenido</em>.</p>
+<h3 id="menu-superior">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/02-colors/menu-superior-colores.jpg" /></p>
+<p><strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/02-colors/menu-superior-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h4 id="seccion-uno">Sección Uno</h4>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración. Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/02-colors/seccion-uno-colores.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h5 id="nombre">Nombre</h5>
+<p>Este indicador muestra el nombre de la sección del módulo en donde se encuentra el usuario, es decir, para este caso usted está en la subsección <strong>Colores</strong> dentro de la sección <strong>General</strong> perteneciente al módulo de <strong>Configuración</strong>.</p>
+<h5 id="activos">Activos</h5>
+<p>Este primer botón proporciona los registros que están en estado activo y están siendo utilizados por ProSer para generar estadísticas y vistas. Al hacer clic sobre el botón <em>“Activos”</em>, estará desplegando la lista de colores configurados disponibles para ser utilizados por la herramienta para mostrar información en el display, dashboard y/o reportes.</p>
+<h5 id="inactivo">Inactivo</h5>
+<p>Ocupa el tercer lugar en la zona de botones y expone los registros que están en estado inactivo y no están siendo utilizados por ProSer para generar estadísticas y vistas. Al hacer clic sobre el botón <em>“Inactivos”</em>, estará desplegando la lista de colores configurados que no se encuentran disponibles para ser utilizados por la herramienta para mostrar información en el display, dashboard y/o reportes.</p>
+<h5 id="todos">Todos</h5>
+<p>Al ejecutar el botón <em>“Todos”</em> se desplegará en la tabla de contenido la totalidad de los colores creados sin importar el estado en el que se encuentren.</p>
+<h5 id="nuevo">Nuevo</h5>
+<p>Este es el último botón de la zona de botones y sirve para generar un nuevo registro. Al hacer clic sobre <em>“Nuevo”</em>, la vista cambiará a un formulario que mostrará los campos a rellenar para hacer posible la creación de un nuevo color.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/02-colors/new.jpg" /></p>
+<p><strong><center> Figura 4 - Menú Inferior(Nuevo) </center></strong></p>
+<h3 id="seccion-dos">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/02-colors/seccion-dos-colores.jpg" /></p>
+<p><strong><center> Figura 5 - Zona de botones(Sección Dos) </center></strong></p>
+<h5 id="selector-de-dato">Selector de dato</h5>
+<p>Establece el parámetro a través del cual se realizará la búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h5 id="buscador">Buscador</h5>
+<p>Dentro de esta barra se coloca el dato que se quiere conseguir en los registros. Se debe tomar en cuenta el parámetro establecido en el selector de dato.</p>
+<h5 id="selector-de-cantidad-de-registros">Selector de cantidad de registros</h5>
+<p>Para la comodidad del usuario en las vista de los registros, este selector permite establecer el número de filas que desea visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el caso de la vista general se muestra la información con base en los siguientes campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/02-colors/tabla-contenido-color.jpg" /></p>
+<p><strong><center> Figura 6 - Tabla de Contenido </center></strong></p>
+<h4 id="id">Id</h4>
+<p>Identificador que se incremente automáticamente al crear un nuevo registro, y sirve para identificar cada dato existente.</p>
+<h4 id="nombre-del-color">Nombre del color</h4>
+<p>Indica el nombre del registro existente o creado.</p>
+<h4 id="estado">Estado</h4>
+<p>Indica el estado de cada registro. Es oportuno señalar que aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h4 id="uso">Uso</h4>
+<p>Indica la utilización del color creado. A través de este campo se
+puede identificar la función de los colores en las diferentes secciones de ProSer.</p>
+<h4 id="codigo-del-color">Codigo del color</h4>
+<p>Indica el código hexadecimal de cada color. Es importante ser
+consistentes con la asignación del mismo para que exista una relación
+con el nombre, se recomienda buscar en una fuente confiable los códigos para que no exista errores en los registros.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla se podrán visualizar dos nuevos
+botones los cuales sirven para ejecutar las siguientes actividades:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/02-colors/pulsar-tabla-contenido.jpg" /></p>
+<p><strong><center> Figura 7 - Pulsar registro en la tabla de contenido </center></strong></p>
+<h4 id="detalle">Detalle</h4>
+<p>Esta opción le permite al usuario tener una especificación de los colores creados, es decir podrá ver al detalle todos los datos referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/02-colors/detail.jpg" /></p>
+<p><strong><center> Figura 8 - Detalles </center></strong></p>
+<h4 id="editar">Editar</h4>
+<p>Con este botón se desĺegará un formulario que permite editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Editar" src="../img/05-configuration/01-general/02-colors/edit.jpg" /></p>
+<p><strong><center> Figura 9 - Editar </center></strong></p>
+<p>A través de este botón, se puede también eliminar el registro. Para ello primero debe desactivarse (si el registro se encuentra activo) utilizando el botón “Desactivar” y luego “Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/02-colors/delete.jpg" /></p>
+<p><strong><center> Figura 10 - Eliminar </center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar” estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-horas">Configuración de Horas</h2>
+<p>Esta sección del módulo de configuración brinda la capacidad de configurar las horas a través de los criterios de la organización. Por defecto, las horas están configuradas tal cual como las conocemos. ProSer tomará como base esta información para calcular y mostrar la estadísticas.  </p>
+<p>La vista se divide en 3 grandes secciones que son: <em>menú superior, zona de botones y tabla de contenido</em>.</p>
+<h3 id="menu-superior_1">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario,el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/03-hours/menu-superior-horas.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior</center></strong></p>
+<h3 id="zona-de-botones_1">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/03-hours/zona-botones-horas.jpg" /></p>
+<p><strong><center>Figura 2 - Zona de botones</center></strong></p>
+<h4 id="seccion-uno_1">Sección uno</h4>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración. Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/03-hours/seccion-uno-horas.jpg" /></p>
+<p><strong><center>Figura 3 - Zona de botones(Sección Uno)</center></strong></p>
+<h5 id="nombre_1">Nombre</h5>
+<p>Este indicador muestra el nombre de la sección del módulo en donde se encuentra el usuario, es decir, para este caso usted está en la subsección <strong>Horas</strong> dentro de la sección <strong>General</strong> perteneciente al módulo de <strong>Configuración</strong>.</p>
+<h5 id="activos_1">Activos</h5>
+<p>Este primer botón proporciona los registros que están en estado activo y están siendo utilizados por ProSer para generar estadísticas y vistas. Al hacer clic sobre el botón <em>“Activos”</em>, estará desplegando la lista de <em>horas</em> configuradas disponibles para ser utilizados por la herramienta para mostrar información en el display, dashboard y/o reportes.</p>
+<h5 id="inactivo_1">Inactivo</h5>
+<p>Ocupa el tercer lugar en la zona de botones y expone los registros que están en estado inactivo y no están siendo utilizados por ProSer para generar estadísticas y vistas. Al hacer clic sobre el botón <em>“Inactivos”</em>, estará desplegando la lista de <em>horas</em> configuradas que no se encuentran disponibles para ser utilizados por la herramienta para mostrar información en el display, dashboard y/o reportes.</p>
+<h5 id="todos_1">Todos</h5>
+<p>Al ejecutar el botón <em>“Todos”</em> se desplegará en la tabla de contenido la totalidad de las horas creadas sin importar el estado
+en el que se encuentren.</p>
+<h5 id="nuevo_1">Nuevo</h5>
+<p>Este es el último botón de la zona de botones y sirve para generar un nuevo registro. Al hacer clic sobre <em>“Nuevo”</em>, la vista cambiará a un formulario que mostrará los campos a rellenar para hacer posible la creación de una nueva <em>hora</em>.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/03-hours/new.jpg" /></p>
+<p><strong><center>Figura 4 - Botón Nuevo</center></strong></p>
+<h4 id="seccion-dos_1">Sección Dos</h4>
+<p>Esta sección está dividida en tres (3) partes que abarca el siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/03-hours/buscador-horas.jpg" /></p>
+<p><strong><center>Figura 5 - Menú Inferior(Sección Dos)</center></strong></p>
+<h5 id="selector-de-dato_1">Selector de dato</h5>
+<p>Establece el parámetro a través del cual se realizará la búsqueda. Es decir, podemos especificar la búsqueda de registros por Id, Hora, Valor y Estado.</p>
+<h5 id="buscador_1">Buscador</h5>
+<p>Dentro de esta barra se coloca el dato que se quiere conseguir en los registros. Se debe tomar en cuenta el parámetro establecido en el selector de dato.</p>
+<h5 id="selector-de-cantidad-de-registros_1">Selector de cantidad de registros</h5>
+<p>Para la comodidad del usuario en las vista de los registros, este selector permite establecer el número de filas que desea visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_1">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el caso de la vista general se muestra la información con base en los siguientes campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/03-hours/tabla-contenido-horas.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h4 id="id_1">Id</h4>
+<p>Identificador que se incremente automáticamente al crear un nuevo registro, ys sirve para identificar cada dato existente.</p>
+<h4 id="hora">Hora</h4>
+<p>Indica el nombre de cada hora que esté registrada o se esté creando, deberá indicar cuáles horas pertenecen el horario AM y cuales el horario PM.</p>
+<h4 id="valor">Valor</h4>
+<p>Indica el valor del registro en formato de tiempo ( hora, minutos y segundos).</p>
+<h4 id="estado_1">Estado</h4>
+<p>Indica el estado de cada registro. Es oportuno señalar que aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I” están en un estado inactivo.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_1">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/03-hours/pulsar-registro-horas.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h4 id="detalles">Detalles</h4>
+<p>Esta opción le permite al usuario tener una especificación de las horas creadas, es decir podrá ver al detalle todos los datos referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/03-hours/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h4 id="editar_1">Editar</h4>
+<p>Con este botón se desĺegará un formulario que permite editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/03-hours/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el registro. Para ello, primero debe desactivarse (si el registro se encuentra activo) utilizando el botón “Desactivar” y luego “Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/03-hours/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar” estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-intervalos">Configuración de intervalos</h2>
+<p>Como su nombre lo indica, este módulo es para procesar las configuraciones relacionadas a los intervalos, si bien es cierto que un intervalo se refiere a la duración de tiempo; para efecto de un sistema de reportería son importante los mismos en vista de que sirven como parámetro al momento de ver reflejados gráficos o reportes.  </p>
+<p>La vista se divide en 3 grandes secciones que son: <em>menú superior, zona de botones y tabla de contenido</em>.</p>
+<h3 id="menu-superior_2">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones delas vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/04-intervals/menu-supperior-intervalo.jpg" /></p>
+<p><strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_2">Zona de botones</h3>
+<p>Se ubica debajo del <em>menú superior</em> y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/04-intervals/zona-botones-intervalo.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h4 id="seccion-uno_2">Sección Uno</h4>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración. Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/04-intervals/seccion-uno-intervalos.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h5 id="nombre_2">Nombre</h5>
+<p>Este indicador muestra el nombre de la sección del módulo en donde se encuentra el usuario, es decir, para este caso usted está en la subsección <em>Intervalos</em> dentro de la sección <em>General</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h5 id="activos_2">Activos</h5>
+<p>Este primer botón proporciona los registros que están en estado activo y están siendo utilizados por ProSer para generar estadísticas y vistas. Al hacer clic sobre el botón <em>“Activos”</em>, estará desplegando la lista de <em>intervalos</em> configurados disponibles para ser utilizados por la herramienta para mostrar información en el display, dashboard y/o reportes.</p>
+<h5 id="inactivo_2">Inactivo</h5>
+<p>Ocupa el tercer lugar en la zona de botones y expone los registros que están en estado inactivo y no están siendo utilizados por ProSer para generar estadísticas y vistas. Al hacer clic sobre el botón <em>“Inactivos”</em>, estará desplegando la lista de <em>intervalos</em> configurados que no se encuentran disponibles para ser utilizados por la herramienta para mostrar información en el display,dashboard y/o reporte.</p>
+<h5 id="todos_2">Todos</h5>
+<p>Al ejecutar el botón <em>“Todos”</em> se desplegará en la tabla de contenido la totalidad de los <em>intervalos</em> creados sin importar el estado en el que se encuentren.</p>
+<h5 id="nuevo_2">Nuevo</h5>
+<p>Este es el último botón de la zona de botones y sirve para generar un nuevo registro. Al hacer clic sobre <em>“Nuevo”</em>, la vista cambiará a un formulario que mostrará los campos a rellenar para hacer posible la creación de un nuevo <em>intervalo</em>.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/04-intervals/new.jpg" /></p>
+<p><strong><center>Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h4 id="seccion-dos_2">Sección Dos</h4>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/04-intervals/seccion-dos-intervalo.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h5 id="selector-de-dato_2">Selector de dato</h5>
+<p>Establece el parámetro a través del cual se realizará la búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre intervalo, Estado, Minutos y Valor intervalo.</p>
+<h5 id="buscador_2">Buscador</h5>
+<p>Dentro de esta barra se coloca el dato que se quiere conseguir en los registros. Se debe tomar en cuenta el parámetro establecido en el <em>selector de dato</em>.</p>
+<h5 id="selector-de-cantidad-de-registros_2">Selector de cantidad de registros</h5>
+<p>Para la comodidad del usuario en las vista de los registros, este selector permite establecer el número de filas que desea visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_2">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información correspondiente a los datos configurados del módulo. La información expuesta variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el caso de la vista general se muestra la información con base en los siguientes campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/04-intervals/tabla-contenido-intervalo.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h4 id="id_2">Id</h4>
+<p>Identificador que se incremente automáticamente al crear un nuevo registro, y sirve para identificar cada dato existente.</p>
+<h4 id="nombre-intervalo">Nombre Intervalo</h4>
+<p>Indica el nombre del registro existente o creado.</p>
+<h4 id="estado_2">Estado</h4>
+<p>Indica el estado de cada registro. Es oportuno señalar que aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h4 id="minutos">Minutos</h4>
+<p>Indica el valor numérico de los intervalos. Es decir, el usuario
+puede visualizar la valoración numérica de los mismos.</p>
+<h4 id="valor-intervalo">Valor intervalo</h4>
+<p>Indica el valor de tiempo de cada intervalo. En este campo se podrá establecer las horas, minutos y segundos de duración de cada intervalo.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_2">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/03-hours/pulsar-registro-horas.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h4 id="detalles_1">Detalles</h4>
+<p>Esta opción le permite al usuario tener una especificación de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/04-intervals/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h4 id="editar_2">Editar</h4>
+<p>Con este botón se desĺegará un formulario que permite editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/04-intervals/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el registro. Para ello, primero debe desactivarse (si el registro se encuentra activo) utilizando el botón “Desactivar” y luego “Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/04-intervals/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar” estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-lineas">Configuración de Líneas</h2>
+<p>Esta funcionalidad tiene como objetivo precisar la cantidad de registros a visualizar al momento de solicitar información desplegada en una tabla de contenido. El usuario puede crear las cantidades de líneas a su conveniencia, para su comodidad al momento de leer la información de la tabla con la cantidad de filas creadas.  </p>
+<p>La vista se divide en 3 grandes secciones que son: <em>menú superior, zona de botones y tabla de contenido</em>.</p>
+<h3 id="menu-superior_3">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/05-lines/menu-superior-lineas.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_3">Zona de botones</h3>
+<p>Se ubica debajo del <em>menú superior</em> y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/05-lines/zona-botones-lineas.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h4 id="seccion-uno_3">Sección Uno</h4>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración. Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/05-lines/seccion-uno-lineas.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h5 id="nombre_3">Nombre</h5>
+<p>Este indicador muestra el nombre de la sección del módulo en donde se encuentra el usuario, es decir, para este caso usted está en la subsección <strong>Líneas</strong> dentro de la sección <strong>General</strong> perteneciente al módulo de <strong>Configuración</strong>.</p>
+<h5 id="activos_3">Activos</h5>
+<p>Este primer botón proporciona los registros que están en estado activo y están siendo utilizados por ProSer para generar estadísticas y vistas. Al hacer clic sobre el botón <em>“Activos”</em>, estará desplegando la lista de <em>líneas</em> configurados disponibles para ser utilizados por la herramienta para mostrar información en el display, dashboard y/o reportes.</p>
+<h5 id="inactivo_3">Inactivo</h5>
+<p>Ocupa el tercer lugar en la zona de botones y expone los registros que están en estado inactivo y no están siendo utilizados por ProSer para generar estadísticas y vistas. Al hacer clic sobr el botón <em>“Inactivos”</em>, estará desplegando la lista de <em>líneas</em> configurados que no se encuentran disponibles para ser utilizados por la herramienta para mostrar información en el display, dashboard y/o reportes.</p>
+<h5 id="todos_3">Todos</h5>
+<p>Al ejecutar el botón <em>“Todos”</em> se desplegará en la tabla de contenido la totalidad de las líneas creados sin importar el estado en el que se encuentren.</p>
+<h5 id="nuevo_3">Nuevo</h5>
+<p>Este es el último botón de la zona de botones y sirve para generar un nuevo registro. Al hacer clic sobre <em>“Nuevo”</em>, la vista cambiará a un formulario que mostrará los campos a rellenar para hacer posible la creación de una nueva <em>línea</em>.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/05-lines/new.jpg" /></p>
+<p><strong><center>Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h4 id="seccion-dos_3">Sección Dos</h4>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/05-lines/seccion-dos-lineas.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h5 id="selector-de-dato_3">Selector de dato</h5>
+<p>Establece el parámetro a través del cual se realizará la búsqueda. Es decir, podemos especificar la búsqueda de registros por Id, Nombre línea, Estado y Valor línea.</p>
+<h5 id="buscador_3">Buscador</h5>
+<p>Dentro de esta barra se coloca el dato que se quiere conseguir en los registros. Se debe tomar en cuenta el parámetro establecido en el <em>selector de dato</em>.</p>
+<h5 id="selector-de-cantidad-de-registros_3">Selector de cantidad de registros</h5>
+<p>Para la comodidad del usuario en las vista de los registros, este selector permite establecer el número de filas que desea visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_3">Tabla de contenido</h3>
+<p>Dentro de la <em>tabla de contenido</em> se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el caso de la vista general se muestra la información con base en los siguientes campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/05-lines/tabla-contenido-lineas.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h4 id="i">I</h4>
+<p>Identificador que se incremente automáticamente al crear un nuevo registro, ys sirve para identificar cada dato existente.</p>
+<h4 id="nombre-linea">Nombre linea</h4>
+<p>Indica el nombre del registro existente o creado.</p>
+<h4 id="estado_3">Estado</h4>
+<p>Indica el estado de cada registro. Es oportuno señalar que aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_3">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/05-lines/pulsar-registro-horas.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h4 id="detalles_2">Detalles</h4>
+<p>Esta opción le permite al usuario tener una especificación de las líneas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/05-lines/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h4 id="editar_3">Editar</h4>
+<p>Con este botón se desĺegará un formulario que permite editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/05-lines/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el registro. Para ello, primero debe desactivarse (si el registro se encuentra activo) utilizando el botón “Desactivar” y luego “Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/01-general/05-lines/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar” estará visible dentro de la vista de edición.</p>
+<h2 id="configuraciones-de-supervisores">Configuraciones de Supervisores</h2>
+<h3 id="menu-superior_4">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/menu-superior-supervisores.jpg" />
+<strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_4">Zona de botones</h3>
+<p>Se ubica debajo del <em>menú superior</em> y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/zona-botones-supervisores.jpg" />
+ <strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h4 id="seccion-uno_4">Sección Uno</h4>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración. Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/seccion-uno-suérvisores.jpg" />
+<strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h5 id="nombre_4">Nombre</h5>
+<p>Este indicador muestra el nombre de la sección del módulo en donde se encuentra el usuario, es decir, para este caso usted está en la subsección <strong>Supervisores</strong> dentro de la sección <strong>General</strong> perteneciente al módulo de <strong>Configuración</strong>.</p>
+<h5 id="activos_4">Activos</h5>
+<p>Este primer botón proporciona los registros que están en estado activo y están siendo utilizados por ProSer para generar estadísticas y vistas. Al hacer clic sobre el botón <em>“Activos”</em>, estará desplegando la lista de <em>supervisores</em> configurados disponibles para ser utilizados por la herramienta para mostrar información en el display, dashboard y/o reportes.</p>
+<h5 id="inactivo_4">Inactivo</h5>
+<p>Ocupa el tercer lugar en la zona de botones y expone los registros que están en estado inactivo y no están siendo utilizados por ProSer para generar estadísticas y vistas. Al hacer clic sobre el botón <em>“Inactivos”</em>, estará desplegando la lista de <em>supervisores</em> configurados que no se encuentran disponibles para ser utilizados por la herramienta para mostrar información en el display, dashboard y/o reportes.</p>
+<h5 id="todos_4">Todos</h5>
+<p>Al ejecutar el botón <em>“Todos”</em> se desplegará en la tabla de contenido la totalidad de los <em>supervisores</em> creados sin importar el estado en el que se encuentren.</p>
+<h5 id="nuevo_4">Nuevo</h5>
+<p>Este es el último botón de la zona de botones y sirve para generar un nuevo registro. Al hacer clic sobre <em>“Nuevo”</em>, la vista cambiará a un formulario que mostrará los campos a rellenar para hacer posible la creación de un nuevo supervisor.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/new.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h4 id="seccion-dos_4">Sección Dos</h4>
+<p>Esta sección está dividida en tres (3) partes que abarca el siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/seccion-dos-supervisores.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h5 id="selector-de-dato_4">Selector de dato</h5>
+<p>Establece el parámetro a través del cual se realizará la búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h5 id="buscador_4">Buscador</h5>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h5 id="selector-de-cantidad-de-registros_4">Selector de cantidad de registros</h5>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_4">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el caso de la vista general se muestra la información con base en los siguientes campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/tabal-contenido-supervisores.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h3 id="id_3">Id</h3>
+<p>Identificador que se incremente automáticamente al crear un
+nuevo registro, y sirve para identificar cada dato existente.</p>
+<h3 id="nombre-supervisor">Nombre Supervisor</h3>
+<p>Este campo hace referencia a la identificación de los supervisores
+por su nombre.</p>
+<h3 id="estado_4">Estado</h3>
+<p>Indica el estado de cada registro. Es oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="horario">Horario</h3>
+<p>Indica el horario o turno laboral del supervisor.</p>
+<h3 id="cliente">Cliente</h3>
+<p>Indica el cliente asignado al supervisor.</p>
+<h3 id="cola">Cola</h3>
+<p>Indica la cola asignada al supervisor.</p>
+<h3 id="servicio">Servicio</h3>
+<p>Indica el servicio asignado al supervisor.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_4">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/pulsar-registro-supervisores.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_3">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h3 id="editar_4">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-agentes">Configuración de Agentes</h2>
+<p>Los agentes son fundamentales dentro del Call Center. De ellos, depende el
+funcionamiento, efectividad y productividad de los servicios de la institución.</p>
+<p>La creación de los agentes se lleva a cabo en el sistema de Call Center directamente.
+ProSer extrae los datos de los agentes de la central telefónica y los almacena en su base de
+datos para ser mostrados en las diferentes vistas (reportes, display, dashboard) y puedan ser
+editados a través del módulo de configuración. Es decir, a través de esta funcionalidad, el
+usuario podrá únicamente editar la información del agente, no podrá crear ni eliminar ningún
+registro.</p>
+<p>La vista se divide en 3 grandes secciones que son: menú superior, zona de botones y
+tabla de contenido.</p>
+<h3 id="menu-superior_5">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar:
+el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el
+módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/02-agents/menu-superior-agentes.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior</center></strong></p>
+<h3 id="zona-de-botones_5">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/02-agents/zona-botones.jpg" /></p>
+<p><strong><center>Figura 2 - Zona de botones</center></strong></p>
+<h3 id="seccion-uno_5">Sección uno</h3>
+<p>En esta sección se encuentra un indicador y tres (03) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/02-agents/seccion-uno.jpg" /></p>
+<p><strong><center>Figura 3 - Zona de botones(Sección Uno)</center></strong></p>
+<h3 id="nombre_5">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección <em>Agentes</em> dentro de la sección
+<em>Personas</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="activos_5">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generar
+estadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de colores configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_5">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de colores
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h4 id="todos_5">Todos</h4>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="seccion-dos_5">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/02-agents/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 4 - Zona de botones(Sección Dos)(Sección Uno)</center></strong></p>
+<h3 id="selector-de-dato_5">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará la
+búsqueda. Es decir, podemos especificar la búsqueda de
+registros por Id, Nombre agente, Estado, Tipo, Extensión, Cédula,
+Número empleado, Cola, Supervisor, Turno, Calendario y Rol.</p>
+<h3 id="buscador_5">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_5">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_5">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/02-agents/tabla-contenido.jpg" /></p>
+<p><strong><center>Figura 5 - Tabla de Contenido(Sección Uno)</center></strong></p>
+<h3 id="id_4">Id</h3>
+<p>Identificador único que pertenece a cada agente.</p>
+<h3 id="nombre-agente">Nombre agente</h3>
+<p>Este campo hace referencia a la identificación de los agentes por
+su nombre.</p>
+<h3 id="estado_5">Estado</h3>
+<p>Indica el estado de cada registro. Es oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="tipo">Tipo</h3>
+<p>Indica el perfil, dentro del Call Center, del agente. Este puede
+ser: SIP o Agent.</p>
+<h3 id="extension">Extensión</h3>
+<p>Indica el número de extensión telefónica asignada al agente.</p>
+<h3 id="cedula">Cedula</h3>
+<p>Indica el número de identificación legal del agente.</p>
+<h3 id="numero-empleado">Numero Empleado</h3>
+<p>Indica el número o código de identificación laboral (si la
+organización cuenta con ello).</p>
+<h3 id="cola_1">Cola</h3>
+<p>Indica el nombre de la cola asignada al agente.</p>
+<h3 id="supervisor">Supervisor</h3>
+<p>Indica el nombre del supervisor asignado al agente.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_5">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/02-agents/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 6 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_4">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación de los agentescreados, es decir podrá ver al detalle todos los datos referentes al registro
+previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/02-agents/detail.jpg" /></p>
+<p><strong><center>Figura 7 - Detalles</center></strong></p>
+<h3 id="editar_5">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/02-agents/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/02-agents/delete.jpg" /></p>
+<p><strong><center>Figura 9 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-roles-de-agentes">Configuración de Roles de Agentes</h2>
+<p>Las asignaciones son los breaks, de los agentes, que son productivos para la
+organización. Cuando un agente inicia un break, está indicando al Call Center que no estará
+disponible para atender llamadas y de esa manera el sistema no envía llamadas a su
+extensión. Una vez que el agente indique que el break ha finalizado, el sistema volverá a
+asignar, a su extensión, llamadas de la cola.</p>
+<p>Un break productivo significa que a pesar de que el agente no está atendiendo
+llamadas, este se encuentra realizando una actividad de interés para la organización. A través
+de esta sección de la reportería ProSer, las asignaciones pueden ser editadas e incluso el
+usuario tiene la posibilidad de convertir una asignación en un auxiliar. Al igual que los agentes,
+los break (auxiliares y asignaciones) sólo pueden ser creadas a través del sistema de Call
+Center.</p>
+<p>La vista se divide en 3 grandes secciones que son: menú superior, zona de botones y
+tabla de contenido.</p>
+<h3 id="menu-superior_6">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y
+dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de
+las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la
+hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/03-agent-roles/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_6">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/03-agent-roles/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_6">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/03-agent-roles/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_6">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección <em>Roles de Agentes</em> dentro de la
+sección <em>Personas</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="activos_6">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generar
+estadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de colores configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_6">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de colores
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h4 id="todos_6">Todos</h4>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="nuevo_5">Nuevo</h3>
+<p>Este es el último botón de la zona de botones y sirve para
+generar un nuevo registro. Al hacer clic sobre “Nuevo”, la vista
+cambiará a un formulario que mostrará los campos a rellenar para
+hacer posible la creación de un nuevo rol de agente.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/03-agent-roles/new.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h3 id="seccion-dos_6">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/03-agent-roles/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="selector-de-dato_6">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará la
+búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h3 id="buscador_6">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_6">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_6">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/03-agent-roles/tabla-contenido.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h3 id="id_5">Id</h3>
+<p>Identificador que se incremente automáticamente al crear un
+nuevo registro, ys sirve para identificar cada dato existente.</p>
+<h3 id="descripcion">Descripción</h3>
+<p>Indica el nombre del rol creado, haciendo referencia a la
+actividad que ejecutan los agentes.</p>
+<h3 id="estado_6">Estado</h3>
+<p>Indica el estado de cada registro. Es oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_6">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/03-agent-roles/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_5">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/03-agent-roles/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h3 id="editar_6">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/03-agent-roles/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/03-agent-roles/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-asignaciones">Configuración de Asignaciones</h2>
+<h3 id="menu-superior_7">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y
+dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de
+las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la
+hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/04-assignments/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_7">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/04-assignments/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_7">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/04-assignments/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_7">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección <em>Asignaciones</em> dentro de la
+sección <em>Personas</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="activos_7">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generar
+estadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de colores configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_7">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de colores
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h3 id="todos_7">Todos</h3>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="nuevo_6">Nuevo</h3>
+<p>Este es el último botón de la zona de botones y sirve para
+generar un nuevo registro. Al hacer clic sobre “Nuevo”, la vista
+cambiará a un formulario que mostrará los campos a rellenar para
+hacer posible la creación de una nueva asignación.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/04-assignments/detail.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h3 id="seccion-dos_7">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/04-assignments/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="selector-de-dato_7">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará la
+búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h3 id="buscador_7">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_7">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_7">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/04-assignments/tabla-contenido.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h3 id="id_6">Id</h3>
+<p>Identificador que se incremente automáticamente al crear un
+nuevo registro, y sirve para identificar cada dato existente.</p>
+<h3 id="estado_7">Estado</h3>
+<p>Indica el estado de cada registro. Es oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="nombre-asignacion">Nombre asignacion</h3>
+<p>Indica el nombre de la asignación.</p>
+<h3 id="nombre-corto">Nombre Corto</h3>
+<p>Indica el nombre de la asignación que utiliza la reportería ProSer
+para hacer referencia en los módulos de monitoreo y estadísticas; tales
+como el display, dashboard y reportes.</p>
+<h3 id="descripcion_1">Descripción</h3>
+<p>Indica una breve explicación referente a la asignación.</p>
+<h3 id="productividad">Productividad</h3>
+<p>Indica si el break es productivo o no. Para el caso de la
+asignaciones, el valor de productividad debe ser “1”.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_7">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/04-assignments/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_6">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/04-assignments/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h3 id="editar_7">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/04-assignments/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/04-assignments/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-auxiliares">Configuración de Auxiliares</h2>
+<p>Los auxiliares son los breaks, de los agentes, que no son productivos para la
+organización. Cuando un agente inicia un break, está indicando al Call Center que no estará
+disponible para atender llamadas y de esa manera el sistema no envía llamadas a su
+extensión. Una vez que el agente indique que el break ha finalizado, el sistema volverá a
+asignar, a su extensión, llamadas de la cola.</p>
+<p>Un break no productivo significa que el agente se encuentra totalmente separado de su
+actividad laboral en ese momento y las acciones que realiza en ese tiempo no agrega valor a la
+organización. A través de esta sección de la reportería ProSer, los auxiliares pueden ser
+editados e incluso el usuario tiene la posibilidad de convertir un auxiliar en una asignación. Al
+igual que los agentes, los break (auxiliares y asignaciones) sólo pueden ser creadas a través
+del sistema de Call Center.</p>
+<p>La vista se divide en 3 grandes secciones que son: menú superior, zona de botones y
+tabla de contenido.</p>
+<h3 id="menu-superior_8">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y
+dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de
+las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la
+hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/05-auxiliary/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_8">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/05-auxiliary/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_8">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/05-auxiliary/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_8">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para estecaso usted está en la subsección <em>Auxiliares</em> dentro de la sección
+<em>Personas</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="activos_8">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generar
+estadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de colores configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_8">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de colores
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h3 id="todos_8">Todos</h3>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="nuevo_7">Nuevo</h3>
+<p>Este es el último botón de la zona de botones y sirve para
+generar un nuevo registro. Al hacer clic sobre “Nuevo”, la vista
+cambiará a un formulario que mostrará los campos a rellenar para
+hacer posible la creación de un nuevo auxiliar.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/05-auxiliary/new.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h3 id="seccion-dos_8">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/05-auxiliary/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="selector-de-dato_8">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará la
+búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h3 id="buscador_8">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_8">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_8">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/05-auxiliary/tabla-contenido.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h3 id="id_7">Id</h3>
+<p>Identificador que se incremente automáticamente al crear un
+nuevo registro, y sirve para identificar cada dato existente.</p>
+<h3 id="estado_8">Estado</h3>
+<p>Indica el estado de cada registro. Es oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="nombre-auxiliar">Nombre auxiliar</h3>
+<p>Indica el nombre del auxiliar.</p>
+<h3 id="nombre-corto_1">Nombre Corto</h3>
+<p>Indica el nombre del auxiliar que utiliza la reportería ProSer para
+hacer referencia en los módulos de monitoreo y estadísticas; tales como
+el display, dashboard y reportes.</p>
+<h3 id="descripcion_2">Descripción</h3>
+<p>Indica una breve explicación referente al auxiliar.</p>
+<h3 id="productividad_1">Productividad</h3>
+<p>Indica si el break es productivo o no. Para el caso de los
+auxiliares, el valor de productividad debe ser “0”.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_8">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/05-auxiliary/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_7">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/05-auxiliary/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h3 id="editar_8">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/05-auxiliary/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/05-auxiliary/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-turnos">Configuración de Turnos</h2>
+<p>Cada organización cuenta con un horario laboral para los agentes y en la mayoría de
+los casos estos horarios se dividen en diferentes turnos. Los turnos laborales de los agentes se
+estructuran de acuerdo a las exigencias de la organización.</p>
+<p>La reportería ProSer, a través del módulo de configuración, permite al usuario crear los
+turnos laborales para los agentes y posteriormente asociarlos a cada uno de los operadores.
+Una vez realizado este procedimiento, la reportería tomará esta información y la desplegará en
+los módulos de estadísticas y monitoreo (reportes, dashboard, display), brindando la posibilidad
+de filtrar la información por turnos e identificar el personal a través del mismo.</p>
+<p>La vista de esta sección se divide en 3 grandes secciones que son: menú superior,
+zona de botones y tabla de contenido.</p>
+<h3 id="menu-superior_9">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y
+dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de
+las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la
+hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/06-turns/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_9">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/06-turns/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_9">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/06-turns/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_9">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección <em>Turnos</em> dentro de la sección
+<em>Personas</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="activos_9">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generar
+estadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de colores configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_9">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de colores
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h3 id="todos_9">Todos</h3>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="nuevo_8">Nuevo</h3>
+<p>Este es el último botón de la zona de botones y sirve para
+generar un nuevo registro. Al hacer clic sobre “Nuevo”, la vista
+cambiará a un formulario que mostrará los campos a rellenar para
+hacer posible la creación de un nuevo turno.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/06-turns/new.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h3 id="seccion-dos_9">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/06-turns/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="selector-de-dato_9">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará la
+búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h3 id="buscador_9">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_9">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_9">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/06-turns/tabla-contenido.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h3 id="id_8">Id</h3>
+<p>Identificador que se incremente automáticamente al crear un
+nuevo registro, y sirve para identificar cada dato existente.</p>
+<h3 id="estado_9">Estado</h3>
+<p>Indica el estado de cada registro. Es oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="nombre-turno">Nombre turno</h3>
+<p>Indica el nombre del turno creado.</p>
+<h3 id="descripcion_3">Descripción</h3>
+<p>Indica una breve explicación referente al 
+turno.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_9">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/06-turns/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_8">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/06-turns/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h3 id="editar_9">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/06-turns/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-dias-por-turnos">Configuración de Días por Turnos</h2>
+<p>La sección de “Días por Turnos” es una extensión de la sección “Turnos”. Una
+vez creado los turnos apropiados para el cumplimiento de las actividades de los
+agentes, es necesario establecer y asociar los días respectivos de la semana a cada
+turno. La reportería ProSer, por defecto, ajusta el turno con la siguiente configuración:</p>
+<ul>
+<li>Días laborables: Lunes, Martes, Miércoles,- Jueves y Viernes.</li>
+<li>Días no laborables: Sábado y Domingo.</li>
+<li>Horario laboral: 08:00 am a 16:00 pm.</li>
+<li>Tiempo de descanso: 1 hora.</li>
+</ul>
+<p>Sin embargo, cada día de la semana puede ajustarse a la conveniencia de la
+organización. Sólo basta con seleccionar el día y hacer clic sobre el botón “Editar”.</p>
+<p>La vista de esta sección se divide en 3 grandes secciones que son: menú
+superior, zona de botones y tabla de contenido.</p>
+<h3 id="menu-superior_10">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y
+dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de
+las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la
+hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/07-turns-days/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_10">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene tres (03) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/07-turns-days/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_10">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y dos (02) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/07-turns-days//seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_10">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección <em>Días</em> por turno dentro de la
+sección <em>Personas</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="turnos">Turnos</h3>
+<p>Este botón redirigirá al usuario hacia la sección de
+“Turnos” de manera directa.</p>
+<h3 id="todos-los-dias">Todos los días</h3>
+<p>Muestra la configuración actual de los días de la semanaasociados al turno.
+*Este botón se muestra únicamente si hay un turno
+seleccionado en el selector de turno.</p>
+<h3 id="seccion-dos_10">Sección Dos</h3>
+<p>Dentro de esta sección se encuentra el selector de turnos. En
+dicho selector se despliega el inventario de los turnos creados
+previamente en la sección “Turnos”. Una vez elegido el turno a
+configurar, se desplegará la lista de los días de la semana con la
+configuración por defecto.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/07-turns-days/seccion-dos.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Sección Dos) </center></strong></p>
+<h3 id="seccion-tres">Sección Tres</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el siguiente
+contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/07-turns-days/seccion-tres.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Sección Tres) </center></strong></p>
+<h3 id="selector-de-dato_10">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará labúsqueda. Es decir, podemos especificar la búsqueda de
+registros por Id, Id Horario, Num Día, Día, Inicio, Final, Descanso,
+Laboral y Duración.</p>
+<h3 id="buscador_10">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_10">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_10">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/07-turns-days/tabla-contenido.jpg" /></p>
+<p><strong><center> Figura 6 - Tabla de Contenido </center></strong></p>
+<h3 id="id_9">Id</h3>
+<p>Identificador que se incremente automáticamente al crear un
+nuevo registro, y sirve para identificar cada dato existente.</p>
+<h3 id="id-horario">Id Horario</h3>
+<p>Indica el Id del turno al que está asociado el día de la semana.</p>
+<h3 id="numero-dia">Numero Dia</h3>
+<p>Indica al usuario el número correspondiente al dia de la semana,
+partiendo de la premisa que el día número 1 corresponde al Lunes.
+Sabiendo que la semana dispone de siete (7) días, entonces cada día
+tendrá un número asociado, por ejemplo: al Lunes le corresponde el
+número 1, al Martes le corresponde el número 2, al Miércoles el
+corresponde el número 3 y así progresivamente.</p>
+<h3 id="dia">Día</h3>
+<p>Indica el nombre del día.</p>
+<h3 id="inicio">Inicio</h3>
+<p>Indica la hora de inicio de la jornada laboral.</p>
+<h3 id="final">Final</h3>
+<p>Indica la hora en la que finaliza la jornada laboral.</p>
+<h3 id="descanso">Descanso</h3>
+<p>Indica el tiempo de descanso de la jornada laboral.</p>
+<h3 id="laboral">Laboral</h3>
+<p>Indica si el día es laborable o no laborable. Para un día laborable
+el valor es “1” y para un día no laborable el valor es “0”.</p>
+<h3 id="duracion">Duración</h3>
+<p>Indica el tiempo de duración de la jornada laboral.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_10">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/07-turns-days/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_9">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/07-turns-days/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h3 id="editar_10">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/07-turns-days/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<h2 id="configuracion-de-calendario">Configuración de Calendario</h2>
+<p>Para efectos de cada entidad, el calendario laboral muta de acuerdo a sus
+modelos internos de trabajo. Por consiguiente, la reportería ProSer en virtud de las
+diferentes normativas internas de cada institución, cuenta con la funcionalidad que
+permite al usuario crear el o los calendarios laborales que mejor se adapten a su
+corporación.</p>
+<p>El calendario hace referencia a las fechas de celebración de índole
+organizacional o nacional que puedan afectar la jornada laboral.</p>
+<p>La vista de esta sección se divide en 3 grandes secciones que son: menú
+superior, zona de botones y tabla de contenido.</p>
+<h3 id="menu-superior_11">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y
+dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de
+las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la
+hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/08-calendar/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_11">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/08-calendar/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_11">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/08-calendar/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_11">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección <em>Calendario</em> dentro de la
+sección <em>Personas</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="activos_10">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generar
+estadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de colores configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_10">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de colores
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h3 id="todos_10">Todos</h3>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="nuevo_9">Nuevo</h3>
+<p>Este es el último botón de la zona de botones y sirve para
+generar un nuevo registro. Al hacer clic sobre “Nuevo”, la vista
+cambiará a un formulario que mostrará los campos a rellenar para
+hacer posible la creación de un nuevo calendario.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/08-calendar/new.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h3 id="seccion-dos_11">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/08-calendar/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="selector-de-dato_11">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará la
+búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h3 id="buscador_11">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_11">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_11">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/08-calendar/tabla-contenido.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h3 id="id_10">Id</h3>
+<p>Identificador que se incremente automáticamente al crear un
+nuevo registro, y sirve para identificar cada dato existente.</p>
+<h3 id="estado_10">Estado</h3>
+<p>Indica el estado de cada registro. Es oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="nombre-turno_1">Nombre turno</h3>
+<p>Indica el nombre del calendario creado.</p>
+<h3 id="tipo_1">Tipo</h3>
+<p>Indica una breve explicación referente al 
+calendario.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_11">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/08-calendar/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_10">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/08-calendar/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h3 id="editar_11">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/08-calendar/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/08-calendar/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-feriados">Configuración de Feriados</h2>
+<p>La sección de “Feriados” es una extensión de la sección “Calendario”. Una vez
+creado el o los calendarios correspondiente al año para determinar las jornadas
+festivas, es necesario establecer y asociar las fechas feriadas respectivas.</p>
+<p>La vista de esta sección se divide en 3 grandes secciones que son: menú
+superior, zona de botones y tabla de contenido.</p>
+<h3 id="menu-superior_12">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar:
+el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el
+módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/09-holidays-days/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_12">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/09-holidays-days/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_12">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/09-holidays-days/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_12">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección Feriados dentro de la sección
+Personas perteneciente al módulo de Configuración.</p>
+<h3 id="activos_11">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generarestadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de feriados configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_11">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de feriados
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h3 id="todos_11">Todos</h3>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="nuevo_10">Nuevo</h3>
+<p>Este es el último botón de la zona de botones y sirve para
+generar un nuevo registro. Al hacer clic sobre “Nuevo”, la vista
+cambiará a un formulario que mostrará los campos a rellenar para
+hacer posible la creación de un nuevo feriado.</p>
+<p>*Este botón se muestra únicamente si hay un calendario
+seleccionado en el selector de calendarios.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/09-holidays-days/detail.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h3 id="seccion-dos_12">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/09-holidays-days/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="selector-de-dato_12">Selector de dato</h3>
+<p>Dentro de esta sección se encuentra el selector de calendarios.
+En dicho selector se despliega el inventario de los calendarios creados
+previamente en la sección “Calendario”. Una vez elegido el calendario a
+configurar, se desplegará la lista de los días de la semana con la
+configuración por defecto.</p>
+<h3 id="buscador_12">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_12">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="seccion-tres_1">Sección Tres</h3>
+<p>Dentro de esta sección se encuentra el selector de calendarios.
+En dicho selector se despliega el inventario de los calendarios creados
+previamente en la sección “Calendario”. Una vez elegido el calendario a
+configurar, se desplegará la lista de los días de la semana con la
+configuración por defecto..</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/09-holidays-days/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="tabla-de-contenido_12">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/09-holidays-days/tabla-contenido.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h3 id="id_11">Id</h3>
+<p>Identificador que se incremente automáticamente al crear un
+nuevo registro, y sirve para identificar cada dato existente.</p>
+<h3 id="calendario">Calendario</h3>
+<p>Indica el Id del calendario al que está asociado la fecha festiva.</p>
+<h3 id="estado_11">Estado</h3>
+<p>Indica el estado de cada registro. Es oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”están en un estado inactivo.</p>
+<h3 id="fecha">Fecha</h3>
+<p>Indica la fecha del día festivo.</p>
+<h3 id="nombre_13">Nombre</h3>
+<p>Indica el nombre de la celebración.</p>
+<h3 id="tipo_2">Tipo</h3>
+<p>Indica el tipo de festividad.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_12">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/09-holidays-days/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_11">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/09-holidays-days/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h3 id="editar_12">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/09-holidays-days/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<h1 id="clientes">Clientes</h1>
+<h2 id="configuracion-de-clientes">Configuración de Clientes</h2>
+<p>La reportería ProSer ofrece la oportunidad de segmentar información de cada
+cliente de la organización en tiempo real e histórica, a través de los módulos de
+estadísticas y monitoreo (reportes, dashboard, displays). Para ello, el usuario debe
+crear un perfil para cada cliente y luego asociarlo a cada agente y supervisor.</p>
+<p>La vista se divide en 3 grandes secciones que son: menú superior, zona de
+botones y tabla de contenido.</p>
+<h3 id="menu-superior_13">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y
+dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de
+las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la
+hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/01-clients/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_13">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/01-clients/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_13">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/01-clients/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_14">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección <em>Clientes</em> dentro de la sección
+<em>Operación</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="activos_12">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generar
+estadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de colores configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_12">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de colores
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h3 id="todos_12">Todos</h3>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="nuevo_11">Nuevo</h3>
+<p>Este es el último botón de la zona de botones y sirve para
+generar un nuevo registro. Al hacer clic sobre “Nuevo”, la vista
+cambiará a un formulario que mostrará los campos a rellenar para
+hacer posible la creación de un nuevo cliente.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/01-clients/new.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h3 id="seccion-dos_13">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/01-clients/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="selector-de-dato_13">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará la
+búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h3 id="buscador_13">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_13">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_13">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/01-clients/tabla-contenido.jpg" /></p>
+<p><strong><center> Figura 6 - Tabla Contenido</center></strong></p>
+<h3 id="id_12">Id</h3>
+<p>Identificador que se incremente automáticamente al crear un
+nuevo registro, y sirve para identificar cada dato existente.</p>
+<h3 id="nombre-cliente">Nombre cliente</h3>
+<p>Este campo hace referencia a la identificación de los clientes por
+su nombre.</p>
+<h3 id="nombre-corto_2">Nombre Corto</h3>
+<p>Indica el nombre del cliente que utiliza la reportería ProSer para
+hacer referencia en los módulos de monitoreo y estadísticas; tales como
+el display, dashboard y reportes.</p>
+<h3 id="tipo-cliente">Tipo cliente</h3>
+<p>Indica una breve referencia de clasificación interna del cliente.</p>
+<h3 id="estado_12">Estado</h3>
+<p>Indica el estado de cada registro. Es oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_13">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/01-clients/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_12">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/01-clients/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h3 id="editar_13">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/01-clients/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/01-clients/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-colas">Configuración de Colas</h2>
+<p>La creación de las colas se lleva a cabo en el sistema de Call Center directamente.
+ProSer extrae los datos de las colas de la central telefónica y los almacena en su base de datos
+para ser mostrados en las diferentes vistas (reportes, display, dashboard) y puedan ser
+editados a través del módulo de configuración. Es decir, a través de esta funcionalidad, el
+usuario podrá únicamente editar la información de la cola, no podrá crear ni eliminar ningún
+registro.</p>
+<p>La vista se divide en 3 grandes secciones que son: menú superior, zona de botones y
+tabla de contenido.</p>
+<h3 id="menu-superior_14">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y
+dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de
+las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la
+hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/02-queues/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_14">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/02-queues/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_14">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y tres (03) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha::</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/02-queues/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_15">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección <em>Campañas</em> dentro de la
+sección <em>Operación</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="activos_13">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generar
+estadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de colores configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_13">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de colores
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h3 id="todos_13">Todos</h3>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="seccion-dos_14">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/02-queues/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 4- Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="selector-de-dato_14">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará la
+búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h3 id="buscador_14">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_14">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_14">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/01-clients/tabla-contenido.jpg" /></p>
+<p><strong><center>Figura 5- Tabla de Contenido</center></strong></p>
+<h3 id="id_13">Id</h3>
+<p>Identificador único que pertenece a cada 
+cola.</p>
+<h3 id="estado_13">Estado</h3>
+<p>Indica el estado de cada registro. Es 
+oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="nombre-cola">Nombre cola</h3>
+<p>Este campo hace referencia a la identificación de las colas por su
+nombre.</p>
+<h3 id="nombe-corto-cola">Nombe corto cola</h3>
+<p>Indica el nombre de la cola que utiliza la reportería ProSer para
+hacer referencia en los módulos de monitoreo y estadísticas; tales como
+el display, dashboard y reportes</p>
+<h3 id="nombre-sms">Nombre SMS</h3>
+<p>Indica el nombre de la cola abreviado para ser utilizado en los
+sms (aplica sólo para las organizaciones que cuentan con servicio de
+mensajería de texto).</p>
+<h3 id="numero">Número</h3>
+<p>Indica el número de la cola.</p>
+<h3 id="tipo_3">Tipo</h3>
+<p>Indica el tipo de llamadas que circulan en la cola. Puede ser:
+inbound, outbound, automatic.</p>
+<h3 id="cliente_1">Cliente</h3>
+<p>Indica el nombre del cliente asignado a la cola.</p>
+<h3 id="servicio_1">Servicio</h3>
+<p>Indica el nombre del servicio asignado a la cola.</p>
+<h3 id="escala">Escala</h3>
+<p>Indica el nombre de la escala asignada a la cola.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_14">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/03-agent-roles/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 6 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_13">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/detail.jpg" /></p>
+<p><strong><center>Figura 7 - Detalles</center></strong></p>
+<h3 id="editar_14">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/edit.jpg" /></p>
+<p><strong><center>Figura 8 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/02-people/01-supervisors/delete.jpg" /></p>
+<p><strong><center>Figura 9 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-servicios">Configuración de Servicios</h2>
+<p>Del mismo modo que en la sección de “Clientes”, la reportería ProSer permite
+segmentar información de los servicios ofrecidos por la organización a través del Call
+Center. Igualmente, la información de las llamadas relacionadas a cada servicio puede
+divisarse en tiempo real e históricamente, a través de los módulos de estadísticas y
+monitoreo (reportes, dashboard, displays). Para que esto ocurra, el usuario debe crear
+un perfil para cada servicio y luego asociarlo a cada agente, supervisor y/o cola.</p>
+<p>La vista se divide en 3 grandes secciones que son: menú superior, zona de
+botones y tabla de contenido.</p>
+<h3 id="menu-superior_15">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y
+dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de
+las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la
+hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/03-services/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_15">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/03-services/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_15">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/03-services/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_16">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección <em>Servicios</em> dentro de la sección
+<em>Operación</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="activos_14">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generar
+estadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de colores configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_14">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de colores
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h3 id="todos_14">Todos</h3>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="nuevo_12">Nuevo</h3>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/03-services/detail.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h3 id="seccion-dos_15">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/03-services/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="selector-de-dato_15">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará la
+búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h3 id="buscador_15">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_15">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_15">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/03-services/tabla-contenido.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_15">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/03-services/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_14">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/03-services/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h3 id="editar_15">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/03-services//edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/03-services/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-campanas">Configuración de Campañas</h2>
+<h3 id="menu-superior_16">Menú superior</h3>
+<p>Como en el caso de las colas, las campañas se crean directamente en el sistema de
+Call Center. La reportería ProSer extrae los datos de las campañas de la central telefónica y los
+almacena en su base de datos para ser utilizados en las diferentes vistas. Al igual que en el
+módulo de configuración de colas, a través de esta funcionalidad, el usuario podrá únicamente
+editar la información de las campañas, no podrá crear ni eliminar ningún registro.</p>
+<p>La vista se divide en 3 grandes secciones que son: menú superior, zona de botones y
+tabla de contenido.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/04-campaigns/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_16">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/04-campaigns/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_16">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/04-campaigns/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_17">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección <em>Campañas</em> dentro de la
+sección <em>Operación</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="activos_15">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generar
+estadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de colores configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_15">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de colores
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h3 id="todos_15">Todos</h3>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="seccion-dos_16">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/04-campaigns/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 4 - Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="selector-de-dato_16">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará la
+búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h3 id="buscador_16">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_16">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_16">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/04-campaigns/tabla-contenido.jpg" /></p>
+<p><strong><center>Figura 5 - Tabla de Contenido</center></strong></p>
+<h3 id="id_14">Id</h3>
+<p>Identificador único que pertenece a cada cola.</p>
+<h3 id="nombre-campana">Nombre campaña</h3>
+<p>Este campo hace referencia a la identificación de las campañas
+por su nombre.</p>
+<h3 id="nombe-corto">Nombe corto</h3>
+<p>Indica el nombre de la campaña que utiliza la reportería ProSer
+para hacer referencia en los módulos de monitoreo y estadísticas; tales
+como el display, dashboard y reportes.</p>
+<h3 id="descipcion">Descipción</h3>
+<p>Indica brevemente el objetivo de la campaña.</p>
+<h3 id="estado_14">Estado</h3>
+<p>Indica el estado de cada registro. Es oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="numero-cola">Número cola</h3>
+<p>Indica el número de la cola asociada a la campaña.</p>
+<h3 id="fecha-inicio">Fecha inicio</h3>
+<p>Indica la fecha en la que inicia la campaña.</p>
+<h3 id="fecha-final">Fecha final</h3>
+<p>Indica la fecha en la que finaliza la campaña.</p>
+<h3 id="hora-inicio">Hora inicio</h3>
+<p>Indica la hora de inicio de la campaña.</p>
+<h3 id="hora-final">Hora final</h3>
+<p>Indica la hora en la que la campaña termina.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_16">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/04-campaigns/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 6 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_15">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/04-campaigns/detail.jpg" /></p>
+<p><strong><center>Figura 7 - Detalles</center></strong></p>
+<h3 id="editar_16">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/04-campaigns/edit.jpg" /></p>
+<p><strong><center>Figura 8 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/04-campaigns//delete.jpg" /></p>
+<p><strong><center>Figura 9 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<h2 id="configuracion-de-escalas">Configuración de Escalas</h2>
+<p>Las organizaciones establecen metas en los indicadores más relevantes de un
+Call Center (nivel de servicio, nivel de atención, nivel de contactabilidad, nivel de
+efectividad, entre otros) para cumplir con los objetivos planteados para cada cliente.</p>
+<p>La reportería ProSer contiene una sección dentro del módulo “Configuración”,
+llamada “Escalas”. Las escalas consisten en establecer los límites de las metas y
+asociarlas a un color, con la finalidad de mostrar en los dashboards y displays el nivel
+de cada indicador a través del color asociado a la meta dentro de la escala.</p>
+<p>Los colores son los siguientes:</p>
+<ul>
+<li>Rojo: Señala que el indicador se encuentra en un valor pésimo.</li>
+<li>Amarillo: Señala que el indicador se encuentra en un valor preocupante.</li>
+<li>Verde: Señala que el indicador se encuentra en un valor bueno.</li>
+<li>Azul: Señala que el indicador se encuentra en un valor óptimo.</li>
+</ul>
+<p>En esta sección, el usuario podrá crear escalas para luego asociarlas a cada
+cola o usar una escala de manera general.
+ProSer establece una escala por defecto, esta es la escala “Normal”. El usuario
+podrá editarla a conveniencia de la organización o crear cuantas considere necesario.</p>
+<p>La vista se divide en 3 grandes secciones que son: menú superior, zona de
+botones y tabla de contenido.</p>
+<h3 id="menu-superior_17">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y
+dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de
+las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la
+hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/05-scales/menu-superior.jpg" /></p>
+<p><strong><center>Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones_17">Zona de botones</h3>
+<p>Se ubica debajo del menú superior y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/05-scales/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h3 id="seccion-uno_17">Sección Uno</h3>
+<p>En esta sección se encuentra un indicador y cuatro (4) botones que
+permiten llevar a cabo acciones características del módulo de configuración.
+Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de
+la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/05-scales/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h3 id="nombre_18">Nombre</h3>
+<p>Este indicador muestra el nombre de la sección del
+módulo en donde se encuentra el usuario, es decir, para este
+caso usted está en la subsección <em>Escala</em>s dentro de la sección
+<em>Operación</em> perteneciente al módulo de <em>Configuración</em>.</p>
+<h3 id="activos_16">Activos</h3>
+<p>Este primer botón proporciona los registros que están en
+estado activo y están siendo utilizados por ProSer para generar
+estadísticas y vistas. Al hacer clic sobre el botón “Activos”, estará
+desplegando la lista de colores configurados disponibles para ser
+utilizados por la herramienta para mostrar información en el
+display, dashboard y/o reportes.</p>
+<h3 id="inactivo_16">Inactivo</h3>
+<p>Ocupa el tercer lugar en la zona de botones y expone los
+registros que están en estado inactivo y no están siendo utilizados
+por ProSer para generar estadísticas y vistas. Al hacer clic sobre
+el botón “Inactivos”, estará desplegando la lista de colores
+configurados que no se encuentran disponibles para ser utilizados
+por la herramienta para mostrar información en el display,
+dashboard y/o reportes.</p>
+<h3 id="todos_16">Todos</h3>
+<p>Al ejecutar el botón “Todos” se desplegará en la tabla de
+contenido la totalidad de los colores creados sin importar el
+estado en el que se encuentren.</p>
+<h3 id="nuevo_13">Nuevo</h3>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/05-scales/detail.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Nuevo)</center></strong></p>
+<h3 id="seccion-dos_17">Sección Dos</h3>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/05-scales/seccion-dos.jpg" /></p>
+<p><strong><center>Figura 5 - Zona de botones(Sección Dos)</center></strong></p>
+<h3 id="selector-de-dato_17">Selector de dato</h3>
+<p>Establece el parámetro a través del cual se realizará la
+búsqueda. Es decir, podemos especificar la búsqueda deregistros por Id, Nombre, Estado y Uso.</p>
+<h3 id="buscador_17">Buscador</h3>
+<p>Dentro de esta barra se coloca el dato que se quiere
+conseguir en los registros. Se debe tomar en cuenta el parámetro
+establecido en el selector de dato.</p>
+<h3 id="selector-de-cantidad-de-registros_17">Selector de cantidad de registros</h3>
+<p>Para la comodidad del usuario en las vista de los registros,
+este selector permite establecer el número de filas que desea
+visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido_17">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta
+variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el
+caso de la vista general se muestra la información con base en los siguientes
+campos:</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/05-scales/tabla-contenido.jpg" /></p>
+<p><strong><center>Figura 6 - Tabla de Contenido</center></strong></p>
+<h3 id="id_15">Id</h3>
+<p>Identificador que se incremente automáticamente al crear un
+nuevo registro, y sirve para identificar cada dato existente.</p>
+<h3 id="estado_15">Estado</h3>
+<p>Indica el estado de cada registro. Es oportuno señalar que
+aquellos con la letra “A” tienen un estado activo y los que tiene la letra “I”
+están en un estado inactivo.</p>
+<h3 id="nombre-escala">Nombre escala</h3>
+<p>Este campo hace referencia a la identificación de las escalas por
+su nombre.</p>
+<h3 id="nombre-cortoindica">Nombre CortoIndica</h3>
+<p>el nombre de las escalas que utiliza la reportería ProSer
+para hacer referencia en los módulos de display y dashboard.</p>
+<h3 id="rol-rojo">Rol rojo</h3>
+<p>Indica el límite inferior para que el indicador se refleje en color
+rojo.</p>
+<h3 id="rol-amarillo">Rol amarillo</h3>
+<p>Indica el límite inferior para que el indicador se refleje en color
+amarillo.</p>
+<h3 id="rol-verde">Rol verde</h3>
+<p>Indica el límite inferior para que el indicador se refleje en color
+verde. </p>
+<h3 id="rol-azul">Rol azul</h3>
+<p>Indica el límite inferior para que el indicador se refleje en color
+azul.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido_17">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/05-scales/pulsar-registro.jpg" /></p>
+<p><strong><center>Figura 7 - Pulsar registro en la tabla de contenido</center></strong></p>
+<h3 id="detalles_16">Detalles</h3>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/05-scales/detail.jpg" /></p>
+<p><strong><center>Figura 8 - Detalles</center></strong></p>
+<h3 id="editar_17">Editar</h3>
+<p>Con este botón se desĺegará un formulario que permite
+editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/05-scales/edit.jpg" /></p>
+<p><strong><center>Figura 9 - Editar</center></strong></p>
+<p>A través de este botón, se puede también eliminar el
+registro. Para ello, primero debe desactivarse (si el registro se
+encuentra activo) utilizando el botón “Desactivar” y luego
+“Eliminar”.</p>
+<p><img alt="Texto alternativo" src="../img/05-configuration/03-operation/05-scales/delete.jpg" /></p>
+<p><strong><center>Figura 10 - Eliminar</center></strong></p>
+<p>Si el registro no se encuentra activo, el botón “Eliminar”
+estará visible dentro de la vista de edición.</p>
+<p></justify></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../sistema/" class="btn btn-neutral float-right" title="Sistema">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../reportes/" class="btn btn-neutral" title="Reportes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../reportes/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../sistema/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

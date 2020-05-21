@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Dashboard - Manual del Usuario</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Dashboard";
+    var mkdocs_page_input_path = "dashboard.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Manual del Usuario</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Inicio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../home/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../display/">Display</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Dashboard</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#dashboard">Dashboard</a></li>
+    
+
+    <li class="toctree-l2"><a href="#entrantes">Entrantes</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#dashboard-de-entrantes-en-tiempo-real">Dashboard de entrantes en tiempo real</a></li>
+        
+            <li><a class="toctree-l3" href="#dashboard-de-entrantes-historico">Dashboard de entrantes histórico</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#salientes">Salientes</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#dashboard-salientes-en-tiempo-real">Dashboard salientes en tiempo real</a></li>
+        
+            <li><a class="toctree-l3" href="#dashboard-salientes-historico">Dashboard salientes histórico</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../reportes/">Reportes</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../configuracion/">Configuracion</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sistema/">Sistema</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../usuario/">Usuario</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../selector/">Selector</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Manual del Usuario</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Dashboard</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><justify></p>
+<h1 id="dashboard">Dashboard</h1>
+<p>Los dashboard son vistas similares a los diplays, la diferencia consiste en que los dashboard son pizarras interactivas con el usuario. A través de un clic en cada indicador se muestra el detalle del valor señalado. Los dashboard tienen la capacidad de mostrar información en tiempo real y datos historicos.  </p>
+<p>En esencia los dashboards, al igual que los displays, cumplen con los indicadores de la Norma C.O:P.C. Son una herramienta diseñada especialmente para los supervisores y gerentes de Call Center, quienes necesitan la información precisa sobre lo que está ocurriendo con las llamadas y los agentes.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/dashboard-main/01-dashboard.jpg" /></p>
+<p>Esta sección se divide en dos grande módulos:</p>
+<h1 id="entrantes">Entrantes</h1>
+<p>Dentro de este módulo se encuentran los dashboard que reflejan el comportamiento de las llamadas entrantes del Call Center.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/dashboard-main/02-dashboard.jpg" /></p>
+<h2 id="dashboard-de-entrantes-en-tiempo-real">Dashboard de entrantes en tiempo real</h2>
+<p>El dashboard de entrantes en tiempo real es una versión interactiva del display de llamadas entrantes. Su estructura es similar, se diferencia principalmente en que el dashboard permite al usuario poseer información detallada, a través de un clic, de cada métrica que se muestra en su <em>pizarra de indicadores</em>.   </p>
+<p>Esta vista del <em>Módulo Dashboard</em> puntualiza la información del <em>Call Center</em> en modalidad <em>Inbound</em>. Es una herramienta efectiva diseñada para el gerente o supervisor, ya que brinda las estadísticas necesarias para tomar acciones correctivas inmediatas (si el caso lo amerita) y alcanzar o mantener el nivel de servicio ideal.  </p>
+<p>Este dashboard está compuesto por un <em>menú superior, menú inferior</em> y la <em>pizarra de indicadores</em>.</p>
+<h3 id="menu-superior">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/2.jpg" />
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/3.jpg" />
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba 
+hacia abajo, se encuentran las siguientes descripciones: Nombre de la 
+vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/4.jpg" />
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/4-2.jpg" />
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/4-1.jpg" />
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="pizarra-de-indicadores">Pizarra de indicadores</h3>
+<p>La pizarra de indicadores es la sección más relevante, ya que en ella se plasma toda la información fundamental de la vista. Esta sección, a su vez, se conforma por seis (06) grupos de información: <em>destacados, llamadas, niveles, tiempos, agentes conectados</em> y <em>auxiliares/asignaciones</em>.</p>
+<h4 id="destacados">Destacados</h4>
+<p>Los destacados puntualizan los indicadores de mayor envergadura para la toma de decisiones por parte del supervisor o gerente. Este grupo se conforma por: nivel del servicio, nivel de atención,llamadas en cola, llamadas activas, agentes planificados, agentes conectados, agentes efectivos, tiempo medio de operación (TMO).</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/5.jpg" />
+<strong><center> Figura 6 - Destacados </center></strong></p>
+<h5 id="nivel-de-servicio">Nivel de servicio</h5>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar el tiempo ideal de atención, conocido comúnmente como umbral (normalmente es de 20 segundos). Este indicador colorea su contenido de acuerdo a los porcentajes configurados en la <em>escala</em> para cada color.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/5-1.jpg" />
+<strong><center> Figura 7 - Destacados(Nivel de Servicio) </center></strong></p>
+<h5 id="nivel-de-atencion">Nivel de atención</h5>
+<p>Indica el porcentaje que representa las llamadas atendidas con respecto a la cantidad de llamadas recibidas. Este indicador colorea su contenido de acuerdo a los porcentajes configurados en la <em>escala</em> para cada color.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/5-2.jpg" />
+<strong><center> Figura 8 - Destacados(Nivel de Atención) </center></strong></p>
+<h5 id="llamadas-en-cola">Llamadas en cola</h5>
+<p>Indica la cantidad de llamadas que encuentran esperando, en ese momento, en la cola para ser atendidas.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/5-3.jpg" />
+<strong><center> Figura 9 - Destacados(Llamadas en cola) </center></strong></p>
+<h5 id="llamadas-activas">Llamadas activas</h5>
+<p>Indica la cantidad de llamadas que están siendo atendidas en ese momento.   </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/5-4.jpg" />
+<strong><center> Figura 10 - Destacados(Llamadas activas) </center></strong></p>
+<h5 id="agentes-planificados">Agentes planificados</h5>
+<p>Indica la cantidad de agentes que se deben conectar en el transcurso del día, turno o guardia.</p>
+<h5 id="agentes-conectados">Agentes conectados</h5>
+<p>Indica la cantidad de agentes que se encuentran conectados en ese instante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada agente correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/5-5.jpg" />
+<strong><center> Figura 11 - Destacados(Agentes conectados) </center></strong></p>
+<h5 id="agentes-efectivos">Agentes efectivos</h5>
+<p>Indica la cantidad de agentes que se encuentran operativos (disponibles u ocupados) en ese instante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada agente correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/5-6.jpg" />
+<strong><center> Figura 12 - Destacados(Agentes efectivos) </center></strong></p>
+<h5 id="tiempo-medio-de-operacion-tmo">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que dura un agente atendiendo una llamada.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/5-7.jpg" />
+<strong><center> Figura 13 - Destacados(TMO) </center></strong></p>
+<h4 id="llamadas">Llamadas</h4>
+<p>El grupo de llamadas hace referencia a las métricas de todo lo relacionado con la cantidad de llamadas en la operación. Este grupo lo 
+conforman los siguientes indicadores: recibidas, atendidas, abandonadas,cortas, atendidas en menos de, atendidas en más de, colgadas por agente y pérdidas.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/7.jpg" />
+<strong><center> Figura 14 - Llamadas </center></strong></p>
+<h5 id="recibidas">Recibidas</h5>
+<p>Indica la cantidad de llamadas recibidas hasta ese instante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/7-1.jpg" />
+<strong><center> Figura 15 - Llamadas(Recibidas) </center></strong></p>
+<h5 id="atendidas">Atendidas</h5>
+<p>Indica la cantidad de llamadas atendidas hasta ese instante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/7-2.jpg" />
+<strong><center> Figura 16 - Llamadas(Atendidas) </center></strong></p>
+<h5 id="abandonadas">Abandonadas</h5>
+<p>Indica la cantidad de llamadas abandonadas hasta ese instante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/7-3.jpg" />
+<strong><center> Figura 17 - Llamadas(Abandonadas) </center></strong></p>
+<h5 id="cortas">Cortas</h5>
+<p>Indica la cantidad de llamadas finalizadas antes de un valor de tiempo previamente definido por la empresa o el cliente (usualmente el valor de tiempo corresponde a los 10 segundos).  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/7-4.jpg" />
+<strong><center> Figura 18 - Llamadas(Cortas) </center></strong></p>
+<h5 id="atendidas-en-menos-de">Atendidas en menos de</h5>
+<p>Indica la cantidad de llamadas atendidas antes deculminar el tiempo ideal de atención (umbral).  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/7-5.jpg" />
+<strong><center> Figura 19 - Llamadas(Atendidas en menos de) </center></strong></p>
+<h5 id="atendidas-en-mas-de">Atendidas en más de</h5>
+<p>Indica la cantidad de llamadas atendidas luego de culminar el tiempo ideal de atención (umbral).  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/7-6.jpg" />
+<strong><center> Figura 20 - Llamadas(Atendidas en más de) </center></strong></p>
+<h5 id="colgadas-por-agente">Colgadas por agente</h5>
+<p>Indica la cantidad de llamadas culminadas por los agentes,es decir, cuando la llamada finaliza porque el agente colgó primero que el llamante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/7-7.jpg" />
+<strong><center> Figura 21 - Llamadas(Colgadas por agente) </center></strong></p>
+<h5 id="perdidas">Perdidas</h5>
+<p>Indica la cantidad de llamadas que no son atendidas por un agente SIP y se pierden.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<h4 id="niveles">Niveles</h4>
+<p>El grupo <em>niveles</em> expresa los indicadores de eficiencia del call 
+center: nivel de servicio, nivel de atención y nivel de abandono.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/8.jpg" />
+<strong><center> Figura 22 - Niveles </center></strong></p>
+<h5 id="nivel-de-servicio_1">Nivel de servicio</h5>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar el tiempo ideal de atención, conocido comúnmente como umbral (normalmente es de 20 segundos).  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/8-1.jpg" />
+<strong><center> Figura 23 - Niveles(Nivel de servicio) </center></strong></p>
+<h5 id="nivel-de-atencion_1">Nivel de atención</h5>
+<p>Indica el porcentaje que representa las llamadas atendidascon respecto a la cantidad de llamadas recibidas.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/8-2.jpg" />
+<strong><center> Figura 24 - Niveles(Nivel de atención) </center></strong></p>
+<h5 id="nivel-de-abandono">Nivel de abandono</h5>
+<p>Indica el porcentaje que representa la cantidad de llamadas no contestadas con respecto a las llamadas recibidas.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/8-3.jpg" />
+<strong><center> Figura 25 - Niveles(Nivel de abandono) </center></strong></p>
+<h4 id="tiempos">Tiempos</h4>
+<p>El grupo tiempos puntualiza todos aquellos indicadores que su 
+cálculo se basa en el tiempo, siempre expresados en segundos. Los 
+indicadores de tiempo son: tiempo medio de operación, tiempo medio de 
+espera, máxima espera en cola, máxima espera.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/9.jpg" />
+<strong><center> Figura 26 - Tiempos </center></strong></p>
+<h5 id="tiempo-medio-de-operacion-tmo_1">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que dura un agente atendiendo una llamada.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/9-1.jpg" />
+<strong><center> Figura 27 - Tiempos(TMO) </center></strong></p>
+<h5 id="tiempo-medio-de-espera-asa">Tiempo medio de espera (ASA)</h5>
+<p>Indica el tiempo promedio que transcurre desde que las llamadas ingresan a la cola hasta ser atendidas.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/9-2.jpg" />
+<strong><center> Figura 28 - Tiempos(ASA) </center></strong></p>
+<h5 id="maxima-espera-en-cola">Máxima espera en cola</h5>
+<p>Indica el valor máximo de tiempo de espera de una llamada en la cola en ese instante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/9-3.jpg" />
+<strong><center> Figura 29 - Tiempos(Máxima espera en cola) </center></strong></p>
+<h5 id="maximo-espera">Máximo espera</h5>
+<p>Indica el valor total del tiempo de espera de las llamadas que han sido recibidas.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/9-4.jpg" />
+<strong><center> Figura 30 - Tiempos(Máximo espera) </center></strong></p>
+<h4 id="agentes-conectados_1">Agentes conectados</h4>
+<p>Muestra un gráfico que expresa el estado actual de los agentes 
+en ese instante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada agente correspondiente al valor 
+mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/10.jpg" />
+<strong><center> Figura 31 - Agentes conectados </center></strong></p>
+<h4 id="agentes-en-auxiliarasignacion">Agentes en auxiliar/asignación</h4>
+<p>Cuando hay agentes en break, se divisa dentro de este grupo un 
+resumen de: la cantidad de agentes en break, el tipo de break y el tiempoacumulado en ese break.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/11.jpg" />
+<strong><center> Figura 32 - Agentes en auxiliar/asignación </center></strong></p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada agente correspondiente al valor 
+mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/01-incoming-in-real-time/10-1.jpg" />
+<strong><center> Figura 33 - Agentes en auxiliar/asignación </center></strong></p>
+<h2 id="dashboard-de-entrantes-historico">Dashboard de entrantes histórico</h2>
+<p>Es una vista que expresa información de fechas anteriores a la actual y las representa en formato de dashboard. Para el caso del dashboard de entrantes históricolas estadísticas mostradas corresponden a la modalidad <em>Inbound</em> y al igual que el <em>dashboard de entrantes en tiempo real</em> permite al usuario poseer información detallada,a través de un clic, de cada métrica que se muestra en su <em>pizarra de indicadores</em>.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este dashboard está compuesto por un <em>menú superior, menú inferior</em> y la <em>pizarra de indicadores</em>.</p>
+<h3 id="menu-superior_1">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/2.jpg" />
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_1">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/3.jpg" />
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_1">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que representa la información expuesta en el módulo. En el orden de arriba hacia abajo,se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_1">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center 
+del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_1">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/4.jpg" />
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/4-1.jpg" />
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/4-2.jpg" />
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="pizarra-de-indicadores_1">Pizarra de indicadores</h3>
+<p>La pizarra de indicadores es la sección más relevante, ya que en ella se plasma toda la información fundamental de la vista. Esta sección, a su vez, se conforma por seis (06) grupos de información: <em>destacados, llamadas, niveles, tiempos, resumen de agentes</em> e <em>histórico auxiliares/histórico asignaciones</em>.</p>
+<h4 id="destacados_1">Destacados</h4>
+<p>Los destacados puntualizan los indicadores de mayor envergadura para la toma de decisiones por parte del supervisor o gerente. Este grupo se conforma por: nivel del servicio, nivel de atención,llamadas abandonadas, agentes planificados, agentes registrados, tiempo medio de operación (TMO).</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/5.jpg" />
+<strong><center> Figura 6 - Destacados </center></strong></p>
+<h5 id="nivel-de-servicio_2">Nivel de servicio</h5>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar el tiempo ideal de atención, conocido comúnmente como umbral (normalmente es de 20 segundos), dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>. Este indicador colorea su contenido de acuerdo a los porcentajes configurados en la <em>escala</em> para cada color.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/5-1.jpg" />
+<strong><center> Figura 7 - Destacados(Nivel de Servicio) </center></strong></p>
+<h5 id="nivel-de-atencion_2">Nivel de atención</h5>
+<p>Indica el porcentaje que representa las llamadas atendidascon respecto a la cantidad de llamadas recibidas dentro del rangode fecha y tiempo seleccionado en el <em>selector</em>. Este indicador colorea su contenido de acuerdo a los porcentajes configurados en la <em>escala</em> para cada color.</p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/5-2.jpg" />
+<strong><center> Figura 8 - Destacados(Nivel de Atención) </center></strong></p>
+<h5 id="llamadas-abandonadas">Llamadas abandonadas</h5>
+<p>Indica la cantidad de llamadas abandonadas dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/5-3.jpg" />
+<strong><center> Figura 9 - Destacados(Llamadas en cola) </center></strong></p>
+<h5 id="agentes-planificados_1">Agentes planificados</h5>
+<p>Indica la cantidad de agentes planificados para el transcurso del día, turno o guardias dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.</p>
+<h5 id="agentes-registrados">Agentes registrados</h5>
+<p>Indica la cantidad de agentes que se registraron dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada agente correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/5-4.jpg" />
+<strong><center> Figura 10 - Destacados(Agentes registrados) </center></strong></p>
+<h5 id="tiempo-medio-de-operacion-tmo_2">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que duró un agente operando una llamada, dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>, atendiendo una llamada.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/5-5.jpg" />
+<strong><center> Figura 11 - Destacados(TMO) </center></strong></p>
+<h4 id="llamadas_1">Llamadas</h4>
+<p>El grupo de llamadas hace referencia a las métricas de todo lo 
+relacionado con la cantidad de llamadas en la operación. Este grupo lo 
+conforman los siguientes indicadores: recibidas, atendidas, abandonadas,cortas, atendidas en menos de, atendidas en más de, colgadas por agente y pérdidas.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/7.jpg" />
+<strong><center> Figura 12 - Llamadas </center></strong></p>
+<h5 id="recibidas_1">Recibidas</h5>
+<p>Indica la cantidad de llamadas recibidas dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.</p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/7-1.jpg" />
+<strong><center> Figura 13 - Llamadas(Recibidas) </center></strong></p>
+<h5 id="atendidas_1">Atendidas</h5>
+<p>Indica la cantidad de llamadas atendidas dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/7-2.jpg" />
+<strong><center> Figura 14 - Llamadas(Atendidas) </center></strong></p>
+<h5 id="abandonadas_1">Abandonadas</h5>
+<p>Indica la cantidad de llamadas abandonadas dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/7-3.jpg" />
+<strong><center> Figura 15 - Llamadas(Abandonadas) </center></strong></p>
+<h5 id="cortas_1">Cortas</h5>
+<p>Indica la cantidad de llamadas finalizadas antes de un valor de tiempo previamente definido por la empresa o el cliente (usualmente el valor de tiempo corresponde a los 10 segundos), dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/7-4.jpg" />
+<strong><center> Figura 16 - Llamadas(Cortas) </center></strong></p>
+<h5 id="atendidas-en-menos-de_1">Atendidas en menos de</h5>
+<p>Indica la cantidad de llamadas atendidas antes de culminar el tiempo ideal de atención (umbral) dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/7-5.jpg" />
+<strong><center> Figura 17 - Llamadas(Atendidas en menos de) </center></strong></p>
+<h5 id="atendidas-en-mas-de_1">Atendidas en más de</h5>
+<p>Indica la cantidad de llamadas atendidas luego de culminar el tiempo ideal de atención (umbral) dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/7-6.jpg" />
+<strong><center> Figura 18 - Llamadas(Atendidas en más de) </center></strong></p>
+<h5 id="colgadas-por-agente_1">Colgadas por agente</h5>
+<p>Indica la cantidad de llamadas culminadas por los agentes,es decir, cuando la llamada finaliza porque el agente colgó primero que el llamante. Este indicador basa su información dentro del rango de fecha y tiempo seleccionado en el selector.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/7-7.jpg" />
+<strong><center> Figura 19 - Llamadas(Colgadas por agente) </center></strong></p>
+<h5 id="perdidas_1">Perdidas</h5>
+<p>Indica la cantidad de llamadas que no son atendidas por un agente SIP y se pierden. Este indicador basa su información dentro del rango de fecha y tiempo seleccionado en el selector.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<h4 id="niveles_1">Niveles</h4>
+<p>El grupo <em>niveles</em> expresa los indicadores de eficiencia del call center: nivel de servicio, nivel de atención y nivel de abandono.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/8.jpg" />
+<strong><center> Figura 20 - Niveles </center></strong></p>
+<h5 id="nivel-de-servicio_3">Nivel de servicio</h5>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar el tiempo ideal de atención, conocido comúnmente como umbral (normalmente es de 20 segundos). Este indicador basa suinformación dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/8-1.jpg" />
+<strong><center> Figura 21 - Niveles(Nivel de servicio) </center></strong></p>
+<h5 id="nivel-de-atencion_3">Nivel de atención</h5>
+<p>Indica el porcentaje que representa las llamadas atendidascon respecto a la cantidad de llamadas recibidas. Este indicador basa su información dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/8-2.jpg" />
+<strong><center> Figura 22 - Niveles(Nivel de atención) </center></strong></p>
+<h5 id="nivel-de-abandono_1">Nivel de abandono</h5>
+<p>Indica el porcentaje que representa la cantidad de llamadas no contestadas con respecto a las llamadas recibidas. Este indicador basa su información dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/8-3.jpg" />
+<strong><center> Figura 23 - Niveles(Nivel de abandono) </center></strong></p>
+<h4 id="tiempos_1">Tiempos</h4>
+<p>El grupo <em>tiempos</em> puntualiza todos aquellos indicadores que su cálculo se basa en el tiempo, siempre expresados en segundos. Los indicadores de tiempo son: tiempo medio de operación, tiempo medio de espera, máxima espera en cola, máxima espera.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/9.jpg" />
+<strong><center> Figura 24 - Tiempos </center></strong></p>
+<h5 id="tiempo-medio-de-operacion-tmo_3">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que duró un agente atendiendo una llamada dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/9-1.jpg" />
+<strong><center> Figura 25 - Tiempos(TMO) </center></strong></p>
+<h5 id="tiempo-medio-de-espera-asa_1">Tiempo medio de espera (ASA)</h5>
+<p>Indica el tiempo promedio que transcurrió desde que las llamadas ingresaron a la cola hasta ser atendidas dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/9-2.jpg" />
+<strong><center> Figura 26 - Tiempos(ASA) </center></strong></p>
+<h5 id="maxima-espera-en-cola_1">Máxima espera en cola</h5>
+<p>Indica el valor máximo de tiempo de espera de una llamada en la cola dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/9-3.jpg" />
+<strong><center> Figura 27 - Tiempos(Máxima espera en cola) </center></strong></p>
+<h5 id="maximo-espera_1">Máximo espera</h5>
+<p>Indica el valor total del tiempo de espera de las llamadas que fueron recibidas dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/9-4.jpg" />
+<strong><center> Figura 28 - Tiempos(Máximo espera) </center></strong></p>
+<h4 id="resumen-de-agentes">Resumen de agentes</h4>
+<p>Muestra una tabla que expresa estadísticas sobre los agentes, basándose en: cantidad de personas(agentes), sumatoria de la duración de la acción y el promedio de duración de esa acción o concepto.  </p>
+<p>Este indicador fundamenta su información dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/10-1.jpg" />
+<strong><center> Figura 29 - Resumen de agentes </center></strong></p>
+<h4 id="agentes-en-auxiliarasignacion_1">Agentes en auxiliar/asignación</h4>
+<p>Este grupo refleja, de manera resumida, toda la información referente a la actividad de los auxiliares y asignaciones transcurrida dentro del rango de fecha y hora seleccionado en el <em>selector</em>.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/01-incoming/02-historical-incoming/10-2.jpg" />
+<strong><center> Figura 30 - Agentes en auxiliar/asignación </center></strong></p>
+<h1 id="salientes">Salientes</h1>
+<p>Dentro de este módulo se encuentran los dashboard que reflejan el comportamiento de las llamadas salientes del Call Center.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/dashboard-main/03-dashboard.jpg" /></p>
+<h2 id="dashboard-salientes-en-tiempo-real">Dashboard salientes en tiempo real</h2>
+<p>El dashboard de salientes en tiempo real es una versión interactiva del display de llamadas salientes. Su estructura es similar, se diferencia principalmente en que el dashboard permite al usuario poseer información detallada, a través de un clic, de cada métrica que se muestra en su <em>pizarra de indicadores</em>.  </p>
+<p>Esta vista del <em>Módulo Dashboard</em> puntualiza la información del <em>Call Center</em> en modalidad <em>Outbound</em>. Es una herramienta que permite al gerente o supervisor, monitorear de manera detallada el comportamiento y la dinámica de las llamadas realizadas por los agentes.  </p>
+<p>Este dashboard está compuesto por un <em>menú superior,menú inferior</em>  y la <em>pizarra de indicadores</em>.</p>
+<h3 id="menu-superior_2">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/2.jpg" />
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_2">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/3.jpg" />
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_2">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda querepresenta la información expuesta en el módulo. En el orden de arriba hacia abajo,se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_2">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_2">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”,encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/4.jpg" />
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es)seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/4-1.jpg" />
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/4-2.jpg" />
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="pizarra-de-indicadores_2">Pizarra de indicadores</h3>
+<p>La pizarra de indicadores es la sección más relevante, ya que en ella se plasma toda la información fundamental de la vista. Esta sección, a su vez, se conforma por seis (06) grupos de información: <em>destacados, llamadas, niveles, tiempos, agentes conectados</em> y <em>auxiliares/asignaciones</em>.</p>
+<h4 id="destacados_2">Destacados</h4>
+<p>Los destacados puntualizan los indicadores de mayor envergadura para la toma de decisiones por parte del supervisor o gerente. Este grupo se conforma por: nivel de contactabilidad, nivel de efectividad, llamadas en cola, llamadas activas, agentes planificados, agentes conectados, agentes efectivos, tiempo medio de operación(TMO).</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/5.jpg" />
+<strong><center> Figura 6 - Destacados </center></strong></p>
+<h5 id="nivel-de-contactabilidad">Nivel de contactabilidad</h5>
+<p>Indica el porcentaje que representa la cantidad de llamadas contestadas por el destinatario con respecto a la cantidad de llamadas realizadas. Este indicador colorea su contenido de acuerdo a los porcentajes configurados en la <em>escala</em> para cada color.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana  informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/5-1.jpg" />
+<strong><center> Figura 7 - Destacados(Nivel de contactabilidad) </center></strong></p>
+<h5 id="nivel-de-efectividad">Nivel de efectividad</h5>
+<p>Indica el porcentaje que representa las llamadas efectivas con respecto a la cantidad de llamadas realizadas. Este indicador colorea su contenido de acuerdo a los porcentajes configurados en la <em>escala</em> para cada color. </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/5-2.jpg" />
+<strong><center> Figura 8 - Destacados(Nivel de efectividad) </center></strong></p>
+<h5 id="llamadas-en-cola_1">Llamadas en cola</h5>
+<p>Indica la cantidad de llamadas que encuentran esperando, en ese momento,en la cola para ser atendidas.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/5-3.jpg" />
+<strong><center> Figura 9 - Destacados(Llamadas en cola) </center></strong></p>
+<h5 id="llamadas-activas_1">Llamadas activas</h5>
+<p>Indica la cantidad de llamadas que están siendo realizadas en ese momento.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/5-4.jpg" />
+<strong><center> Figura 10 - Destacados(Llamadas activas) </center></strong></p>
+<h5 id="agentes-planificados_2">Agentes planificados</h5>
+<p>Indica la cantidad de agentes que se deben conectar en el transcurso del día, turno o guardia (según la configuración del display).</p>
+<h5 id="agentes-conectados_2">Agentes conectados</h5>
+<p>Indica la cantidad de agentes que se encuentran conectados en ese instante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada agente correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/5-5.jpg" />
+<strong><center> Figura 11 - Destacados(Agentes conectados) </center></strong></p>
+<h5 id="agentes-efectivos_1">Agentes efectivos</h5>
+<p>Indica la cantidad de agentes que se encuentran operativos (disponibles u ocupados) en ese instante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada agente correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/5-6.jpg" />
+<strong><center> Figura 12 - Destacados(Agentes efectivos) </center></strong></p>
+<h5 id="tiempo-medio-de-operacion-tmo_4">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que dura un agente realizando una llamada.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/5-7.jpg" />
+<strong><center> Figura 13 - Destacados(TMO) </center></strong></p>
+<h4 id="llamadas_2">Llamadas</h4>
+<p>El grupo de llamadas hace referencia a las métricas de todo lo relacionado con la cantidad de llamadas en la operación. Este grupo lo conforman los siguientes indicadores: realizadas, fallidas, contestadas,efectivas y colgadas por agente.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/7.jpg" />
+<strong><center> Figura 14 - Llamadas </center></strong></p>
+<h5 id="realizadas">Realizadas</h5>
+<p>Indica la cantidad de llamadas realizadas por los agentes hasta ese instante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/7-1.jpg" />
+<strong><center> Figura 15 - Llamadas(Realizadas) </center></strong></p>
+<h5 id="fallidas">Fallidas</h5>
+<p>Indica la cantidad de llamadas que no lograron establecer conexión con el destinatario.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/7-2.jpg" />
+<strong><center> Figura 16 - Llamadas(Fallidas) </center></strong></p>
+<h5 id="contestadas">Contestadas</h5>
+<p>Indica la cantidad de llamadas que lograron establecer conexión con el destinatario.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/7-3.jpg" />
+<strong><center> Figura 17 - Llamadas(Contestadas) </center></strong></p>
+<h5 id="efectivas">Efectivas</h5>
+<p>Indica la cantidad de llamadas que lograron con éxito el propósito de las mismas.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/7-4.jpg" />
+<strong><center> Figura 18 - Llamadas(Efectivas) </center></strong></p>
+<h5 id="colgadas-por-agente_2">Colgadas por agente</h5>
+<p>Indica la cantidad de llamadas culminadas por los agentes, es decir, cuando la llamada finaliza porque el agente colgó primero que el llamante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/7-5.jpg" />
+<strong><center> Figura 19 - Llamadas(Colgadas por agente) </center></strong></p>
+<h4 id="niveles_2">Niveles</h4>
+<p>El grupo <em>niveles</em> expresa los indicadores de eficiencia del call center: nivel de servicio, nivel de contactabilidad y nivel de efectividad.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/8.jpg" />
+<strong><center> Figura 20 - Niveles </center></strong></p>
+<h5 id="nivel-de-contactabilidad_1">Nivel de contactabilidad</h5>
+<p>Indica el porcentaje que representa la cantidad de llamadas contestadas por el destinatario con respecto a la cantidad de llamadas realizadas.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/8-1.jpg" />
+<strong><center> Figura 21 - Niveles(Nivel de contactabilidad) </center></strong></p>
+<h5 id="nivel-de-efectividad_1">Nivel de efectividad</h5>
+<p>Indica el porcentaje que representa las llamadas efectivas con respecto a la cantidad de llamadas realizadas.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/8-2.jpg" />
+<strong><center> Figura 22 - Niveles(Nivel de efectividad) </center></strong></p>
+<h4 id="tiempos_2">Tiempos</h4>
+<p>El grupo <em>tiempos</em> puntualiza todos aquellos indicadores que su cálculo se basa en el tiempo, siempre expresados en segundos. Los indicadores de tiempo son: tiempo medio de operación, tiempo de operación.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/9.jpg" />
+<strong><center> Figura 23 - Tiempos </center></strong></p>
+<h5 id="tiempo-medio-de-operacion-tmo_5">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que dura un agente realizando una llamada.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/9-1.jpg" />
+<strong><center> Figura 24 - Tiempos(TMO) </center></strong></p>
+<h5 id="tiempo-de-operacion">Tiempo de operación</h5>
+<p>Indica el tiempo de operación acumulado hasta ese instante.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/9-2.jpg" />
+<strong><center> Figura 25 - Tiempos(Tiempo de operación) </center></strong></p>
+<h4 id="agentes-conectados_3">Agentes conectados</h4>
+<p>Muestra un gráfico que expresa el estado actual de los agentes en ese instante.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/10.jpg" />
+<strong><center> Figura 26 - Agentes conectados </center></strong></p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana
+informativa con el detalle de cada agente correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/10-1.jpg" />
+<strong><center> Figura 27 - Agentes conectados </center></strong></p>
+<h4 id="agentes-en-auxiliarasignacion_2">Agentes en auxiliar/asignación</h4>
+<p>Cuando hay agentes en break, se divisa dentro de este grupo un resumen de: la cantidad de agentes en break, el tipo de break y el tiempo acumulado en ese break.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/11.jpg" />
+<strong><center> Figura 28 - Agentes en auxiliar/asignación </center></strong></p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana
+informativa con el detalle de cada agente correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/01-outgoing-in-real-time/11-1.jpg" />
+<strong><center> Figura 29 - Agentes en auxiliar/asignación </center></strong></p>
+<h2 id="dashboard-salientes-historico">Dashboard salientes histórico</h2>
+<p>Es una vista que expresa información de fechas anteriores a la actual y las representa en formato de dashboard. Para el caso del <em>dashboard de salientes histórico</em> las estadísticas mostradas corresponden a la modalidad <em>Outbound</em> y al igual que el <em>dashboard de salientes</em> en <em>tiempo real</em> permite al usuario poseer información detallada, a través de un clic, de cada métrica que se muestra en su <em>pizarra de indicadores</em>.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este dashboard está compuesto por un <em>menú superior, menú inferior</em> y la <em>pizarra de indicadores</em>.</p>
+<h3 id="menu-superior_3">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/2.jpg" />
+<strong><center> Figura 1 - Menú Superior  </center></strong></p>
+<h3 id="menu-inferior_3">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/3.jpg" />
+<strong><center> Figura 2 - Menú Inferior  </center></strong></p>
+<h4 id="seccion-uno_3">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que representa la información expuesta en el módulo. En el orden de arriba hacia abajo,se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_3">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_3">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”,encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/4.jpg" />
+<strong><center> Figura 3 - Menú Inferior(Sección tres)  </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es)seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/4-1.jpg" />
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/4-2.jpg" />
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="pizarra-de-indicadores_3">Pizarra de indicadores</h3>
+<p>La pizarra de indicadores es la sección más relevante, ya que en ella se plasma toda la información fundamental de la vista. Esta sección, a su vez, se conforma por seis (06) grupos de información: <em>destacados, llamadas, niveles,tiempos, resumen de agentes</em> e <em>histórico auxiliares/histórico asignaciones</em>.</p>
+<h4 id="destacados_3">Destacados</h4>
+<p>Los destacados puntualizan los indicadores de mayor envergadura para la toma de decisiones por parte del supervisor o gerente. Este grupo se conforma por: nivel del contactabilidad, nivel de efectividad, llamadas contestadas, agentes planificados, agentes registrados, tiempo medio de operación (TMO).</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/5.jpg" />
+<strong><center> Figura 6 - Destacados </center></strong></p>
+<h5 id="nivel-de-contactabilidad_2">Nivel de contactabilidad</h5>
+<p>Indica el porcentaje que representa la cantidad de llamadas contestadas por el destinatario con respecto a la cantidad de llamadas realizadas, dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>. Este indicador colorea su contenido de acuerdo a los porcentajes configurados en la <em>escala</em> para cada color.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/5-1.jpg" />
+<strong><center> Figura 7 - Destacados(Nivel de contactabilidad) </center></strong></p>
+<h5 id="nivel-de-efectividad_2">Nivel de efectividad</h5>
+<p>Indica el porcentaje que representa las llamadas efectivas con respecto a la cantidad de llamadas realizadas dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>. Este indicador colorea su contenido de acuerdo a los porcentajes configurados en la escala para cada color.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/5-2.jpg" />
+<strong><center> Figura 8 - Destacados(Nivel de efectividad) </center></strong></p>
+<h5 id="llamadas-contestadas">Llamadas contestadas</h5>
+<p>Indica la cantidad de llamadas que lograron establecer conexión con el destinatario dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>. </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/5-3.jpg" />
+<strong><center> Figura 9 - Destacados(Llamadas contestadas) </center></strong></p>
+<h5 id="agentes-planificados_3">Agentes planificados</h5>
+<p>Indica la cantidad de agentes planificados para el transcurso del día, turno o guardias dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.</p>
+<h5 id="agentes-registrados_1">Agentes registrados</h5>
+<p>Indica la cantidad de agentes que se registraron dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada agente correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/5-4.jpg" />
+<strong><center> Figura 10 - Destacados(Agentes registrados) </center></strong></p>
+<h5 id="tiempo-medio-de-operacion-tmo_6">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que duró un agente operando una llamada, dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>, atendiendo una llamada.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/5-5.jpg" />
+<strong><center> Figura 11 - Destacados(TMO) </center></strong></p>
+<h4 id="llamadas_3">Llamadas</h4>
+<p>El grupo de llamadas hace referencia a las métricas de todo lo relacionado con la cantidad de llamadas en la operación. Este grupo lo conforman los siguientes indicadores: realizadas, fallidas, contestadas, efectivas y colgadas por agente.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/7.jpg" />
+<strong><center> Figura 12 - Llamadas </center></strong></p>
+<h5 id="realizadas_1">Realizadas</h5>
+<p>Indica la cantidad de llamadas realizadas por los agentes dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/7-1.jpg" />
+<strong><center> Figura 13 - Llamadas(Realizadas) </center></strong></p>
+<h5 id="fallidas_1">Fallidas</h5>
+<p>Indica la cantidad de llamadas que no lograron establecer conexión con el destinatario dentro del rango de fecha y tiempo seleccionado en el selector.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/7-2.jpg" />
+<strong><center> Figura 14 - Llamadas(Fallidas) </center></strong></p>
+<h5 id="contestadas_1">Contestadas</h5>
+<p>Indica la cantidad de llamadas que lograron establecer conexión con el destinatario dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/7-3.jpg" />
+<strong><center> Figura 15 - Llamadas(Contestadas) </center></strong></p>
+<h5 id="efectivas_1">Efectivas</h5>
+<p>Indica la cantidad de llamadas que lograron con éxito el propósito de las mismas dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/7-4.jpg" />
+<strong><center> Figura 16 - Llamadas(Efectivas) </center></strong></p>
+<h5 id="colgadas-por-agente_3">Colgadas por agente</h5>
+<p>Indica la cantidad de llamadas culminadas por los agentes,es decir, cuando la llamada finaliza porque el agente colgó primero que el llamante. Este indicador basa su información dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con el detalle de cada llamada correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/7-5.jpg" />
+<strong><center> Figura 17 - Llamadas(Colgadas por agente) </center></strong></p>
+<h4 id="niveles_3">Niveles</h4>
+<p>El grupo <em>niveles</em> expresa los indicadores de eficiencia del call center: nivel de contactabilidad y nivel de efectividad.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/8.jpg" />
+<strong><center> Figura 18 - Niveles </center></strong></p>
+<h5 id="nivel-de-contactabilidad_3">Nivel de contactabilidad</h5>
+<p>Indica el porcentaje que representa la cantidad de llamadas contestadas por el destinatario con respecto a la cantidad de llamadas realizadas. Este indicador basa su información dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/8-1.jpg" />
+<strong><center> Figura 19 - Niveles(Nivel de contactabilidad) </center></strong></p>
+<h5 id="nivel-de-efectividad_3">Nivel de efectividad</h5>
+<p>Indica el porcentaje que representa las llamadas efectivas con respecto a la cantidad de llamadas realizadas. Este indicadorbasa su información dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/8-2.jpg" />
+<strong><center> Figura 20 - Niveles(Nivel de efectividad) </center></strong></p>
+<h4 id="tiempos_3">Tiempos</h4>
+<p>El grupo <em>tiempos</em> puntualiza todos aquellos indicadores que su cálculo se basa en el tiempo, siempre expresados en segundos. Los indicadores de tiempo son: tiempo medio de operación, tiempo de operación.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/9.jpg" />
+<strong><center> Figura 21 - Tiempos </center></strong></p>
+<h5 id="tiempo-medio-de-operacion-tmo_7">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que duró un agente realizando una llamada dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/9-1.jpg" />
+<strong><center> Figura 22 - Tiempos(TMO) </center></strong></p>
+<h5 id="tiempo-de-operacion_1">Tiempo de operación</h5>
+<p>Indica el tiempo de operación acumulado dentro del rango de fecha y tiempo seleccionado en el <em>selector</em>.  </p>
+<p>Al hacer clic sobre este indicador se desplegará una ventana informativa con la leyenda descriptiva correspondiente al valor mostrado.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/9-2.jpg" />
+<strong><center> Figura 23 - Tiempos(Tiempo de operación) </center></strong></p>
+<h4 id="resumen-de-agentes_1">Resumen de agentes</h4>
+<p>Muestra una tabla que expresa estadísticas sobre los agentes, basándose en: cantidad de personas(agentes), sumatoria de la duración de la acción y el promedio de duración de esa acción o concepto. Este indicador fundamenta su información dentro del rango defecha y tiempo seleccionado en el <em>selector</em>.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/10.jpg" />
+<strong><center> Figura 24 - Resumen de agentes </center></strong></p>
+<h4 id="agentes-en-auxiliarasignacion_3">Agentes en auxiliar/asignación</h4>
+<p>Este grupo refleja, de manera resumida, toda la información referente a la actividad de los auxiliares y asignaciones transcurrida dentro del rango de fecha y hora seleccionado en el <em>selector</em>.</p>
+<p><img alt="Texto alternativo" src="../img/03-dashboard/02-outgoing/02-historical-outgoing/11.jpg" />
+<strong><center> Figura 25 - Agentes en auxiliar/asignación </center></strong></p>
+<p></justify></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../reportes/" class="btn btn-neutral float-right" title="Reportes">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../display/" class="btn btn-neutral" title="Display"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../display/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../reportes/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

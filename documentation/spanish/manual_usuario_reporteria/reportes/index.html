@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Reportes - Manual del Usuario</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Reportes";
+    var mkdocs_page_input_path = "reportes.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Manual del Usuario</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Inicio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../home/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../display/">Display</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dashboard/">Dashboard</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Reportes</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#reportes">Reportes</a></li>
+    
+
+    <li class="toctree-l2"><a href="#portada">Portada</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#barra-de-navegacion">Barra de navegación</a></li>
+        
+            <li><a class="toctree-l3" href="#reportes-de-llamadas-entrantes">Reportes de llamadas entrantes</a></li>
+        
+            <li><a class="toctree-l3" href="#reportes-de-llamadas-entrantes-por-intervalo">Reportes de llamadas entrantes por intervalo</a></li>
+        
+            <li><a class="toctree-l3" href="#reportes-de-llamadas-salientes-manuales">Reportes de llamadas salientes manuales</a></li>
+        
+            <li><a class="toctree-l3" href="#reportes-de-llamadas-salientes-manuales-por-intervalo">Reportes de llamadas salientes manuales por intervalo</a></li>
+        
+            <li><a class="toctree-l3" href="#reporte-de-detalles-de-llamadas">Reporte de detalles de llamadas</a></li>
+        
+            <li><a class="toctree-l3" href="#reporte-de-llamadas-abandonadas">Reporte de llamadas abandonadas</a></li>
+        
+            <li><a class="toctree-l3" href="#reporte-de-tiempo-de-espera">Reporte de tiempo de espera</a></li>
+        
+            <li><a class="toctree-l3" href="#reportes-de-agentes-conexion-y-desconexion">Reportes de agentes conexión y desconexión</a></li>
+        
+            <li><a class="toctree-l3" href="#reportes-detallado-de-auxiliares">Reportes detallado de auxiliares</a></li>
+        
+            <li><a class="toctree-l3" href="#reporte-detallado-de-asignaciones">Reporte detallado de asignaciones</a></li>
+        
+            <li><a class="toctree-l3" href="#reporte-operativo-detallado">Reporte operativo detallado</a></li>
+        
+            <li><a class="toctree-l3" href="#reporte-operativo-consolidado">Reporte operativo consolidado</a></li>
+        
+            <li><a class="toctree-l3" href="#auditoria-audit">Auditoría (Audit)</a></li>
+        
+            <li><a class="toctree-l3" href="#registro-de-detalle-de-las-llamadas-cdr">Registro de detalle de las llamadas (CDR)</a></li>
+        
+            <li><a class="toctree-l3" href="#registro-de-entrada-de-llamadas-callentry">Registro de entrada de llamadas (CallEntry)</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../configuracion/">Configuracion</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sistema/">Sistema</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../usuario/">Usuario</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../selector/">Selector</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Manual del Usuario</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Reportes</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><justify></p>
+<h1 id="reportes">Reportes</h1>
+<p>Esta sección presenta la información en forma de tablas que pueden ser invocadas por el usuario.  </p>
+<p>Las tablas fundamentalmente muestran la información de tres fuentes, el <strong>Audit</strong> (Información de los agentes), el <strong>CDR</strong> (Información de las llamadas)y el <strong>CallEntry</strong> (Información de las colas). Adicionalmente esta información se combina con elementos que permiten su clasificación.  </p>
+<p>Todas las tablas tienen acceso a un "selector" que se activa al presionar el link de "Filtre la información aquí", donde el usuario puede escoger una fecha, un intervalo de fecha, intervalos de hora, modalidades del reporte o variables de clasificación tanto de agentes como de colas.  </p>
+<p>Nótese que todas las tablas generadas aquí pueden invocarse directamente con una herramienta de consultas SQL, accediendo a la base de datos con un usuario de solo lectura, lo que permite obtener variantes de los reportes para usuarios avanzados.</p>
+<h1 id="portada">Portada</h1>
+<p><img alt="Texto alternativo" src="../img/04-reports/reports-main/01-reports.jpg" /></p>
+<p>Al ingresar en el módulo puede visualizar un portada que contiene una barra de navegación.  </p>
+<p>El cuerpo de la portada despliega el logo de la organización, el nombre del reporte, el slogan, la versión de Proser y la versión de la sección.  </p>
+<p><strong>NOTA TÉCNICA:</strong> La información del logo y nombre de la organización y el slogan pueden modificarse en los archivos de las variables de entorno de frontend (env.js)  </p>
+<p>Si el usuario no está logueado, el sistema solo permite acceso a la funcionalidad de login para que el usuario escriba un nombre de usuario y una contraseña.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/reports-main/01-login.jpg" /> </p>
+<p>Una vez logueado podrá tener acceso a las funcionalidades del sistema.</p>
+<h2 id="barra-de-navegacion">Barra de navegación</h2>
+<p><img alt="Texto alternativo" src="../img/04-reports/reports-main/06-main.jpg" /> </p>
+<p>Esta barra de navegación contiene:</p>
+<h3 id="logo-de-proser">Logo de ProSer</h3>
+<p><img alt="Texto alternativo" src="../img/04-reports/reports-main/07-logo.jpg" /> </p>
+<p>Que actúa como un botón para regresar al menú principal.</p>
+<h3 id="link-de-reportes">Link de Reportes</h3>
+<p><img alt="Texto alternativo" src="../img/04-reports/reports-main/08-link.jpg" /> </p>
+<p>Que regresa siempre a esta portada.</p>
+<h3 id="menu-de-llamadas">Menú de llamadas</h3>
+<p><img alt="Texto alternativo" src="../img/04-reports/reports-main/09.jpg" /> </p>
+<p>Que despliega un menú mostrando los reportes asociados a las llamadas:  </p>
+<p>Entrantes, salientes, detalle de llamadas, abandonadas y un reporte sobre los tiempos de espera.</p>
+<h3 id="menu-de-agentes">Menú de agentes</h3>
+<p><img alt="Texto alternativo" src="../img/04-reports/reports-main/10.jpg" /> </p>
+<p>Aquí observamos links al reporte de conexión, detalle de auxiliares y de asignaciones.</p>
+<h3 id="menu-de-operacion">Menú de operación</h3>
+<p><img alt="Texto alternativo" src="../img/04-reports/reports-main/11.jpg" /> </p>
+<p>Este menú presenta dos vistas de la misma data: Operativo detallado y el consolidado.  </p>
+<p>La información que presentan es la misma, pero difiere la forma en que es mostrada cuando se trata de un intervalo de fechas ya que el primero agrupa la información por fechas mientras que el segundo la acumula por agente.</p>
+<h3 id="menu-de-data">Menú de data</h3>
+<p><img alt="Texto alternativo" src="../img/04-reports/reports-main/12.jpg" /> </p>
+<p>El menú de data permite ver, acceder y exportar las tablas principales que registran la información:  </p>
+<p><strong>Audit</strong> se refiere a la tabla que guarda la información relacionada con los agentes.  </p>
+<p>Aquí se registra la información de los logueos (conexión y desconexión),las pausas o interrupciones de trabajo que son de dos tipos, las que son para el agente (Auxiliares tales como ir al baño, reuniones, seguimiento de actividades, etc) y las que son para el proyecto ejecutado (Llamadas salientes, redes sociales, análisis de información, tareas asignadas queno implican llamar por teléfono). Estas clasificaciones y nombres varían según como se hayan configurado.  </p>
+<p>La tabla de audit se genera en el momento en que se inicia una actividad tal como loguearse, o entrar en pausa. El registro no está completo y algunos campos están en blanco hasta que el usuario decide cerrar la actividad. Una vez cerrado el registro este no se altera.  </p>
+<p>El audit posee los campos originales generados por el call center y algunos campos adicionales para la clasificación.  </p>
+<p><strong>Cdr</strong> se refiere a la información relacionada con las llamadas realizadas desde la Central Telefónica.  </p>
+<p>Cada vez que la central telefónica detecta alguna actividad en las colas o en las extensiones, crea un registro detallado de dicha información llamado CDR (Call Detail Record). La data se guarda en una base de datos que contiene toda esta información y puede ser consultada en cualquier momento.  </p>
+<p>Cada registro es creado una vez que la llamada finaliza, así que cualquier actividad en curso no existe para el CDR.  </p>
+<p>Este reporte exporta los campos originales del CDR y le agrega alguna información complementaria para efectos de análisis y clasificación.  </p>
+<p><strong>CallEntry</strong> se refiere a la actividad en las colas.  </p>
+<p>Cada vez que una llamada ingresa a una cola, se crea un registro en esta tabla. La información no está completa hasta que la llamada finaliza, en cuyo caso el registro llena los campos faltantes (hora y fecha de finalización, estado y duración por ejemplo).  </p>
+<p>La data contiene la información del registro y algunos campos que facilitan la clasificación de la llamada.</p>
+<h3 id="menu-de-usuario">Menú de usuario</h3>
+<p><img alt="Texto alternativo" src="../img/04-reports/reports-main/13.jpg" /> </p>
+<p>Este menú muestra el nombre del usuario, el estado de la conexión (online/offline) y la hora. Si se oprime aparece la opción para desloguearse.</p>
+<h2 id="reportes-de-llamadas-entrantes">Reportes de llamadas entrantes</h2>
+<p>Es una vista que expresa información sobre los indicadores más relevantes de las llamadas entrantes por día según la fecha o intervalo de fecha seleccionada, brindando estadísticas que permiten conocer el comportamiento global de las llamadas recibidas.  </p>
+<p>Esta herramienta proporciona la capacidad de navegar a través de datos históricos, dando a conocer, desde el inicio de la operación del Call Center hasta la fecha actual, los valores solicitados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/01-incoming/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/01-incoming/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/01-incoming/4.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/01-incoming/4-1.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/01-incoming/4-2.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por tres (03)botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/01-incoming/5.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="grafico">Gráfico</h4>
+<p>Permite visualizar la información de los indicadores principales del reporte en un gráfico de barras. Es un gráfico interactivo, concede la oportunidad al usuario de ocultar y/o hacer visible los valores.  </p>
+<p>Dentro de la vista del gráfico aparecen dos (02) botones: Tabla, Recalcular.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/01-incoming/5-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Gráfico) </center></strong></p>
+<h5 id="tabla">Tabla</h5>
+<p>Devuelve al usuario a la vista con la tabla de contenido del reporte.</p>
+<h5 id="recalcular">Recalcular</h5>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="recalcular_1">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra.</p>
+<h4 id="exportar-excel">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada en el 
+reporte hacia un archivo excel.</p>
+<h4 id="barra-de-busqueda">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/01-incoming/5-2.jpg" /> 
+<strong><center> Figura 8 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada por el reporte, esta información varía de acuerdo al reporte. Para el caso del reporte de llamadas entrantes:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/01-incoming/6.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido </center></strong></p>
+<h4 id="fecha">Fecha</h4>
+<p>Indica el nombre del día y la fecha de la información solicitada.</p>
+<h4 id="hora-inicio">Hora inicio</h4>
+<p>Indica la hora en la que fue recibida la primera llamada de la fecha.</p>
+<h4 id="hora-final">Hora final</h4>
+<p>Indica la hora en la que fue recibida la última llamada de la fecha.</p>
+<h4 id="recibidas">Recibidas</h4>
+<p>Indica la cantidad de llamadas recibidas en la fecha indicada.</p>
+<h4 id="atendidas">Atendidas</h4>
+<p>Indica la cantidad de llamadas atendidas en la fecha indicada.</p>
+<h4 id="atendidas-antes-de">Atendidas antes de</h4>
+<p>Indica la cantidad de llamadas atendidas antes de cumplirse el umbral de tiempo ideal de atención, en la fecha indicada.</p>
+<h4 id="atendidas-despues-de">Atendidas después de</h4>
+<p>Indica la cantidad de llamadas atendidas después de cumplirse el umbral de tiempo ideal de atención, en la fecha indicada.</p>
+<h4 id="abandonadas">Abandonadas</h4>
+<p>Indica la cantidad de llamadas abandonadas en la fecha indicada.</p>
+<h4 id="cortas">Cortas</h4>
+<p>Indica la cantidad de llamadas finalizadas antes de un valor de tiempo previamente definido por la empresa o el cliente, en la fecha indicada. Usualmente el valor de tiempo corresponde a los 10 segundos.</p>
+<h4 id="colgadas-agente">Colgadas agente</h4>
+<p>Indica la cantidad de llamadas culminadas por los agentes, es decir, cuando la llamada finaliza porque el agente colgó primero que el llamante. El cálculo de este valor corresponde a la fecha indicada.</p>
+<h4 id="nivel-servicio">Nivel servicio</h4>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar el 
+tiempo ideal de atención, conocido comúnmente como umbral (normalmente es de 20 segundos). El cálculo de este valor corresponde a la fecha indicada. </p>
+<h4 id="nivel-atencion">Nivel atención</h4>
+<p>Indica el porcentaje que representa las llamadas atendidas con respecto a la cantidad de llamadas recibidas. El cálculo de este valor corresponde a la fecha indicada.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/01-incoming/6-1.jpg" /> 
+<strong><center> Figura 10 - Tabla de contenido </center></strong></p>
+<h4 id="nivel-abandono">Nivel abandono</h4>
+<p>Indica el porcentaje que representa la cantidad de llamadas no contestadas con respecto a las llamadas recibidas. El cálculo de este 
+valor corresponde a la fecha indicada.</p>
+<h4 id="tiempo-medio-de-operacion-tmo">Tiempo medio de operación (TMO)</h4>
+<p>Indica el tiempo promedio que dura un agente atendiendo una llamada, en la fecha indicada.</p>
+<h4 id="tiempo-medio-de-espera-asa">Tiempo medio de espera (ASA)</h4>
+<p>Indica el tiempo promedio que transcurre desde que las llamadas ingresan a la cola hasta ser atendidas, en la fecha indicada.</p>
+<h4 id="seg-operacion">Seg operación</h4>
+<p>Indica la duración total de operación en segundos, en la fecha indicada.</p>
+<h4 id="hrs-operacion">Hrs operación</h4>
+<p>Indica la duración total de operación en: hora, minutos y segundos, en la fecha indicada.</p>
+<h4 id="seg-espera">Seg espera</h4>
+<p>Indica el tiempo total de espera en segundos, en la fecha indicada.</p>
+<h4 id="hrs-operacion_1">Hrs operación</h4>
+<p>Indica el tiempo total de espera en: hora, minutos y segundos, en la fecha indicada.</p>
+<h2 id="reportes-de-llamadas-entrantes-por-intervalo">Reportes de llamadas entrantes por intervalo</h2>
+<p>Es una vista que expresa información sobre los indicadores más relevantes de las llamadas entrantes por día según la fecha seleccionada, brindando estadísticas que permiten conocer el comportamiento global de las llamadas recibidas.  </p>
+<p>A diferencia del reporte de llamadas entrantes, el reporte de llamadas entrantes por intervalo ofrece la funcionalidad de fragmentar la información en intervalos de tiempo.  </p>
+<p>Esta herramienta proporciona la capacidad de navegar a través de datos históricos, dando a conocer, desde el inicio de la operación del Call Center hasta la fecha actual, los valores solicitados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_1">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/02-incoming-by-interval/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_1">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/02-incoming-by-interval/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_1">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_1">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_1">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/02-incoming-by-interval/4.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/02-incoming-by-interval/4-1.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/02-incoming-by-interval/4-2.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_1">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por tres (03)botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/02-incoming-by-interval/5.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="grafico_1">Gráfico</h4>
+<p>Permite visualizar la información de los indicadores principales del reporte en un gráfico de barras. Es un gráfico interactivo, concede la oportunidad al usuario de ocultar y/o hacer visible los valores.  </p>
+<p>Dentro de la vista del gráfico aparecen dos (02) botones: Tabla, Recalcular.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/02-incoming-by-interval/5-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Gráfico) </center></strong></p>
+<h5 id="tabla_1">Tabla</h5>
+<p>Devuelve al usuario a la vista con la tabla de contenido del reporte.</p>
+<h5 id="recalcular_2">Recalcular</h5>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="recalcular_3">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra.</p>
+<h4 id="exportar-excel_1">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada en el 
+reporte hacia un archivo excel.</p>
+<h4 id="barra-de-busqueda_1">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/02-incoming-by-interval/5-2.jpg" /> 
+<strong><center> Figura 8 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_1">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada por el reporte, esta información varía de acuerdo al reporte. Para el caso del reporte de llamadas entrantes:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/02-incoming-by-interval/6.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido </center></strong></p>
+<h4 id="fecha_1">Fecha</h4>
+<p>Indica el nombre del día y la fecha de la información solicitada.</p>
+<h4 id="intervalo-inicial">Intervalo inicial</h4>
+<p>Indica la hora inicial del intervalo.</p>
+<h4 id="intervalo-final">Intervalo final</h4>
+<p>Indica la hora final del intervalo.</p>
+<h4 id="recibidas_1">Recibidas</h4>
+<p>Indica la cantidad de llamadas recibidas en la fecha indicada.</p>
+<h4 id="atendidas_1">Atendidas</h4>
+<p>Indica la cantidad de llamadas atendidas en la fecha indicada.</p>
+<h4 id="atendidas-antes-de_1">Atendidas antes de</h4>
+<p>Indica la cantidad de llamadas atendidas antes de cumplirse el umbral de tiempo ideal de atención, en la fecha indicada.</p>
+<h4 id="atendidas-despues-de_1">Atendidas después de</h4>
+<p>Indica la cantidad de llamadas atendidas después de cumplirse el umbral de tiempo ideal de atención, en la fecha indicada.</p>
+<h4 id="abandonadas_1">Abandonadas</h4>
+<p>Indica la cantidad de llamadas abandonadas en la fecha indicada.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/02-incoming-by-interval/6-1.jpg" /> 
+<strong><center> Figura 10 - Tabla de contenido </center></strong></p>
+<h4 id="cortas_1">Cortas</h4>
+<p>Indica la cantidad de llamadas finalizadas antes de un valor de tiempo previamente definido por la empresa o el cliente, en la fecha indicada. Usualmente el valor de tiempo corresponde a los 10 segundos.</p>
+<h4 id="colgadas-agente_1">Colgadas agente</h4>
+<p>Indica la cantidad de llamadas culminadas por los agentes, es decir, cuando la llamada finaliza porque el agente colgó primero que el llamante. El cálculo de este valor corresponde a la fecha indicada. </p>
+<h4 id="nivel-servicio_1">Nivel servicio</h4>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar el 
+tiempo ideal de atención, conocido comúnmente como umbral (normalmente es de 20 segundos). El cálculo de este valor corresponde a la fecha indicada. </p>
+<h4 id="nivel-atencion_1">Nivel atención</h4>
+<p>Indica el porcentaje que representa las llamadas atendidas con respecto a la cantidad de llamadas recibidas. El cálculo de este valor corresponde a la fecha indicada.</p>
+<h4 id="nivel-abandono_1">Nivel abandono</h4>
+<p>Indica el porcentaje que representa la cantidad de llamadas no contestadas con respecto a las llamadas recibidas. El cálculo de este 
+valor corresponde a la fecha indicada.</p>
+<h4 id="tiempo-medio-de-operacion-tmo_1">Tiempo medio de operación (TMO)</h4>
+<p>Indica el tiempo promedio que dura un agente atendiendo una llamada, en la fecha indicada.</p>
+<h4 id="tiempo-medio-de-espera-asa_1">Tiempo medio de espera (ASA)</h4>
+<p>Indica el tiempo promedio que transcurre desde que las llamadas ingresan a la cola hasta ser atendidas, en la fecha indicada.</p>
+<h4 id="seg-operacion_1">Seg operación</h4>
+<p>Indica la duración total de operación en segundos, en la fecha indicada.</p>
+<h4 id="hrs-operacion_2">Hrs operación</h4>
+<p>Indica la duración total de operación en: hora, minutos y segundos, en la fecha indicada.</p>
+<h4 id="seg-espera_1">Seg espera</h4>
+<p>Indica el tiempo total de espera en segundos, en la fecha indicada.</p>
+<h4 id="hrs-operacion_3">Hrs operación</h4>
+<p>Indica el tiempo total de espera en: hora, minutos y segundos, en la fecha indicada.</p>
+<h2 id="reportes-de-llamadas-salientes-manuales">Reportes de llamadas salientes manuales</h2>
+<p>Es una vista que expresa información sobre los indicadores más relevantes de las llamadas salientes manuales por día según la fecha o intervalo de fecha seleccionada, brindando estadísticas que permiten conocer el comportamiento global de las llamadas salientes manuales.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_2">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/03-manual-outgoing/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_2">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/03-manual-outgoing/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_2">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_2">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_2">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/03-manual-outgoing/4.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/03-manual-outgoing/4-1.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/03-manual-outgoing/4-2.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_2">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por tres (03)botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/03-manual-outgoing/5.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="grafico_2">Gráfico</h4>
+<p>Permite visualizar la información de los indicadores principales del reporte en un gráfico de barras. Es un gráfico interactivo, concede la oportunidad al usuario de ocultar y/o hacer visible los valores.  </p>
+<p>Dentro de la vista del gráfico aparecen dos (02) botones: Tabla, Recalcular.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/03-manual-outgoing/5-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Gráfico) </center></strong></p>
+<h5 id="tabla_2">Tabla</h5>
+<p>Devuelve al usuario a la vista con la tabla de contenido del reporte.</p>
+<h5 id="recalcular_4">Recalcular</h5>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="recalcular_5">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra.</p>
+<h4 id="exportar-excel_2">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada en el 
+reporte hacia un archivo excel.</p>
+<h4 id="barra-de-busqueda_2">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/03-manual-outgoing/5-2.jpg" /> 
+<strong><center> Figura 8 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_2">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada por el reporte, esta información varía de acuerdo al reporte. Para el caso del reporte de llamadas salientes manuales:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/03-manual-outgoing/6.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido </center></strong></p>
+<h4 id="fecha_2">Fecha</h4>
+<p>Indica el nombre del día y la fecha de la información solicitada.</p>
+<h4 id="hora-inicio_1">Hora inicio</h4>
+<p>Indica la hora en la que fue realizada la primera llamada de la fecha.</p>
+<h4 id="hora-final_1">Hora final</h4>
+<p>Indica la hora en la que fue realizada la última llamada de la fecha.</p>
+<h4 id="llamadas-realizadas">Llamadas realizadas</h4>
+<p>Indica la cantidad de llamadas realizadas por el agente en la fecha indicada.</p>
+<h4 id="llamadas-fallidas">Llamadas fallidas</h4>
+<p>Indica la cantidad de llamadas realizadas por los agentes que fueron fallidas en la fecha indicada.</p>
+<h4 id="llamadas-contestadas">Llamadas contestadas</h4>
+<p>Indica la cantidad de llamadas realizadas por los agentes que fueron contestadas en la fecha indicada.</p>
+<h4 id="llamadas-efectivas">Llamadas efectivas</h4>
+<p>Indica la cantidad de llamadas realizadas por los agentes que fueron efectivas en la fecha indicada.</p>
+<h4 id="llamadas-colgadas">Llamadas colgadas</h4>
+<p>Indica la cantidad de llamadas realizadas por los agentes que fueron colgadas en la fecha indicada.</p>
+<h4 id="nivel-de-contactabilidad">Nivel de contactabilidad</h4>
+<p>Indica el porcentaje que representa la cantidad de llamadas contestadas por el destinatario con respecto a la cantidad de llamadas realizadas. El cálculo de este valor corresponde a la fecha indicada. </p>
+<h4 id="nivel-de-efectividad">Nivel de efectividad</h4>
+<p>Indica el porcentaje que representa las llamadas efectivas con respecto a la cantidad de llamadas realizadas. El cálculo de este valor corresponde a la fecha indicada. </p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/03-manual-outgoing/6-1.jpg" /> 
+<strong><center> Figura 10 - Tabla de contenido </center></strong></p>
+<h4 id="segundos-de-operacion">Segundos de operación</h4>
+<p>Indica la duración total de operación en segundos, en la fecha indicada.</p>
+<h4 id="tiempo-de-operacion">Tiempo de operación</h4>
+<p>Indica el tiempo promedio que dura un agente atendiendo una llamada, en la fecha indicada.</p>
+<h4 id="tiempo-medio-de-operacion-tmo-saliente">Tiempo medio de operación (TMO) saliente</h4>
+<p>Indica el tiempo promedio que dura un agente realizando una llamada saliente, en la fecha indicada.</p>
+<h2 id="reportes-de-llamadas-salientes-manuales-por-intervalo">Reportes de llamadas salientes manuales por intervalo</h2>
+<p>Es una vista que expresa información sobre los indicadores más relevantes de las llamadas salientes manuales por día según la fecha seleccionada, brindando estadísticas que permiten conocer el comportamiento global de las llamadas realizadas por los agentes.  </p>
+<p>A diferencia del reporte de llamadas salientes manuales, el reporte de llamadas salientes manuales por intervalo ofrece la funcionalidad de fragmentar la información enintervalos de tiempo.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_3">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/04-manual-outgoing-by-interval/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_3">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/04-manual-outgoing-by-interval/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_3">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_3">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_3">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/04-manual-outgoing-by-interval/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/04-manual-outgoing-by-interval/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/04-manual-outgoing-by-interval/3-3.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_3">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por tres (03)botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/04-manual-outgoing-by-interval/4.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="grafico_3">Gráfico</h4>
+<p>Permite visualizar la información de los indicadores principales del reporte en un gráfico de barras. Es un gráfico interactivo, concede la oportunidad al usuario de ocultar y/o hacer visible los valores.  </p>
+<p>Dentro de la vista del gráfico aparecen dos (02) botones: Tabla, Recalcular.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/04-manual-outgoing-by-interval/4-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Gráfico) </center></strong></p>
+<h5 id="tabla_3">Tabla</h5>
+<p>Devuelve al usuario a la vista con la tabla de contenido del reporte.</p>
+<h5 id="recalcular_6">Recalcular</h5>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="recalcular_7">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra.</p>
+<h4 id="exportar-excel_3">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada en el 
+reporte hacia un archivo excel.</p>
+<h4 id="barra-de-busqueda_3">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/04-manual-outgoing-by-interval/4-2.jpg" /> 
+<strong><center> Figura 8 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_3">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada por el reporte, esta información varía de acuerdo al reporte. Para el caso del reporte de llamadas salientes manuales por intervalo:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/04-manual-outgoing-by-interval/5.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido </center></strong></p>
+<h4 id="fecha_3">Fecha</h4>
+<p>Indica el nombre del día y la fecha de la información solicitada.</p>
+<h4 id="intervalo-inicial_1">Intervalo inicial</h4>
+<p>Indica la hora inicial del intervalo.</p>
+<h4 id="intervalo-final_1">Intervalo final</h4>
+<p>Indica la hora final del intervalo.</p>
+<h4 id="llamadas-realizadas_1">Llamadas realizadas</h4>
+<p>Indica la cantidad de llamadas realizadas por el agente en la fecha indicada.</p>
+<h4 id="llamadas-fallidas_1">Llamadas fallidas</h4>
+<p>Indica la cantidad de llamadas realizadas por los agentes que fueron fallidas en la fecha indicada.</p>
+<h4 id="llamadas-contestadas_1">Llamadas contestadas</h4>
+<p>Indica la cantidad de llamadas realizadas por los agentes que fueron contestadas en la fecha indicada.</p>
+<h4 id="llamadas-efectivas_1">Llamadas efectivas</h4>
+<p>Indica la cantidad de llamadas realizadas por los agentes que fueron efectivas en la fecha indicada.</p>
+<h4 id="llamadas-colgadas_1">Llamadas colgadas</h4>
+<p>Indica la cantidad de llamadas realizadas por los agentes que fueron colgadas en la fecha indicada.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/04-manual-outgoing-by-interval/5-1.jpg" /> 
+<strong><center> Figura 10 - Tabla de contenido </center></strong></p>
+<h4 id="nivel-de-contactabilidad_1">Nivel de contactabilidad</h4>
+<p>Indica el porcentaje que representa la cantidad de llamadas contestadas por el destinatario con respecto a la cantidad de llamadas realizadas. El cálculo de este valor corresponde a la fecha indicada. </p>
+<h4 id="nivel-de-efectividad_1">Nivel de efectividad</h4>
+<p>Indica el porcentaje que representa las llamadas efectivas con respecto a la cantidad de llamadas realizadas. El cálculo de este valor corresponde a la fecha indicada. </p>
+<h4 id="segundos-de-operacion_1">Segundos de operación</h4>
+<p>Indica la duración total de operación en segundos, en la fecha indicada.</p>
+<h4 id="tiempo-de-operacion_1">Tiempo de operación</h4>
+<p>Indica el tiempo promedio que dura un agente atendiendo una llamada, en la fecha indicada.</p>
+<h4 id="tiempo-medio-de-operacion-tmo-saliente_1">Tiempo medio de operación (TMO) saliente</h4>
+<p>Indica el tiempo promedio que dura un agente atendiendo una llamada saliente, en la fecha indicada.</p>
+<h2 id="reporte-de-detalles-de-llamadas">Reporte de detalles de llamadas</h2>
+<p>Es un reporte que muestra el detalle de cada llamada del Call Center, brindando datos referentes a las fechas y los valores importantes según sus estadísticas.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_4">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/05-calls-detail/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_4">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/05-calls-detail/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_4">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_4">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_4">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/05-calls-detail/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/05-calls-detail/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/05-calls-detail/3-3.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_4">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por tres (03)botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/05-calls-detail/4.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="exportar-excel_4">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada en el 
+reporte hacia un archivo excel.</p>
+<h4 id="recalcular_8">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra.</p>
+<h4 id="barra-de-busqueda_4">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/05-calls-detail/4-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_4">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada por el reporte, esta información varía de acuerdo al reporte. Para el caso del reporte de detalles de llamadas:  </p>
+<p>Dentro de la tabla de contenido se despliega la información solicitada, esta información varía de acuerdo al reporte. Para el caso del reporte de detalles de llamadas, muestra los datos que identifica una llamada en el Call Center. Esta tabla se estructura de la siguiente forma:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/05-calls-detail/5.jpg" /> 
+<strong><center> Figura 8 - Tabla de contenido </center></strong></p>
+<h4 id="grabacion">Grabación</h4>
+<p>Indica la grabación de la llamada específica asociada a ese registro.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/05-calls-detail/6.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido(Grabación) </center></strong></p>
+<h4 id="tipo-de-llamada">Tipo de llamada</h4>
+<p>Indica el tipo de llamada asociada a ese registro.</p>
+<h4 id="origen">Origen</h4>
+<p>Indica el origen de la llamada asociada a ese registro.</p>
+<h4 id="destino">Destino</h4>
+<p>Indica el destino de la llamada asociada a ese registro.</p>
+<h4 id="id">Id</h4>
+<p>Indica el ID del agente que operó la llamada asociada a ese registro.</p>
+<h4 id="ext">Ext</h4>
+<p>Indica la extensión de que operó la llamada asociada a ese registro.</p>
+<h4 id="trans">Trans</h4>
+<p>Indica si una llamada fue transferida. El valor que correspondiente es: xfer.</p>
+<h4 id="agente">Agente</h4>
+<p>Indica el nombre del agente que atendió la llamada asociada a ese registro.</p>
+<h4 id="fecha-de-inicio">Fecha de inicio</h4>
+<p>Indica la fecha en la que la llamada asociada a ese registro fue atendida o realizada.</p>
+<h4 id="hora-de-inicio">Hora de inicio</h4>
+<p>Indica la hora en la que la llamada asociada a ese registro fue atendida o realizada, en formato de horas, minutos y segundos.</p>
+<h4 id="hora-fin">Hora fin</h4>
+<p>Indica la hora en la que la llamada asociada a ese registro fue finalizada o salió de la cola sin ser atendida.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/05-calls-detail/5-1.jpg" /> 
+<strong><center> Figura 10 - Tabla de contenido </center></strong></p>
+<h4 id="duracion">Duración</h4>
+<p>Indica la duración, de la llamada asociada a ese registro.</p>
+<h4 id="estatus">Estatus</h4>
+<h4 id="colgado-cliente">Colgado cliente</h4>
+<p>Indica la hora en la que la llamada fue colgada por el cliente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/05-calls-detail/5-2.jpg" /> 
+<strong><center> Figura 11 - Tabla de contenido </center></strong></p>
+<h4 id="colgado-agente">Colgado agente</h4>
+<p>Indica la hora en la que la llamada fue colgada por el agente.</p>
+<h4 id="hora-de-abandono">Hora de abandono</h4>
+<p>Indica la hora en que la llamada fue abandonada.</p>
+<h4 id="supervisor">Supervisor</h4>
+<p>Indica el nombre del supervisor, asociada a ese registro.</p>
+<h4 id="cdr-id">Cdr id</h4>
+<p>Indica la identificación del Cdr perteneciente a ese registro.</p>
+<h4 id="uniqueid">Uniqueid</h4>
+<p>Indica un código único de identificación de la llamada asociada a ese registro.</p>
+<h2 id="reporte-de-llamadas-abandonadas">Reporte de llamadas abandonadas</h2>
+<p>Es una vista que expone información sobre las llamadas recibidas que no fueronatendidas en una fecha señalada, brindando datos referentes a las fechas y los valores importantes según sus estadísticas.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_5">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/06-abandoned-calls/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_5">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/06-abandoned-calls/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_5">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_5">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_5">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/06-abandoned-calls/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/06-abandoned-calls/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/06-abandoned-calls/3-3.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_5">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por tres (03)botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/06-abandoned-calls/4.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="exportar-excel_5">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada en el 
+reporte hacia un archivo excel.</p>
+<h4 id="recalcular_9">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra.</p>
+<h4 id="barra-de-busqueda_5">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/06-abandoned-calls/4-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_5">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada, 
+esta información varía de acuerdo al reporte. Para el caso del registro de llamadas abandonadas, muestra los datos que identifica una llamada que no fue atendida al ingresar al Call Center. Esta tabla se estructura de la siguiente forma:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/06-abandoned-calls/5.jpg" /> 
+<strong><center> Figura 8 - Tabla de contenido </center></strong></p>
+<h4 id="origen_1">Origen</h4>
+<p>Indica el origen de la llamada abandonada.</p>
+<h4 id="fecha_4">Fecha</h4>
+<p>Indica la fecha de la llamada abandonada.</p>
+<h4 id="entrada-cola">Entrada cola</h4>
+<p>Indica la hora en la que la llamada asociada a ese registro ingresó en la cola.</p>
+<h4 id="segundos-espera">Segundos espera</h4>
+<p>Indica la duración, en segundos, que la llamada asociada a ese registro esperó en la cola para ser atendida.</p>
+<h4 id="tiempo-de-espera">Tiempo de espera</h4>
+<p>Indica la duración, en formato horas, minutos y segundos, que la 
+llamada asociada a ese registro esperó en la cola para ser atendida.</p>
+<h4 id="final">Final</h4>
+<p>Indica la hora en la que la llamada asociada a ese registro abandonó la cola.</p>
+<h4 id="uniqueid_1">Uniqueid</h4>
+<p>Indica un código único de identificación de la llamada asociada a 
+ese registro.</p>
+<h4 id="nombre-cola">Nombre cola</h4>
+<p>Indica el nombre de la cola asociada a ese registro.</p>
+<h4 id="numero-cola">Número cola</h4>
+<p>Indica el número de la cola asociada a ese registro.</p>
+<h2 id="reporte-de-tiempo-de-espera">Reporte de tiempo de espera</h2>
+<p>Es una vista que expresa información sobre la cantidad de llamadas que 
+esperaron para ser atendidas. La información se clasifica en intervalos de segundos definidos, brindando estadísticas que permiten conocer el comportamiento global de los tiempos de espera de los clientes.  </p>
+<p>El reporte de tiempo de espera ofrece la funcionalidad de fragmentar la 
+información en intervalos de tiempo.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_6">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/07-wait-time/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_6">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/07-wait-time/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_6">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_6">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_6">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/07-wait-time/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/07-wait-time/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/07-wait-time/3-3.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_6">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por tres (03)botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/07-wait-time/4.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="grafico_4">Gráfico</h4>
+<p>Permite visualizar la información de los indicadores principales del reporte en un gráfico de barras. Es un gráfico interactivo, concede la oportunidad al usuario de ocultar y/o hacer visible los valores.  </p>
+<p>Dentro de la vista del gráfico aparecen dos (02) botones: Tabla, Recalcular.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/07-wait-time/4-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Gráfico) </center></strong></p>
+<h5 id="tabla_4">Tabla</h5>
+<p>Devuelve al usuario a la vista con la tabla de contenido del reporte.</p>
+<h5 id="recalcular_10">Recalcular</h5>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="recalcular_11">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra.</p>
+<h4 id="exportar-excel_6">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada en el 
+reporte hacia un archivo excel.</p>
+<h4 id="barra-de-busqueda_6">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/07-wait-time/4-2.jpg" /> 
+<strong><center> Figura 8 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_6">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada por el reporte, esta información varía de acuerdo al reporte. Para el caso del reporte de tiempos de espera: </p>
+<p><img alt="Texto alternativo" src="../img/04-reports/01-calls/07-wait-time/5.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido </center></strong></p>
+<h4 id="fecha_5">Fecha</h4>
+<p>Indica el nombre del día y la fecha de la información solicitada.</p>
+<h4 id="intervalo-inicial_2">Intervalo inicial</h4>
+<p>Indica la hora inicial del intervalo.</p>
+<h4 id="intervalo-final_2">Intervalo final</h4>
+<p>Indica la hora final del intervalo.</p>
+<h4 id="0-5">0-5</h4>
+<p>Indica la cantidad de llamadas que esperaron entre 0 y 5 segundos para ser atendidas.</p>
+<h4 id="6-10">6-10</h4>
+<p>Indica la cantidad de llamadas que esperaron entre 6 y 10 segundos para ser atendidas.</p>
+<h4 id="11-15">11-15</h4>
+<p>Indica la cantidad de llamadas que esperaron entre 11 y 15 segundos para ser atendidas.</p>
+<h4 id="16-20">16-20</h4>
+<p>Indica la cantidad de llamadas que esperaron entre 16 y 20 segundos para ser atendidas.</p>
+<h4 id="21-25">21-25</h4>
+<p>Indica la cantidad de llamadas que esperaron entre 21 y 25 segundos para ser atendidas.</p>
+<h4 id="26-30">26-30</h4>
+<p>Indica la cantidad de llamadas que esperaron entre 26 y 30 segundos para ser atendidas.</p>
+<h4 id="31-60">31-60</h4>
+<p>Indica la cantidad de llamadas que esperaron entre 31 y 60 segundos para ser atendidas.</p>
+<h4 id="61-120">61-120</h4>
+<p>Indica la cantidad de llamadas que esperaron entre 61 y 120 segundos para ser atendidas.</p>
+<h4 id="121-180">121-180</h4>
+<p>Indica la cantidad de llamadas que esperaron entre 121 y 180 segundos 
+para ser atendidas.</p>
+<h4 id="181-240">181-240</h4>
+<p>Indica la cantidad de llamadas que esperaron entre 181 y 240 segundos 
+para ser atendidas.</p>
+<h4 id="241-">241 -&gt;</h4>
+<p>Indica la cantidad de llamadas que esperaron más de 241 segundos para
+ser atendidas.</p>
+<h2 id="reportes-de-agentes-conexion-y-desconexion">Reportes de agentes conexión y desconexión</h2>
+<p>En este reporte se puntualiza toda la información referente a las estadísticas de conexión y desconexión de los agentes a la consola de trabajo. Tiene la capacidad de mostrar datos sumarizados y detallados al mismo tiempo.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_7">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/01-connection-disconnection/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_7">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/01-connection-disconnection/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_7">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_7">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_7">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/01-connection-disconnection/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/01-connection-disconnection/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/01-connection-disconnection/3-3.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_7">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por tres (03)botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/01-connection-disconnection/4.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="recalcular_12">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="exportar-consolidad">Exportar consolidad</h4>
+<p>Inicia el proceso de exportación de la información mostrada de manera sumarizada en el reporte, en un archivo excel.</p>
+<h4 id="exportar-detalle">Exportar detalle</h4>
+<p>Inicia el proceso de exportación de la información mostrada de manera detallada en el reporte, en un archivo excel.</p>
+<h4 id="barra-de-busqueda_7">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/01-connection-disconnection/4-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_7">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada por el reporte, esta información varía de acuerdo al reporte. Para el caso del reporte de agentes conexión y desconexión muestra la sumarización de los valores por cada agente y se estructura de la siguiente forma:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/01-connection-disconnection/6.jpg" /> 
+<strong><center> Figura 8 - Tabla de contenido </center></strong></p>
+<h4 id="conectado">Conectado</h4>
+<p>Muestra un ícono que varía su color de acuerdo al estado de conexión del agente: si el agente se encuentra conectado en es instante el ícono será de color verde, si el agente se encuentra desconectado en ese instante el ícono será de color rojo.  </p>
+<p>También el ícono es un botón que, al hacer clic sobre él, despliega una ventana informativa con el detalle de conexión y desconexión del agente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/01-connection-disconnection/5.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido(Conectado) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/01-connection-disconnection/5-1.jpg" /> 
+<strong><center> Figura 10 - Tabla de contenido(Conectado) </center></strong></p>
+<h4 id="previo">Previo</h4>
+<p>Indica si un agente se encuentra conectado desde el día anterior a la fecha actual.</p>
+<h4 id="nombre-agente">Nombre agente</h4>
+<p>Indica el nombre del agente.</p>
+<h4 id="cantidad">Cantidad</h4>
+<p>Indica la cantidad de conexiones realizadas por el agente.</p>
+<h4 id="id-agente">Id agente</h4>
+<p>Indica el ID del agente.</p>
+<h4 id="duracion_1">Duración</h4>
+<p>Indica la cantidad de tiempo conectado del agente, expresado en formato de hora, minutos y segundos.</p>
+<h4 id="fecha-inicial">Fecha inicial</h4>
+<p>Indica el valor de la fecha inicial en el cuál hay información de 
+conexión o desconexión del agente dentro del intervalo de fecha 
+seleccionada. Si la información solicitada corresponde únicamente a un 
+día, el valor de fecha inicial será igual al valor de fecha final.</p>
+<h4 id="fecha-final">Fecha final</h4>
+<p>Indica el valor de la fecha final en el cuál hay información de 
+conexión o desconexión del agente dentro del intervalo de fecha 
+seleccionada. Si la información solicitada corresponde únicamente a un 
+día, el valor de fecha final será igual al valor de fecha inicial.</p>
+<h4 id="hora-inicial">Hora inicial</h4>
+<p>Indica la hora en la que efectuó la primera conexión del agente para la fecha mostrada.</p>
+<h4 id="hora-final_2">Hora final</h4>
+<p>Indica la hora en la que efectuó la última desconexión del agente para la fecha mostrada.</p>
+<h4 id="segundos-conexion">Segundos conexión</h4>
+<p>Indica la cantidad de tiempo conectado del agente, expresado en formato de segundos.</p>
+<h4 id="id-reporte-detallado">Id (reporte detallado)</h4>
+<p>Indica el número de identificación único del registro.</p>
+<h2 id="reportes-detallado-de-auxiliares">Reportes detallado de auxiliares</h2>
+<p>En este reporte se puntualiza toda la información referente a las estadísticas de los auxiliares ejecutados por los agentes. Tiene la capacidad de mostrar datos sumarizados y detallados al mismo tiempo.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_8">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/02-auxiliary-details/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_8">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/02-auxiliary-details/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_8">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_8">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_8">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/02-auxiliary-details/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/02-auxiliary-details/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/02-auxiliary-details/3-3.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_8">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por tres (03)botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/02-auxiliary-details/4.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="recalcular_13">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="exportar-consolidad_1">Exportar consolidad</h4>
+<p>Inicia el proceso de exportación de la información mostrada de manera sumarizada en el reporte, en un archivo excel.</p>
+<h4 id="exportar-detalle_1">Exportar detalle</h4>
+<p>Inicia el proceso de exportación de la información mostrada de manera detallada en el reporte, en un archivo excel.</p>
+<h4 id="barra-de-busqueda_8">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/02-auxiliary-details/4-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_8">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada por el reporte, esta información varía de acuerdo al reporte. Para el caso del reporte detallado de auxiliares muestra la sumarización de los valores por cada agente y se estructura de la siguiente forma: </p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/02-auxiliary-details/5.jpg" /> 
+<strong><center> Figura 8 - Tabla de contenido </center></strong></p>
+<h4 id="conectado_1">Conectado</h4>
+<p>Muestra un ícono que varía su color de acuerdo al estado de conexión del agente: si el agente se encuentra conectado en es instante el ícono será de color verde, si el agente se encuentra desconectado en ese instante el ícono será de color rojo.  </p>
+<p>También el ícono es un botón que, al hacer clic sobre él, despliega una ventana informativa con el detalle de los auxiliares del agente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/02-auxiliary-details/6.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido(Conectado) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/02-auxiliary-details/6-1.jpg" /> 
+<strong><center> Figura 10 - Tabla de contenido(Conectado) </center></strong></p>
+<h4 id="previo_1">Previo</h4>
+<p>Indica si un agente se encuentra en auxiliar desde el día anterior a la fecha actual.</p>
+<h4 id="nombre-agente_1">Nombre agente</h4>
+<p>Indica el nombre del agente.</p>
+<h4 id="cantidad_1">Cantidad</h4>
+<p>Indica la cantidad de auxiliares realizados por el agente.</p>
+<h4 id="id-agente_1">Id agente</h4>
+<p>Indica el ID del agente.</p>
+<h4 id="duracion_2">Duración</h4>
+<p>Indica la cantidad de tiempo en auxilar del agente, expresado en formato de hora, minutos y segundos.</p>
+<h4 id="fecha-inicial_1">Fecha inicial</h4>
+<p>Indica el valor de la fecha inicial en el cuál hay información de 
+auxiliares del agente en auxiliar dentro del intervalo de fecha 
+seleccionada. Si la información solicitada corresponde únicamente a un día, el valor de fecha inicial será igual al valor de fecha final.</p>
+<h4 id="fecha-final_1">Fecha final</h4>
+<p>Indica el valor de la fecha final en el cuál hay información de 
+auxiliares del agente en auxiliar dentro del intervalo de fecha 
+seleccionada. Si la información solicitada corresponde únicamente a un día, el valor de fecha final será igual al valor de fecha inicial.</p>
+<h4 id="hora-inicial_1">Hora inicial</h4>
+<p>Indica la hora en la que el agente efectuó el primer auxiliar para la
+fecha mostrada.</p>
+<h4 id="hora-final_3">Hora final</h4>
+<p>Indica la hora en la que el agente efectuó el último auxiliar para la 
+fecha mostrada.</p>
+<h4 id="segundos-conexion_1">Segundos conexión</h4>
+<p>Indica la cantidad de tiempo conectado del agente en auxiliar, expresado en formato de segundo.</p>
+<h2 id="reporte-detallado-de-asignaciones">Reporte detallado de asignaciones</h2>
+<p>En este reporte se puntualiza toda la información referente a las estadísticas de las asignaciones realizadas por los agentes. Tiene la capacidad de mostrar datos sumarizados y detallados al mismo tiempo.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_9">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/03-assignments-detail/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_9">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/03-assignments-detail/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_9">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_9">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_9">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/03-assignments-detail/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/03-assignments-detail/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_9">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por tres (03)botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/03-assignments-detail/4.jpg" /> 
+<strong><center> Figura 5 - Zona de botones </center></strong></p>
+<h4 id="recalcular_14">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="exportar-consolidad_2">Exportar consolidad</h4>
+<p>Inicia el proceso de exportación de la información mostrada de manera sumarizada en el reporte, en un archivo excel.</p>
+<h4 id="exportar-detalle_2">Exportar detalle</h4>
+<p>Inicia el proceso de exportación de la información mostrada de manera detallada en el reporte, en un archivo excel.</p>
+<h4 id="barra-de-busqueda_9">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/03-assignments-detail/4-1.jpg" /> 
+<strong><center> Figura 6 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_9">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la informaciónsolicitada por el reporte, esta información varía de acuerdo al reporte. Para el caso del reporte detallado de asignaciones, se muestra lasumarización de los valores por cada agente y se estructura de la siguiente forma:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/03-assignments-detail/5.jpg" /> 
+<strong><center> Figura 7 - Tabla de contenido </center></strong></p>
+<h4 id="conectado_2">Conectado</h4>
+<p>Muestra un ícono que varía su color de acuerdo al estado de conexión del agente: si el agente se encuentra conectado en ese instante el ícono será de color verde, si el agente se encuentra desconectado en ese instante el ícono será de color rojo.  </p>
+<p>También el ícono es un botón que, al hacer clic sobre él, despliega una ventana informativa con el detalle de las asignaciones del agente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/02-agents/03-assignments-detail/6.jpg" /> 
+<strong><center> Figura 8 - Tabla de contenido(Conectado) </center></strong></p>
+<h4 id="previo_2">Previo</h4>
+<p>Indica si un agente se encuentra en asignación desde el día anterior a la fecha actual.</p>
+<h4 id="nombre-agente_2">Nombre agente</h4>
+<p>Indica el nombre del agente.</p>
+<h4 id="cantidad_2">Cantidad</h4>
+<p>Indica la cantidad de asignaciones realizadas por el agente.</p>
+<h4 id="id-agente_2">Id agente</h4>
+<p>Indica el ID del agente.</p>
+<h4 id="duracion_3">Duración</h4>
+<p>Indica la cantidad de tiempo en asignación del agente, expresado en formato de hora, minutos y segundos.</p>
+<h4 id="fecha-inicial_2">Fecha inicial</h4>
+<p>Indica el valor de la fecha inicial en el cuál hay información de 
+asignación(es) del agente dentro del intervalo de fecha seleccionada. Si la información solicitada corresponde únicamente a un día, el valor de fecha inicial será igual al valor de fecha final.</p>
+<h4 id="fecha-final_2">Fecha final</h4>
+<p>Indica el valor de la fecha final en el cuál hay información de 
+asignación(es) del agente dentro del intervalo de fecha seleccionada. Si la información solicitada corresponde únicamente a un día, el valor de fecha final será igual al valor de fecha inicial.</p>
+<h4 id="hora-inicial_2">Hora inicial</h4>
+<p>Indica la hora en la que efectuó la primera asignación del agente para la fecha mostrada.</p>
+<h4 id="hora-final_4">Hora final</h4>
+<p>Indica la hora en la que efectuó la última asignación del agente para la fecha mostrada.</p>
+<h4 id="segundos-conexion_2">Segundos conexión</h4>
+<p>Indica la cantidad de tiempo en asignación del agente, expresado en formato de segundos.</p>
+<h2 id="reporte-operativo-detallado">Reporte operativo detallado</h2>
+<p>El reporte operativo detallado muestra la información del agente referente al porcentaje de tiempo empleado en sus actividades, tomando como base el tiempo de conexión (login). Si se solicita la información por un intervalo de tiempo, aparecerá el detalle de operación de cada agente por cada día seleccionado dentro del intervalo.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido.</em></p>
+<h3 id="menu-superior_10">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/01-detailed-operating/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_10">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/01-detailed-operating/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_10">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_10">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_10">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/01-detailed-operating/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/01-detailed-operating/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/01-detailed-operating/3-3.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_10">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que 
+facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por dos (02) botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/01-detailed-operating/4.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="exportar-excel_7">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada de manera detallada en el reporte, en un archivo excel.</p>
+<h4 id="recalcular_15">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="barra-de-busqueda_10">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido 
+de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/01-detailed-operating/4-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_10">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada por el reporte, esta información varía de acuerdo al reporte. Para el caso del reporte de detalles de operaciones se muestra el detalle de los valores por cada agente y por cada día. Este reporte se estructura de la siguiente forma:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/01-detailed-operating/5.jpg" /> 
+<strong><center> Figura 8 - Tabla de contenido </center></strong></p>
+<h4 id="id-agente_3">Id agente</h4>
+<p>Indica el ID del agente.</p>
+<h4 id="nombre-agente_3">Nombre agente</h4>
+<p>Indica el nombre del agente.</p>
+<h4 id="fecha_6">Fecha</h4>
+<p>Indica la fecha del detalle de operación del agente.</p>
+<h4 id="duracion-seg-login">Duración seg login</h4>
+<p>Indica la cantidad de tiempo conectado (logueado) del agente,expresado en formato de segundos.</p>
+<h4 id="duracion-seg-llamadas-atendidas">Duración seg llamadas atendidas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente atendiendo llamadas entrantes, expresado en formato de segundos.</p>
+<h4 id="duracion-seg-llamadas-realizadas">Duración seg llamadas realizadas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente realizando llamadas salientes manuales, expresado en formato de segundos.</p>
+<h4 id="duracion-seg-llamadas-internas">Duración seg llamadas internas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente realizando llamadas internas, expresado en formato de segundos.</p>
+<h4 id="duracion-seg-auxiliares">Duración seg auxiliares</h4>
+<p>Indica la cantidad de tiempo empleado por el agente en auxiliares,expresado en formato de segundos.</p>
+<h4 id="duracion-seg-asignaciones">Duración seg asignaciones</h4>
+<p>Indica la cantidad de tiempo empleado por el agente en asignaciones, expresado en formato de segundos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/01-detailed-operating/5-1.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido </center></strong></p>
+<h4 id="duracion-seg-disponible">Duración seg disponible</h4>
+<p>Indica la cantidad de tiempo disponible del agente, expresado en 
+formato de segundos.</p>
+<h4 id="duracion-hms-login">Duración hms login</h4>
+<p>Indica la cantidad de tiempo conectado (logueado) del agente, expresado en formato de hora, minutos y segundos.</p>
+<h4 id="duracion-hms-llamadas-atendidas">Duración hms llamadas atendidas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente atendiendo 
+llamadas entrantes, expresado en formato de hora, minutos y segundos.</p>
+<h4 id="duracion-hms-llamadas-realizadas">Duración hms llamadas realizadas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente realizando 
+llamadas salientes manuales, expresado en formato de hora, minutos y 
+segundos.</p>
+<h4 id="duracion-hms-llamadas-internas">Duración hms llamadas internas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente realizando 
+llamadas internas, expresado en formato de hora, minutos y segundos.</p>
+<h4 id="duracion-hms-auxiliares">Duración hms auxiliares</h4>
+<p>Indica la cantidad de tiempo empleado por el agente en auxiliares,minutos y segundos.</p>
+<h4 id="duracion-hms-asignaciones">Duración hms asignaciones</h4>
+<p>Indica la cantidad de tiempo empleado por el agente en asignaciones, expresado en formato de hora, minutos y segundos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/01-detailed-operating/5-2.jpg" /> 
+<strong><center> Figura 10 - Tabla de contenido </center></strong></p>
+<h4 id="duracion-hms-disponible">Duración hms disponible</h4>
+<p>Indica la cantidad de tiempo disponible del agente, expresado en 
+formato de hora, minutos y segundos.</p>
+<h4 id="llamadas-atendidas">Llamadas atendidas</h4>
+<p>Indica la cantidad de llamadas atendidas por el agente.</p>
+<h4 id="llamadas-realizadas_2">Llamadas realizadas</h4>
+<p>Indica la cantidad de llamadas realizadas por el agente.</p>
+<h4 id="llamadas-internas">Llamadas internas</h4>
+<p>Indica la cantidad de llamadas internas realizadas por el agente.</p>
+<h4 id="porcentaje-duracion-atendidas">Porcentaje duración atendidas</h4>
+<p>Indica el porcentaje de tiempo empleado por el agente atendiendo llamadas entrantes.</p>
+<h4 id="porcentaje-duracion-realizadas">Porcentaje duración realizadas</h4>
+<p>Indica el porcentaje de tiempo empleado por el agente realizando 
+llamadas salientes manuales.</p>
+<h4 id="porcentaje-duracion-internas">Porcentaje duración internas</h4>
+<p>Indica el porcentaje de tiempo empleado por el agente realizando 
+llamadas internas.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/01-detailed-operating/5-3.jpg" /> 
+<strong><center> Figura 11 - Tabla de contenido </center></strong></p>
+<h4 id="porcentaje-auxiliares">Porcentaje auxiliares</h4>
+<p>Indica el porcentaje de tiempo en auxiliares empleado por el agente.</p>
+<h4 id="porcentaje-asignaciones">Porcentaje asignaciones</h4>
+<p>Indica el porcentaje de tiempo en asignaciones empleado por el 
+agente.</p>
+<h4 id="porcentaje-disponible">Porcentaje disponible</h4>
+<p>Indica el porcentaje de tiempo disponible del agente.</p>
+<h2 id="reporte-operativo-consolidado">Reporte operativo consolidado</h2>
+<p>El reporte operativo consolidado muestra la información del agente referente al porcentaje de tiempo empleado en sus actividades, tomando como base el tiempo de conexión (login). Si se solicita la información por un intervalo de tiempo, aparecerá la sumarización de la operación de cada agente por el rango de fecha seleccionado. </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_11">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/02-consolidated-operating/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_11">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/02-consolidated-operating/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_11">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_11">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_11">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/02-consolidated-operating/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/02-consolidated-operating/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/02-consolidated-operating/3-3.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_11">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que 
+facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por dos (02) botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/02-consolidated-operating/4.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="exportar-excel_8">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada de manera detallada en el reporte, en un archivo excel.</p>
+<h4 id="recalcular_16">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="barra-de-busqueda_11">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido 
+de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/02-consolidated-operating/4-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_11">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada por el reporte, esta información varía de acuerdo al reporte. Para el caso del reporte operativo consolidado se muestra la sumarización de los valores por cada agente y se estructura de la siguiente forma:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/02-consolidated-operating/5.jpg" /> 
+<strong><center> Figura 8 - Tabla de contenido </center></strong></p>
+<h4 id="id-agente_4">Id agente</h4>
+<p>Indica el ID del agente.</p>
+<h4 id="nombre-agente_4">Nombre agente</h4>
+<p>Indica el nombre del agente.</p>
+<h4 id="fecha-inicio">Fecha inicio</h4>
+<p>Indica el valor de la fecha inicial del rango de fecha seleccionado.</p>
+<h4 id="fecha-fin">Fecha fin</h4>
+<p>Indica el valor de la fecha final del rango de fecha seleccionado.</p>
+<h4 id="duracion-seg-login_1">Duración seg login</h4>
+<p>Indica la cantidad de tiempo conectado (logueado) del agente,expresado en formato de segundos.</p>
+<h4 id="duracion-seg-llamadas-atendidas_1">Duración seg llamadas atendidas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente atendiendo llamadas entrantes, expresado en formato de segundos.</p>
+<h4 id="duracion-seg-llamadas-realizadas_1">Duración seg llamadas realizadas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente realizando 
+llamadas salientes manuales, expresado en formato de segundos.</p>
+<h4 id="duracion-seg-llamadas-internas_1">Duración seg llamadas internas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente realizando 
+llamadas internas, expresado en formato de segundos.</p>
+<h4 id="duracion-seg-auxiliares_1">Duración seg auxiliares</h4>
+<p>Indica la cantidad de tiempo empleado por el agente en auxiliares,expresado en formato de segundos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/02-consolidated-operating/5-1.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido </center></strong></p>
+<h4 id="duracion-seg-asignaciones_1">Duración seg asignaciones</h4>
+<p>Indica la cantidad de tiempo empleado por el agente en 
+asignaciones, expresado en formato de segundos.</p>
+<h4 id="duracion-seg-disponible_1">Duración seg disponible</h4>
+<p>Indica la cantidad de tiempo disponible del agente, expresado en 
+formato de segundos.</p>
+<h4 id="duracion-hms-login_1">Duración hms login</h4>
+<p>Indica la cantidad de tiempo conectado (logueado) del agente,expresado en formato de hora, minutos y segundos.</p>
+<h4 id="duracion-hms-llamadas-atendidas_1">Duración hms llamadas atendidas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente atendiendo 
+llamadas entrantes, expresado en formato de hora, minutos y segundos.</p>
+<h4 id="duracion-hms-llamadas-realizadas_1">Duración hms llamadas realizadas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente realizando 
+llamadas salientes manuales, expresado en formato de hora, minutos y 
+segundos.</p>
+<h4 id="duracion-hms-llamadas-internas_1">Duración hms llamadas internas</h4>
+<p>Indica la cantidad de tiempo empleado por el agente realizando 
+llamadas internas, expresado en formato de hora, minutos y segundos.</p>
+<h4 id="duracion-hms-auxiliares_1">Duración hms auxiliares</h4>
+<p>Indica la cantidad de tiempo empleado por el agente en auxiliares,minutos y segundos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/02-consolidated-operating/5-2.jpg" /> 
+<strong><center> Figura 10 - Tabla de contenido </center></strong></p>
+<h4 id="duracion-hms-asignaciones_1">Duración hms asignaciones</h4>
+<p>Indica la cantidad de tiempo empleado por el agente en asignaciones, expresado en formato de hora, minutos y segundos.</p>
+<h4 id="duracion-hms-disponible_1">Duración hms disponible</h4>
+<p>Indica la cantidad de tiempo disponible del agente, expresado en 
+formato de hora, minutos y segundos.</p>
+<h4 id="llamadas-atendidas_1">Llamadas atendidas</h4>
+<p>Indica la cantidad de llamadas atendidas por el agente.</p>
+<h4 id="llamadas-realizadas_3">Llamadas realizadas</h4>
+<p>Indica la cantidad de llamadas realizadas por el agente.</p>
+<h4 id="llamadas-internas_1">Llamadas internas</h4>
+<p>Indica la cantidad de llamadas internas realizadas por el agente.</p>
+<h4 id="porcentaje-duracion-atendidas_1">Porcentaje duración atendidas</h4>
+<p>Indica el porcentaje de tiempo empleado por el agente atendiendollamadas entrantes.</p>
+<h4 id="porcentaje-duracion-realizadas_1">Porcentaje duración realizadas</h4>
+<p>Indica el porcentaje de tiempo empleado por el agente realizando 
+llamadas salientes manuales.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/03-operation/02-consolidated-operating/5-3.jpg" /> 
+<strong><center> Figura 11 - Tabla de contenido </center></strong></p>
+<h4 id="porcentaje-duracion-internas_1">Porcentaje duración internas</h4>
+<p>Indica el porcentaje de tiempo empleado por el agente realizando 
+llamadas internas.</p>
+<h4 id="porcentaje-auxiliares_1">Porcentaje auxiliares</h4>
+<p>Indica el porcentaje de tiempo en auxiliares empleado por el agente.</p>
+<h4 id="porcentaje-asignaciones_1">Porcentaje asignaciones</h4>
+<p>Indica el porcentaje de tiempo en asignaciones empleado por el 
+agente.</p>
+<h4 id="porcentaje-disponible_1">Porcentaje disponible</h4>
+<p>Indica el porcentaje de tiempo disponible del agente.</p>
+<h2 id="auditoria-audit">Auditoría (Audit)</h2>
+<p>El reporte de Audit o auditoría (por su traducción al castellano) puntualiza toda la información referente a las acciones de conexión, desconexión y pausas realizadas por los agentes, tal cual, como es almacenada en la base de datos. Este reporte ofrece la oportunidad al usuario de conocer el origen de los datos utilizados para la base de cálculo de todos los reportes que hacen referencia a las actividades de los agentes en la reportería ProSer.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botonesy la </em>tabla de contenido*.</p>
+<h3 id="menu-superior_12">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_12">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_12">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_12">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_12">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/3-3.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_12">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que 
+facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por dos (02) botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/4.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="exportar-excel_9">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada de manera detallada en el reporte, en un archivo excel.</p>
+<h4 id="recalcular_17">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="barra-de-busqueda_12">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido 
+de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/4-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_12">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada, esta información varía de acuerdo al reporte. Para el caso del reporte de Audit, muestra los datos que registran la jornada de los agentes. Esta tabla se estructura de la siguiente forma:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/5.jpg" /> 
+<strong><center> Figura 8 - Tabla de contenido </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/6.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido(Botón azul) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/7.jpg" /> 
+<strong><center> Figura 10 - Tabla de contenido(Botón azul) </center></strong></p>
+<h4 id="id_1">Id</h4>
+<p>Indica la identificación del registro dentro de la base de datos.</p>
+<h4 id="fecha_7">Fecha</h4>
+<p>Indica la fecha de la actividad del agente asociada a ese registro.</p>
+<h4 id="agente_1">Agente</h4>
+<p>Indica el nombre del agente que realizó la actividad asociada a ese registro.</p>
+<h4 id="concepto">Concepto</h4>
+<p>Indica la actividad asociada a ese registro.</p>
+<h4 id="inicio">Inicio</h4>
+<p>Indica la hora en la que inició la actividad asociada a ese registro.</p>
+<h4 id="final_1">Final</h4>
+<p>Indica la hora en la que finalizó la actividad asociada a ese registro.</p>
+<h4 id="duracion_4">Duración</h4>
+<p>Indica la duración de la actividad del agente asociada a ese registro. Este valor se muestra en formato de hora, minutos y segundos.</p>
+<h4 id="duracion-sec">Duración sec.</h4>
+<p>Indica la duración, en segundos, de la actividad del agente asociada a ese registro.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/5-1.jpg" /> 
+<strong><center> Figura 11 - Tabla de contenido </center></strong></p>
+<h4 id="id-agente_5">Id Agente</h4>
+<p>Indica el ID del agente que efectuó la actividad asociada a ese 
+registro.</p>
+<h4 id="cedula">Cédula</h4>
+<p>Indica el número de identificación nacional del agente que efectuó la actividad asociada a ese registro.</p>
+<h4 id="doc-interno">Doc. Interno</h4>
+<p>Indica el código de identificación laboral interno del agente que 
+efectuó la actividad asociada a ese registro. Este campo aplica para las empresas u organizaciones que cuenten con dicha estrategia de identificación sobre su personal.</p>
+<h4 id="supervisor_1">Supervisor</h4>
+<p>Indica el nombre del supervisor que dirige al agente que efectuó 
+la actividad relacionada a ese registro.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/5-2.jpg" /> 
+<strong><center> Figura 12 - Tabla de contenido </center></strong></p>
+<h4 id="turno">Turno</h4>
+<p>Indica el turno al que pertenece el agente que efectuó la actividadrelacionada a ese registro.</p>
+<h4 id="rol">Rol</h4>
+<p>Indica el rol que posee el agente que efectuó la actividad 
+relacionada a ese registro.</p>
+<h4 id="cliente">Cliente</h4>
+<p>Indica el nombre del cliente al que fue asignado el agente que 
+efectuó la actividad relacionada a ese registro.</p>
+<h4 id="cola">Cola</h4>
+<p>Indica el nombre de la cola a la que fue asignado el agente que efectuó la actividad relacionada a ese registro.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/01-audit/5-2.jpg" /> 
+<strong><center> Figura 13 - Tabla de contenido </center></strong></p>
+<h4 id="servicio">Servicio</h4>
+<p>Indica el nombre del servicio al que fue asignado el agente que 
+efectuó la actividad relacionada a ese registro.</p>
+<h2 id="registro-de-detalle-de-las-llamadas-cdr">Registro de detalle de las llamadas (CDR)</h2>
+<p>Este reporte expresa la información obtenida del CDR, en él se encuentra el registro de todas las llamadas del Call Center. A diferencia del CallEntry, el CDR registra las llamadas entrantes, internas, salientes, del sistema, entre otras. El reporte ofrece la oportunidad al usuario de conocer el origen de los datos utilizados para la basede cálculo de todos los reportes que hacen referencia a todas llamadas (entrantes, salientes, internas, automáticas) en la reportería ProSer.  </p>
+<p>Es una herramienta que proporciona al gerente o supervisor obtener los valores de las métricas de días pasados. Este reporte está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_13">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/02-cdr/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_13">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/02-cdr/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_13">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_13">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_13">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/02-cdr/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/02-cdr/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/02-cdr/3-3.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_13">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que 
+facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por dos (02) botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/02-cdr/4.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="exportar-excel_10">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada de manera detallada en el reporte, en un archivo excel.</p>
+<h4 id="recalcular_18">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="barra-de-busqueda_13">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido 
+de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/02-cdr/4-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_13">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada, esta información varía de acuerdo al reporte. Para el caso del registro de detalle de las llamadas, muestra los datos que identifica una llamada en todos sus procesos a través del Call Center. Esta tabla se estructura de la siguiente forma:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/02-cdr/5.jpg" /> 
+<strong><center> Figura 8 - Tabla de contenido </center></strong></p>
+<h4 id="id_2">Id</h4>
+<p>Indica la identificación del registro dentro de la base de datos.</p>
+<h4 id="fecha_8">Fecha</h4>
+<p>Indica la fecha de la llamada asociada a ese registro.</p>
+<h4 id="clid">clid</h4>
+<p>Indica la identificación, en texto, del llamante asociado a la 
+llamada perteneciente a ese registro.</p>
+<h4 id="src">src</h4>
+<p>Indica el número de identificación del llamante asociado a la 
+llamada perteneciente a ese registro.</p>
+<h4 id="dst">dst</h4>
+<p>Indica la extensión de destino de la llamada asociada a ese 
+registro.</p>
+<h4 id="dcontext">dcontext</h4>
+<p>Indica el contexto de destino de la llamada asociada a ese 
+registro.</p>
+<h4 id="channel">channel</h4>
+<p>Indica el nombre del canal utilizado por la llamada asociada a eseregistro.</p>
+<h4 id="dstchannel">dstchannel</h4>
+<p>Indica el nombre del canal de destino de la llamada asociada a 
+ese registro.</p>
+<h4 id="lastapp">lastapp</h4>
+<p>Indica la última aplicación que ejecutó el canal de la llamada 
+asociada a ese registro.    </p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/02-cdr/5-1.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido </center></strong></p>
+<h4 id="lastdata">lastdata</h4>
+<p>Indica los datos de la aplicación para la última aplicación que 
+ejecutó el canal de la llamada asociada a ese registro.</p>
+<h4 id="duracion-seg">Duración seg.</h4>
+<p>Indica la duración, en segundos, de la llamada asociada a ese 
+registro.</p>
+<h4 id="segundos-facturables">Segundos facturables</h4>
+<p>Indica la cantidad de segundos facturables para la llamada asociada a 
+ese registro.</p>
+<h4 id="disposition">disposition</h4>
+<p>Indica el estado final de la llamada asociada a ese registro.</p>
+<h4 id="amaflags">amaflags</h4>
+<p>Indica la clasificación del CDR para una sistema externo.</p>
+<h4 id="accountcode">accountcode</h4>
+<p>Indica un código de cuenta (en caso de existir) asociado al canal de la llamada.</p>
+<h4 id="uniqueid_2">uniqueid</h4>
+<p>Indica un código único de identificación de la llamada asociada a 
+ese registro.</p>
+<h4 id="userfield">userfield</h4>
+<p>Indica un campo asociado al usuario configurado previamente en el canal. </p>
+<h4 id="grabacion_1">Grabación</h4>
+<p>Indica el directorio en el que se encuentra almacenada la grabación de la llamada asociada a ese registro.</p>
+<h2 id="registro-de-entrada-de-llamadas-callentry">Registro de entrada de llamadas (CallEntry)</h2>
+<p>Es una vista que se caracteriza por expresar la información de cada llamada recibida, tal cual, como es almacenada en la base de datos. Este reporte ofrece la oportunidad al usuario de conocer el origen de los datos utilizados para la base de cálculo de todos los reportes que hacen referencia a las llamadas entrantes en la reportería ProSer.  </p>
+<p>Está compuesto por un <em>menú superior, menú inferior, zona de botones</em> y la <em>tabla de contenido</em>.</p>
+<h3 id="menu-superior_14">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/2.jpg" /> 
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_14">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/3.jpg" /> 
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_14">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que 
+representa la información expuesta en el módulo. En el orden de arriba hacia abajo, se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_14">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_14">Sección tres</h4>
+<p>En la sección tres, al hacer clic sobre “Filtre la información aquí”, 
+encontramos el <em>selector</em> de opciones. Esta funcionalidad proporciona la capacidad de filtrar, a través de un abanico de posibilidades, la 
+información que se muestra en la pizarra de indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/3-1.jpg" /> 
+<strong><center> Figura 3 - Menú Inferior(Sección tres) </center></strong></p>
+<p>Así como también, en esta sección se visualizará la(s) opción(es) 
+seleccionada(s). El <em>selector</em> es explicado en detalle en su sección del Manual de Usuario correspondiente.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/3-2.jpg" /> 
+<strong><center> Figura 4 - Menú Inferior(Sección tres) </center></strong></p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/3-3.jpg" /> 
+<strong><center> Figura 5 - Menú Inferior(Sección tres) </center></strong></p>
+<h3 id="zona-de-botones_14">Zona de botones</h3>
+<p>La zona de botones se caracteriza por brindar opciones al usuario que 
+facilita la transformación, actualización y exportación de la información contenida en el reporte. Esta zona se conforma por dos (02) botones y una barra de búsqueda.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/4.jpg" /> 
+<strong><center> Figura 6 - Zona de botones </center></strong></p>
+<h4 id="exportar-excel_11">Exportar excel</h4>
+<p>Inicia el proceso de exportación de la información mostrada de manera detallada en el reporte, en un archivo excel.</p>
+<h4 id="recalcular_19">Recalcular</h4>
+<p>Ejecuta nuevamente la consulta a la base de datos para actualizar la información, hasta ese instante, que se muestra. </p>
+<h4 id="barra-de-busqueda_14">Barra de búsqueda</h4>
+<p>La barra de búsqueda permite al usuario hacer un filtrado rápido 
+de la información expuesta en el reporte. La búsqueda se hace a través de los valores de los campos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/4-1.jpg" /> 
+<strong><center> Figura 7 - Zona de botones(Barra de búsqueda) </center></strong></p>
+<h3 id="tabla-de-contenido_14">Tabla de contenido</h3>
+<p>Dentro de la tabla de contenido se despliega la información solicitada, esta información varía de acuerdo al reporte. Para el caso del registro de entrada de llamadas, muestra los datos que identifica una llamada al ingresar al Call Center. Esta tabla se estructura de la siguiente forma:</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/5.jpg" /> 
+<strong><center> Figura 8 - Tabla de contenido </center></strong></p>
+<h4 id="id_3">Id</h4>
+<p>Indica la identificación del registro dentro de la base de datos.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/6.jpg" /> 
+<strong><center> Figura 9 - Tabla de contenido(Id) </center></strong>    </p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/6-1.jpg" /> 
+<strong><center> Figura 10 - Tabla de contenido(Id) </center></strong>    </p>
+<h4 id="agente_2">Agente</h4>
+<p>Indica el nombre del agente que atendió la llamada asociada a 
+ese registro.</p>
+<h4 id="id-cola">Id cola</h4>
+<p>Indica la identificación de la cola asociada a la llamada 
+perteneciente a ese registro.</p>
+<h4 id="cola-numero">Cola número</h4>
+<p>Indica el número de la cola asociada a la llamada perteneciente a 
+ese registro.</p>
+<h4 id="entrada-en-cola">Entrada en cola</h4>
+<p>Indica la fecha y hora en la que la llamada asociada a ese registro ingresó en la cola.</p>
+<h4 id="inicio_1">Inicio</h4>
+<p>Indica la fecha y hora en la que la llamada asociada a ese registro fue atendida.</p>
+<h4 id="final_2">Final</h4>
+<p>Indica la fecha y hora en la que la llamada asociada a ese registro fue finalizada o salió de la cola sin ser atendida.</p>
+<h4 id="duracion-seg_1">Duración seg.</h4>
+<p>Indica la duración, en segundos, de la llamada asociada a ese 
+registro.</p>
+<h4 id="status">Status</h4>
+<p>Indica el estado de la llamada: “terminada” para las llamadas 
+atendidas y “abandonada” para las llamadas abandonadas.</p>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/5-1.jpg" /> 
+<strong><center> Figura 11 - Tabla de contenido </center></strong>  </p>
+<h4 id="espera-seg">Espera seg</h4>
+<p>Indica la duración, en segundos, que la llamada asociada a ese registro esperó en la cola para ser atendida o abandonada</p>
+<h4 id="uniqueid_3">Uniqueid</h4>
+<p>Indica un código único de identificación de la llamada asociada a ese registro.</p>
+<h4 id="campana">Campaña</h4>
+<p>Indica la identificación de la campaña asociada a la llamada perteneciente a ese registro.</p>
+<h4 id="trunk">Trunk</h4>
+<p>Indica la troncal por la que ingres la llamada asociada al registro.</p>
+<h4 id="fecha_9">Fecha</h4>
+<p>Indica la fecha de la llamada asociada a ese registro.</p>
+<h4 id="tiempo-expirado">Tiempo expirado</h4>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/5-2.jpg" /> 
+<strong><center> Figura 12 - Tabla de contenido </center></strong>  </p>
+<h4 id="tipo">Tipo</h4>
+<p>Indica el tipo de la llamada asociada a ese registro. Para este 
+caso, el valor siempre va a ser “inbound” por ser un registro únicamente de llamadas entrantes.</p>
+<h4 id="auto-campana">Auto campaña</h4>
+<p>Indica el nombre de la campaña automática (en caso de haber sido configurado) a la que pertenece la llamada asociada el registro.</p>
+<h4 id="colgada">Colgada</h4>
+<p>Indica quien finalizó la llamada asociada a ese registro, colgado la
+misma. En el caso que haya colgado el agente, el campo tendrá el valor “COMPLETEAGENT”. Para el caso de que haya finalizado la llamada el cliente, el campo tendrá el valor “COMPLETECALLER”.</p>
+<h4 id="colgada-agente">Colgada agente</h4>
+<p>Indica con el valor “1” si la llamada fue colgada por el agente.</p>
+<h4 id="colgada-llamante">Colgada llamante</h4>
+<p>Indica con el valor “1” si la llamada fue colgada por el llamante o cliente.</p>
+<h4 id="id-llamante">Id llamante</h4>
+<p><img alt="Texto alternativo" src="../img/04-reports/04-data/03-callEntry/5-3.jpg" /> 
+<strong><center> Figura 13 - Tabla de contenido </center></strong>  </p>
+<h4 id="llamante">Llamante</h4>
+<p>Indica el número de teléfono de la persona que llama o llamante.</p>
+<h4 id="transferido">Transferido</h4>
+<p>Indica si la llamada fue transferida.</p>
+<p></justify></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../configuracion/" class="btn btn-neutral float-right" title="Configuracion">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../dashboard/" class="btn btn-neutral" title="Dashboard"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../dashboard/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../configuracion/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

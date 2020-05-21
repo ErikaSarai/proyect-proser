@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Display - Manual del Usuario</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Display";
+    var mkdocs_page_input_path = "display.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Manual del Usuario</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Inicio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../home/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Display</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#display">Display</a></li>
+    
+
+    <li class="toctree-l2"><a href="#presentaciones">Presentaciones</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#display-de-llamadas-entrantes">Display de llamadas entrantes</a></li>
+        
+            <li><a class="toctree-l3" href="#display-de-llamadas-salientes">Display de llamadas salientes</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#monitor-de-colas">Monitor de colas</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#monitor-de-llamadas">Monitor de llamadas</a></li>
+        
+            <li><a class="toctree-l3" href="#monitor-de-agentes">Monitor de agentes</a></li>
+        
+            <li><a class="toctree-l3" href="#monitor-de-indicadores">Monitor de indicadores</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dashboard/">Dashboard</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../reportes/">Reportes</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../configuracion/">Configuracion</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sistema/">Sistema</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../usuario/">Usuario</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../selector/">Selector</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Manual del Usuario</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Display</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><justify></p>
+<h1 id="display">Display</h1>
+<p><img alt="Texto alternativo" src="../img/02-display/00-display-main/01-display.jpg" /></p>
+<p>La sección de Display está diseñada para mostrar todos los procesos del sistema en una pantalla de monitor para tener una referencia del estado actual del servicio en un salón amplio, ya que en esta sección no se pueden manipular dichos valores o información solo se pueden ver. Esta sección cuenta con dos opciones:</p>
+<h1 id="presentaciones">Presentaciones</h1>
+<p>Esta opción contiene la vista de los procesos de las llamadas entrantes y salientes del sistema.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/00-display-main/02-display.jpg" /></p>
+<h2 id="display-de-llamadas-entrantes">Display de llamadas entrantes</h2>
+<p>El display de llamadas entrantes permite visualizar de manera general y en tiempo real los indicadores más relevantes para un <em>Call Center</em> en modalidad <em>Inbound</em>. Es una herramienta diseñada para proyectarse en monitores y se muestre a todo el personal.  </p>
+<p>Este display está compuesto por un <em>menú superior, menú inferior</em> y la <em>pizarra de indicadores</em>.</p>
+<h3 id="menu-superior">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/01-incoming/01.jpg" />
+<strong><center> Figura 1 - Menú Superior  </center></strong></p>
+<h3 id="menu-inferior">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/01-incoming/02.jpg" />
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno">Sección uno</h4>
+<p>En esta sección del menú inferior encontramos la leyenda que representa la información expuesta en el módulo. En el orden de arriba hacia abajo se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres">Sección tres</h4>
+<p>No aplica para esta vista.</p>
+<h3 id="pizarra-de-indicadores">Pizarra de indicadores</h3>
+<p>La pizarra de indicadores es la sección más relevante, ya que en ella se plasma toda la información fundamental de la vista. Esta sección, a su vez, se conforma por seis (06) grupos de información: <em>destacados, llamadas, niveles, tiempos, agentes conectados y auxiliares asignaciones.</em></p>
+<h4 id="destacados">Destacados</h4>
+<p>Los destacados puntualizan los indicadores de mayor envergadura para la toma de decisiones por parte del supervisor o gerente. Este grupo se conforma por: nivel del servicio, nivel de atención,llamadas en cola,llamadas activas, agentes planificados, agentes conectados, agentes efectivos, tiempo medio de operación (TMO).</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/01-incoming/03.jpg" />
+<strong><center> Figura 3 - Pizarra de Indicadores (Destacados) </center></strong></p>
+<h4 id="nivel-de-servicio">Nivel de servicio</h4>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar el tiempo ideal de atención, conocido comúnmente como umbral (normalmente es de 20 segundos). Este indicador colorea su contenido de acuerdo a los porcentajes configurados en la <em>escala</em> para cada color.</p>
+<h5 id="nivel-de-atencion">Nivel de atención</h5>
+<p>Indica el porcentaje que representa las llamadas atendidcon respecto a la cantidad de llamadas recibidas. Este indicadocolorea su contenido de acuerdo a los porcentajes configurados en la <em>escala</em> para cada color.</p>
+<h5 id="llamadas-en-cola">Llamadas en cola</h5>
+<p>Indica la cantidad de llamadas que encuentran esperanen ese momento, en la cola para ser atendidas.</p>
+<h5 id="llamadas-activas">Llamadas activas</h5>
+<p>Indica la cantidad de llamadas que están siendo atendiden ese momento.</p>
+<h5 id="agentes-planificados">Agentes planificados</h5>
+<p>Indica la cantidad de agentes que se deben conectar en transcurso del día, turno o guardia (según la <em>configuración del display</em>).</p>
+<h5 id="agentes-conectados">Agentes conectados</h5>
+<p>Indica la cantidad de agentes que se encuentran conectados en ese instante.</p>
+<h5 id="agentes-efectivos">Agentes efectivos</h5>
+<p>Indica la cantidad de agentes que se encuentran operativos (disponibles u ocupados) en ese instante.</p>
+<h5 id="tiempo-medio-de-operacion-tmo">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que dura un agente atendienduna llamada.</p>
+<h4 id="llamadas">Llamadas</h4>
+<p>El grupo de llamadas hace referencia a las métricas de todo lo 
+relacionado con la cantidad de llamadas en la operación. Este grupo lo conforman los siguientes indicadores: recibidas, atendidas, abandonadas,cortas, atendidas en menos de, atendidas en más de, colgadas por agente y pérdidas.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/01-incoming/04.jpg" />
+<strong><center> Figura 4 - Pizarra de Indicadores (Llamadas) </center></strong></p>
+<h5 id="recibidas">Recibidas</h5>
+<p>Indica la cantidad de llamadas recibidas hasta ese instante.</p>
+<h5 id="atendidas">Atendidas</h5>
+<p>Indica la cantidad de llamadas atendidas hasta ese instante.</p>
+<h5 id="abandonadas">Abandonadas</h5>
+<p>Indica la cantidad de llamadas abandonadas hasta ese instante.</p>
+<h5 id="cortas">Cortas</h5>
+<p>Indica la cantidad de llamadas finalizadas antes de un valor de tiempo previamente definido por la empresa o el cliente (usualmente el valor de tiempo corresponde a los 10 segundos).</p>
+<h5 id="atendidas-en-menos-de">Atendidas en menos de</h5>
+<p>Indica la cantidad de llamadas atendidas antes de culminar el tiempo ideal de atención (umbral).</p>
+<h5 id="atendidas-en-mas-de">Atendidas en más de</h5>
+<p>Indica la cantidad de llamadas atendidas luego de culminar el tiempo ideal de atención (umbral).</p>
+<h5 id="colgadas-por-agente">Colgadas por agente</h5>
+<p>Indica la cantidad de llamadas culminadas por los agentes,es decir cuando la llamada finaliza porque el agente colgó primero que el llamante.</p>
+<h5 id="perdidas">Perdidas</h5>
+<p>Indica la cantidad de llamadas que no son atendidas por un agente SIP y se pierden.</p>
+<h4 id="niveles">Niveles</h4>
+<p>El grupo <em>niveles</em> expresa los indicadores de eficiencia del call center: nivel de servicio, nivel de atención y nivel de abandono.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/01-incoming/05.jpg" />
+<strong><center> Figura 5 - Pizarra de Indicadores (Niveles) </center></strong></p>
+<h5 id="nivel-de-servicio_1">Nivel de servicio</h5>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar el tiempo ideal de atención, conocido comúnmente como umbral (normalmente es de 20 segundos).</p>
+<h5 id="nivel-de-atencion_1">Nivel de atención</h5>
+<p>Indica el porcentaje que representa las llamadas atendidascon respecto a la cantidad de llamadas recibidas.</p>
+<h5 id="nivel-de-abandono">Nivel de abandono</h5>
+<p>Indica el porcentaje que representa la cantidad de llamadas no contestadas con respecto a las llamadas recibidas.</p>
+<h4 id="tiempos">Tiempos</h4>
+<p>El grupo <em>tiempos</em> puntualiza todos aquellos indicadores que su cálculo se basa en el tiempo, siempre expresados en segundos. Los indicadores de tiempo son: tiempo medio de operación, tiempo medio de espera, máxima espera en cola, máxima espera.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/01-incoming/06.jpg" />
+<strong><center> Figura 6 - Pizarra de Indicadores (Tiempos) </center></strong></p>
+<h5 id="tiempo-medio-de-operacion-tmo_1">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que dura un agente atendiendo una llamada.</p>
+<h5 id="tiempo-medio-de-espera-asa">Tiempo medio de espera (ASA)</h5>
+<p>Indica el tiempo promedio que transcurre desde que las llamadas ingresan a la cola hasta ser atendidas.</p>
+<h5 id="maxima-espera-en-cola">Máxima espera en cola</h5>
+<p>Indica el valor máximo de tiempo de espera de una llamada en la cola en ese instante.</p>
+<h5 id="maximo-espera">Máximo espera</h5>
+<p>Indica el valor total del tiempo de espera de las llamadas que han sido recibidas.</p>
+<h4 id="agentes-conectados_1">Agentes conectados</h4>
+<p>Muestra un gráfico que expresa el estado actual de los agentes en ese instante.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/01-incoming/07.jpg" />
+<strong><center> Figura 7 - Pizarra de Indicadores (Agentes Conectados) </center></strong></p>
+<h4 id="agentes-en-auxiliarasignacion">Agentes en auxiliar/asignación</h4>
+<p>Cuando hay agentes en break, se divisa dentro de este grupo un 
+resumen de: la cantidad de agentes en break, el tipo de break y el tiempo acumulado en ese break.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/01-incoming/08.jpg" />
+<strong><center> Figura 8 - Pizarra de Indicadores (Agentes en auxiliar/asignación) </center></strong></p>
+<h2 id="display-de-llamadas-salientes">Display de llamadas salientes</h2>
+<p>El display de llamadas salientes permite visualizar de manera general y en tiempo real los indicadores más relevantes para un <em>Call Center</em> en modalidad <em>Outbound</em>. Es una herramienta diseñada para proyectarse en monitores y se muestre a todo el personal.  </p>
+<p>Este display está compuesto por un <em>menú superior, menú inferior</em> y la <em>pizarra de indicadores</em>.</p>
+<h3 id="menu-superior_1">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/02-outgoing/01.jpg" />
+<strong><center> Figura 1 - Menú Superior  </center></strong></p>
+<h3 id="menu-inferior_1">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/02-outgoing/02.jpg" />
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_1">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que representa la información expuesta en el módulo. En el orden de arriba hacia abajo se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información, rango de tiempo de la información.</p>
+<h4 id="seccion-dos_1">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_1">Sección tres</h4>
+<p>No aplica para esta vista.</p>
+<h3 id="pizarra-de-indicadores_1">Pizarra de indicadores</h3>
+<p>La pizarra de indicadores es la sección más relevante, ya que en ella se plasma toda la información fundamental de la vista. Esta sección, a su vez, se conforma por seis (06) grupos de información: <em>destacados, llamadas, niveles, tiempos, agentes conectados y auxiliares asignaciones.</em></p>
+<h4 id="destacados_1">Destacados</h4>
+<p>Los destacados puntualizan los indicadores de mayor envergadura para la toma de decisiones por parte del supervisor o gerente. Este grupo se conforma por: nivel del servicio, nivel de atención,llamadas en cola,llamadas activas, agentes planificados, agentes conectados, agentes efectivos, tiempo medio de operación (TMO).</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/02-outgoing/03.jpg" />
+<strong><center> Figura 3 - Pizarra de Indicadores (Destacados) </center></strong></p>
+<h5 id="nivel-de-contactabilidad">Nivel de contactabilidad</h5>
+<p>Indica el porcentaje que representa la cantidad de llamadas contestadas por el destinatario con respecto a la cantidad de llamadas realizadas. Este indicador colorea su contenido de acuerdo a los porcentajes configurados en la <em>escala</em> para cada color.</p>
+<h5 id="nivel-de-efectividad">Nivel de efectividad</h5>
+<p>Indica el porcentaje que representa las llamadas efectivas con respecto a la cantidad de llamadas realizadas. Este indicador colorea su contenido de acuerdo a los porcentajes configurados en la <em>escala</em> para cada color.</p>
+<h5 id="llamadas-en-cola_1">Llamadas en cola</h5>
+<p>Indica la cantidad de llamadas que encuentran esperando,en ese momento, en la cola para ser atendidas.</p>
+<h5 id="llamadas-activas_1">Llamadas activas</h5>
+<p>Indica la cantidad de llamadas que están siendo realizadas en ese momento.</p>
+<h5 id="agentes-planificados_1">Agentes planificados</h5>
+<p>Indica la cantidad de agentes que se deben conectar en eltranscurso del día, turno o guardia (según la <em>configuración del display</em>).</p>
+<h5 id="agentes-conectados_2">Agentes conectados</h5>
+<p>Indica la cantidad de agentes que se encuentran conectados en ese instante.</p>
+<h5 id="agentes-efectivos_1">Agentes efectivos</h5>
+<p>Indica la cantidad de agentes que se encuentran operativos (disponibles u ocupados) en ese instante.</p>
+<h5 id="tiempo-medio-de-operacion-tmo_2">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que dura un agente realizando una llamada.</p>
+<h4 id="llamadas_1">Llamadas</h4>
+<p>El grupo de llamadas hace referencia a las métricas de todo lo relacionado con la cantidad de llamadas en la operación. Este grupo lo conforman los siguientes indicadores: realizadas, fallidas, contestadas,efectivas y colgadas por agente.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/02-outgoing/04.jpg" />
+<strong><center> Figura 4 - Pizarra de Indicadores (Llamadas) </center></strong></p>
+<h5 id="realizadas">Realizadas</h5>
+<p>Indica la cantidad de llamadas realizadas por los agentes hasta ese instante.</p>
+<h5 id="fallidas">Fallidas</h5>
+<p>Indica la cantidad de llamadas que no lograron establecer conexión con el destinatario.</p>
+<h5 id="contestadas">Contestadas</h5>
+<p>Indica la cantidad de llamadas que lograron establecer conexión con el destinatario.</p>
+<h5 id="efectivas">Efectivas</h5>
+<p>Indica la cantidad de llamadas que lograron con éxito el propósito de las mismas.</p>
+<h5 id="colgadas-por-agente_1">Colgadas por agente</h5>
+<p>Indica la cantidad de llamadas culminadas por los agentes,es decir, cuando la llamada finaliza porque el agente colgó primero que el llamante.</p>
+<h4 id="niveles_1">Niveles</h4>
+<p>El grupo <em>niveles</em> expresa los indicadores de eficiencia del call center: nivel de contactabilidad y nivel de efectividad.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/02-outgoing/05.jpg" />
+<strong><center> Figura 5 - Pizarra de Indicadores (Niveles) </center></strong></p>
+<h5 id="nivel-de-contactabilidad_1">Nivel de contactabilidad</h5>
+<p>Indica el porcentaje que representa la cantidad de llamadas contestadas por el destinatario con respecto a la cantidad de llamadas realizadas. </p>
+<h5 id="nivel-de-efectividad_1">Nivel de efectividad</h5>
+<p>Indica el porcentaje que representa las llamadas efectivas con respecto a la cantidad de llamadas realizadas.</p>
+<h4 id="tiempos_1">Tiempos</h4>
+<p>El grupo <em>tiempos</em> puntualiza todos aquellos indicadores que su cálculo se basa en el tiempo, siempre expresados en segundos. Los indicadores de tiempo son: tiempo medio de operación, tiempo de operación.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/02-outgoing/06.jpg" />
+<strong><center> Figura 6 - Pizarra de Indicadores (Tiempos) </center></strong></p>
+<h5 id="tiempo-medio-de-operacion-tmo_3">Tiempo medio de operación (TMO)</h5>
+<p>Indica el tiempo promedio que dura un agente realizando una llamada.</p>
+<h5 id="tiempo-de-operacion">Tiempo de operación</h5>
+<p>Indica el tiempo de operación acumulado hasta ese instante.</p>
+<h4 id="agentes-conectados_3">Agentes conectados</h4>
+<p>Muestra un gráfico que expresa el estado actual de los agentes en ese instante.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/02-outgoing/07.jpg" />
+<strong><center> Figura 7 - Pizarra de Indicadores (Agentes Conectados) </center></strong></p>
+<h4 id="agentes-en-auxiliarasignacion_1">Agentes en auxiliar/asignación</h4>
+<p>Cuando hay agentes en break, se divisa dentro de este grupo un resumen de: la cantidad de agentes en break, el tipo de break y el tiempo acumulado en ese break.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/01-presentations/02-outgoing/08.jpg" />
+<strong><center> Figura 8 - Pizarra de Indicadores (Agentes en auxiliar/asignación) </center></strong></p>
+<h1 id="monitor-de-colas">Monitor de colas</h1>
+<p>Esta opción contiene las vistas de los monitores de llamadas, de agentes y de los indicadores.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/00-display-main/03-display.jpg" /></p>
+<h2 id="monitor-de-llamadas">Monitor de llamadas</h2>
+<p>El monitor de llamadas es una herramienta que refleja el comportamiento, en tiempo real, de las llamadas entrantes en las colas activas. La información mostrada se basa en estadísticas que se actualizan cada cinco (05) segundos, ofreciendo al supervisor del Call Center la  oportunidad de hacer comparaciones rápidas que permitan mantener o cambiar el curso (según sea el caso) del nivel de atención y nivel de servicio para una mejor respuesta al cliente. Toda la información mostrada en el monitor corresponde al día actual, no maneja estadísticas históricas.  </p>
+<p>Esta vista está conformada por un <em>menú superior, un menú inferior</em> y una <em>tabla de métricas</em>.</p>
+<h3 id="menu-superior_2">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/02-queue-monitor/01-call-monitor/03.jpg" />
+<strong><center> Figura 1 - Menú Superior  </center></strong></p>
+<h3 id="menu-inferior_2">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/02-queue-monitor/01-call-monitor/04.jpg" />
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_2">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que representa la información expuesta en el módulo. En el orden de arriba hacia abajo se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información.</p>
+<h4 id="seccion-dos_2">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_2">Sección tres</h4>
+<p>No aplica para esta vista.</p>
+<h3 id="tabla-de-metricas">Tabla de métricas</h3>
+<p>Dentro de la tabla de métricas se ubica la información que contiene lasestadísticas, por cada cola activa, que componen al monitor de llamadas y las cuales se actualizan cada cinco (05) segundos. Las métricas son:</p>
+<p><img alt="Texto alternativo" src="../img/02-display/02-queue-monitor/01-call-monitor/05.jpg" />
+<strong><center> Figura 3 - Tabla de métricas </center></strong></p>
+<h4 id="nombre-cola">Nombre Cola</h4>
+<p>Indica el nombre de la cola que se encuentra activa durante la jornada.</p>
+<h4 id="numero-cola">Número cola</h4>
+<p>Indica el número de la cola que se encuentra activa durante la jornada.</p>
+<h4 id="t-max-actual-espera-sg">T. Máx. Actual espera (sg)</h4>
+<p>Indica el tiempo máximo que estuvo una llamada esperando en la cola para ser atendida.</p>
+<h4 id="t-max-actual-contestar-sg">T. Máx. Actual contestar (sg)</h4>
+<p>Indica el tiempo máximo que estuvo una llamada esperando en la cola para ser atendida y fue atendida.</p>
+<h4 id="t-max-actual-abandono-sg">T. Máx. Actual abandono (sg)</h4>
+<p>Indica el tiempo máximo que estuvo una llamada esperando en la cola para ser atendida y no fue atendida.</p>
+<h4 id="llamadas-recibidas">Llamadas recibidas</h4>
+<p>Indica la cantidad de llamadas recibidas por cola hasta ese instante.</p>
+<h4 id="llamadas-atendidas">Llamadas atendidas</h4>
+<p>Indica la cantidad de llamadas atendidas por cola hasta ese instante.</p>
+<h4 id="llamadas-abandonadas">Llamadas abandonadas</h4>
+<p>Indica la cantidad de llamadas abandonadas por cola hasta ese instante.</p>
+<h4 id="atendidas-antes-de-umbral">Atendidas antes de (umbral)</h4>
+<p>Indica la cantidad de llamadas atendidas antes de culminar el tiempo ideal de atención (umbral). El valor del umbral usualmente es de 20 segundos, a menos que la empresa decida configurar un umbral diferente.</p>
+<h4 id="atendidas-antes-de-60-sg">Atendidas antes de 60 sg</h4>
+<p>Indica la cantidad de llamadas atendidas antes de sesenta (60)segundos en tiempo de espera en la cola.</p>
+<h4 id="llamadas-cortas">Llamadas cortas</h4>
+<p>Indica la cantidad de llamadas finalizadas antes de un valor de tiempo previamente definido por la empresa o el cliente (usualmente elvalor de tiempo corresponde a los 10 segundos).</p>
+<h4 id="nivel-serv-umbral">Nivel Serv. (umbral)</h4>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar el tiempo ideal de atención, conocido comúnmente como umbral.</p>
+<h4 id="nivel-serv-umbral-ult-60-min">Nivel Serv. (umbral) Ult. 60 Min.</h4>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar el tiempo ideal de atención, conocido comúnmente como umbral, en la última hora.</p>
+<h4 id="nivel-serv-60-sg">Nivel Serv. 60 sg</h4>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar sesenta (60) segundos en tiempo de espera en la cola.</p>
+<h4 id="nivel-serv-60-sg-ult-60-min">Nivel Serv. 60 sg Ult. 60 Min.</h4>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar sesenta (60) segundos en tiempo de espera en la cola, en la última hora.</p>
+<h4 id="niv-atencion">Niv. atención</h4>
+<p>Indica el porcentaje que representa las llamadas atendidas con respecto a la cantidad de llamadas recibidas.</p>
+<h4 id="niv-abandono">Niv. abandono</h4>
+<p>Indica el porcentaje que representa la cantidad de llamadas no contestadas con respecto a las llamadas recibidas.</p>
+<h2 id="monitor-de-agentes">Monitor de agentes</h2>
+<p>Es una funcionalidad que señala la actividad de los agentes, en tiempo real, por cada cola creada en el Call Center. El comportamiento de los agentes se actualiza cada cinco (05) segundos, permitiendo al supervisor del Call Center hacer una comparación rápida entre la cantidad de llamadas activas y la cantidad de agentes disponibles en cada cola.  </p>
+<p>Toda la información mostrada en el monitor corresponde al día actual, nomaneja estadísticas históricas. Esta vista está conformada por un <em>menú superior, un menú inferior</em> y una <em>tabla de agentes</em>.</p>
+<h3 id="menu-superior_3">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/02-queue-monitor/02-agent-monitor/02.jpg" />
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_3">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/02-queue-monitor/02-agent-monitor/03.jpg" />
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_3">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que representa la información expuesta en el módulo. En el orden de arriba hacia abajo se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información.</p>
+<h4 id="seccion-dos_3">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_3">Sección tres</h4>
+<p>No aplica para esta vista.</p>
+<h3 id="tabla-de-agentes">Tabla de agentes</h3>
+<p>Dentro de la tabla de agentes se ubica la información que contiene las estadísticas, por cada cola activa, que componen al monitor de agentes y las cuales se actualizan cada cinco (05)segundos.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/02-queue-monitor/02-agent-monitor/04.jpg" />
+<strong><center> Figura 3 - Tabla de agentes </center></strong></p>
+<h4 id="nombre-cola_1">Nombre Cola</h4>
+<p>Indica el nombre de la cola.</p>
+<h4 id="llamadas-activas_2">Llamadas activas</h4>
+<p>Indica la cantidad de llamadas activas, por cada cola, en ese instante.</p>
+<h4 id="agentes-conectados_4">Agentes conectados</h4>
+<p>Indica la cantidad de agentes conectados, por cada cola, en ese instante.</p>
+<h4 id="agentes-disponibles">Agentes disponibles</h4>
+<p>Indica la cantidad de agentes disponibles, por cada cola, en ese instante.</p>
+<h4 id="agentes-ocupados">Agentes ocupados</h4>
+<p>Indica la cantidad de agentes ocupados, por cada cola, en ese instante.</p>
+<h4 id="agentes-en-auxiliar">Agentes en auxiliar</h4>
+<p>Indica la cantidad de agentes en auxiliar, por cada cola, en ese instante.</p>
+<h4 id="agentes-en-asignacion">Agentes en asignación</h4>
+<p>Indica la cantidad de agentes en asignación, por cada cola, en ese instante.</p>
+<h2 id="monitor-de-indicadores">Monitor de indicadores</h2>
+<p>El monitor de indicadores permite visualizar, en tiempo real, la estadísticas delos indicadores más relevantes de las llamadas entrantes en las colas activas. La información mostrada se basa en estadísticas que se actualizan cada cinco (05)segundos. Toda la información mostrada en el monitor corresponde al día actual, no maneja estadísticas históricas.  </p>
+<p>Esta vista está conformada por un <em>menú superior, un menú inferior</em> y una <em>tabla de métricas</em>.</p>
+<h3 id="menu-superior_4">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/02-queue-monitor/03-indicator-monitor/03.jpg" />
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="menu-inferior_4">Menú inferior</h3>
+<p>Se ubica debajo del <em>menú superior</em> y está dividido en tres (03) secciones que describen, de manera general, la vista actual. De izquierda a derecha: sección uno, sección dos y sección tres.</p>
+<p><img alt="Texto alternativo" src="../img/02-display/02-queue-monitor/03-indicator-monitor/04.jpg" />
+<strong><center> Figura 2 - Menú Inferior </center></strong></p>
+<h4 id="seccion-uno_4">Sección uno</h4>
+<p>En esta sección del <em>menú inferior</em> encontramos la leyenda que representa la información expuesta en el módulo. En el orden de arriba hacia abajo se encuentran las siguientes descripciones: Nombre de la vista del módulo, fecha de la información.</p>
+<h4 id="seccion-dos_4">Sección dos</h4>
+<p>Dentro de la sección dos se puntualiza el nombre del Call Center del cual hace referencia la información mostrada en la vista.</p>
+<h4 id="seccion-tres_4">Sección tres</h4>
+<p>No aplica para esta vista.</p>
+<h3 id="tabla-de-metricas_1">Tabla de métricas</h3>
+<p>Dentro de la tabla de métricas se ubica la información que contiene las estadísticas, por cada cola activa, que componen al monitor de llamadas y las cuales se actualizan cada cinco (05) segundos. Las métricas son:</p>
+<p><img alt="Texto alternativo" src="../img/02-display/02-queue-monitor/03-indicator-monitor/05.jpg" />
+<strong><center> Figura 3 - Tabla de métricas </center></strong></p>
+<h4 id="nombre-cola_2">Nombre Cola</h4>
+<p>Indica el nombre de la cola que se encuentra activa durante la jornada.</p>
+<h4 id="hora-inicio">Hora inicio</h4>
+<p>Indica la hora en la que se recibió la primera llamada.</p>
+<h4 id="tiempo-ideal-de-respuesta">Tiempo ideal de respuesta</h4>
+<p>Indica el valor configurado, en segundos, como tiempo ideal de respuesta (umbral).</p>
+<h4 id="llamadas-recibidas_1">Llamadas recibidas</h4>
+<p>Indica la cantidad de llamadas recibidas por cola hasta ese instante.</p>
+<h4 id="llamadas-atendidas_1">Llamadas atendidas</h4>
+<p>Indica la cantidad de llamadas atendidas por cola hasta ese instante.</p>
+<h4 id="llamadas-abandonadas_1">Llamadas abandonadas</h4>
+<p>Indica la cantidad de llamadas abandonadas por cola hasta ese instante.</p>
+<h4 id="atendidas-antes-de-tiempo-ideal">Atendidas antes de tiempo ideal</h4>
+<p>Indica la cantidad de llamadas atendidas antes de culminar el tiempo ideal de atención (umbral). El valor del umbral usualmente es de 20 segundos, a menos que la empresa decida configurar un umbral diferente.</p>
+<h4 id="atendidas-despues-de-tiempo-ideal">Atendidas después de tiempo ideal</h4>
+<p>Indica la cantidad de llamadas atendidas luego de culminar el tiempo ideal de atención (umbral).</p>
+<h4 id="llamadas-cortas_1">Llamadas cortas</h4>
+<p>Indica la cantidad de llamadas finalizadas antes de un valor de tiempo previamente definido por la empresa o el cliente (usualmente el valor de tiempo corresponde a los 10 segundos).</p>
+<h4 id="colgadas-por-agente_2">Colgadas por agente</h4>
+<p>Indica la cantidad de llamadas culminadas por los agentes, es decir, cuando la llamada finaliza porque el agente colgó primero que el 
+llamante.</p>
+<h4 id="nivel-servicio">Nivel Servicio</h4>
+<p>Indica el porcentaje de llamadas contestadas antes de finalizar el tiempo ideal de atención, conocido comúnmente como umbral.</p>
+<h4 id="niv-atencion_1">Niv. atención</h4>
+<p>Indica el porcentaje que representa las llamadas atendidas con respecto a la cantidad de llamadas recibidas.</p>
+<h4 id="niv-abandono_1">Niv. abandono</h4>
+<p>Indica el porcentaje que representa la cantidad de llamadas no contestadas con respecto a las llamadas recibidas.</p>
+<h4 id="seg-operacion">Seg. Operación</h4>
+<p>Indica la sumatoria de tiempo de operación de las llamadas, en segundos.</p>
+<h4 id="t-operacion">T. Operación</h4>
+<p>Indica la sumatoria de tiempo de operación de las llamadas: en horas, minutos y segundos.</p>
+<h4 id="seg-espera">Seg. Espera</h4>
+<p>Indica la sumatoria de tiempo de espera de las llamadas, en segundos.</p>
+<h4 id="t-espera">T. Espera</h4>
+<p>Indica la sumatoria de tiempo de espera de las llamadas: en horas, minutos y segundos.</p>
+<h4 id="tmo">TMO</h4>
+<p>Indica el tiempo promedio que dura un agente atendiendo una llamada.</p>
+<h4 id="asa">ASA</h4>
+<p>Indica el tiempo promedio que transcurre desde que las llamadas ingresan a la cola hasta ser atendida.</p>
+<p></justify></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../dashboard/" class="btn btn-neutral float-right" title="Dashboard">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../home/" class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../home/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../dashboard/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

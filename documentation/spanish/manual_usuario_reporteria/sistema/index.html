@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Sistema - Manual del Usuario</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Sistema";
+    var mkdocs_page_input_path = "sistema.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Manual del Usuario</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Inicio</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../home/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../display/">Display</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dashboard/">Dashboard</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../reportes/">Reportes</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../configuracion/">Configuracion</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Sistema</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#sistema">Sistema</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#comandos-para-reiniciar">Comandos para Reiniciar</a></li>
+        
+            <li><a class="toctree-l3" href="#configuracion-usuario">Configuración usuario</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../usuario/">Usuario</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../selector/">Selector</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Manual del Usuario</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Sistema</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><justify></p>
+<h1 id="sistema">Sistema</h1>
+<p>En este módulo el usuario al cual se le determinó internamente hacer las modificaciones en el sistema, puede ejecutar comando en la aplicación para iniciar nuevamente su funcionamiento si el mismo presenta inconvenientes. De igual manera puede también crear usuarios para ser asignados a los agentes a fin de que puedan tener acceso al aplicativo.  </p>
+<p>Es oportuno destacar que si no puede visualizar este módulo es debido a su perfil de usuario, por lo tanto no puede procesar ninguna actividad dentro del mismo.</p>
+<p><img alt="Texto alternativo" src="../img/06-system/03-system-main/system-main.jpg" />
+<strong><center> Vista Módulo Sistema </center></strong></p>
+<h2 id="comandos-para-reiniciar">Comandos para Reiniciar</h2>
+<p>El usuario de la reportería ProSer, a través de esta funcionalidad, puede reiniciar el sistema y el servidor para tomar acciones rápidas en caso de alguna falla en los servicios del sistema. Los usuarios con el perfil admin y system serán los responsables de gestionar y
+ejecutar esta tarea. Así mismo, estos dos perfiles son lo únicos que pueden visualizar esta sección.</p>
+<p>La vista se compone de 2 partes: menú superior y zona de acción.</p>
+<h3 id="menu-superior">Menú superior</h3>
+<p>Se encuentra ubicado en la parte superior de la ventana y en él podemos
+divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/06-system/01-comands/menu-superior.jpg" />
+<strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-accion">Zona de acción</h3>
+<p>La zona de acción se caracteriza por poseer los botones de acción y la
+leyenda que señala las tareas que ejecutan dichos botones. El usuario dispone de tres botones que ejecutan diferentes funciones:</p>
+<ul>
+<li>resurrect: reinicia el pm2 en caso que esté apagado.</li>
+<li>restar: apaga y enciende el pm2.</li>
+<li>reboot: reinicia el servidor con un soft-restart (tendrá que recargar la página después de 30 segundos).</li>
+</ul>
+<p>*pm2 es el software que se encarga de administrar los servicios del
+sistema. </p>
+<p><img alt="Texto alternativo" src="../img/06-system/01-comands/zona-accion.jpg" />
+<strong><center> Figura 2 - Zona de acción </center></strong></p>
+<h2 id="configuracion-usuario">Configuración usuario</h2>
+<p>El administrador del sistema puede gestionar los perfiles de los usuarios de la reportería ProSer a través de esta sección. Esta funcionalidad ofrece las opciones para crear, editar, eliminar y exportar los perfiles de usuario, permitiendo tener control sobre el acceso de las personas al sistema.</p>
+<p>La vista de esta funcionalidad se divide en 3 grandes secciones que son: <em>menú superior, zona de botones y tabla de contenido</em>.</p>
+<h3 id="menu-superior_1">Menú superior</h3>
+<p>El menú superior se encuentra ubicado en la parte superior de la ventana y dentro de él podemos divisar: el logo de ProSer, el nombre del módulo, las opciones de las vistas que conforman el módulo, el nombre del usuario, el estado de conexión y la hora actual.</p>
+<p><img alt="Texto alternativo" src="../img/06-system/02-user/menu-superior.jpg" /></p>
+<p><strong><center> Figura 1 - Menú Superior </center></strong></p>
+<h3 id="zona-de-botones">Zona de botones</h3>
+<p>Se ubica debajo del <em>menú superior</em> y contiene dos (2) secciones para
+realizar las actividades inherentes a este módulo.</p>
+<p><img alt="Texto alternativo" src="../img/06-system/02-user/zona-botones.jpg" /></p>
+<p><strong><center> Figura 2 - Zona de botones </center></strong></p>
+<h4 id="seccion-uno">Sección uno</h4>
+<p>En esta sección se encuentra un indicador y tres (03) botones que
+permiten llevar a cabo acciones características del módulo de configuración. Dichas acciones se relacionan con la vista, edición, creación y/o eliminación de la data. A continuación se explica cada botón de izquierda a derecha:</p>
+<p><img alt="Texto alternativo" src="../img/06-system/02-user/seccion-uno.jpg" /></p>
+<p><strong><center> Figura 3 - Zona de botones(Sección Uno) </center></strong></p>
+<h5 id="nombre">Nombre</h5>
+<p>Este indicador muestra el nombre de la sección del módulo en donde se encuentra el usuario, es decir, para este caso usted está en la subsección <strong>Usuarios</strong> dentro de la sección <strong>Usuarios</strong> perteneciente al módulo de <strong>Sistema</strong>.</p>
+<h5 id="todos">Todos</h5>
+<p>Al ejecutar el botón <em>“Todos”</em> se desplegará en la tabla de
+contenido la totalidad de los usuarios creados sin importar el
+estado en el que se encuentren.</p>
+<h5 id="nuevo">Nuevo</h5>
+<p>Sirve para generar un nuevo registro. Al hacer clic sobre <em>“Nuevo”</em>, la vista cambiará a un formulario que mostrará los campos a rellenar para hacer posible la creación de un nuevo usuario.</p>
+<p><img alt="Texto alternativo" src="../img/06-system/02-user/new.jpg" /></p>
+<p><strong><center> Figura 4 - Zona de botones(Nuevo) </center></strong></p>
+<h5 id="exportar">Exportar</h5>
+<p>Al hacer clic sobre el botón exportar, automáticamente se iniciará la descargar de un archivo, en formato CSV, con el todo el contenido de los perfiles de los usuarios.</p>
+<h4 id="seccion-dos">Sección Dos</h4>
+<p>Esta sección está dividida en tres (3) partes que abarca el
+siguiente contenido:</p>
+<p><img alt="Texto alternativo" src="../img/06-system/02-user/seccion-dos.jpg" /></p>
+<p><strong><center> Figura 5 - Zona de botones(Sección Dos) </center></strong></p>
+<h5 id="selector-de-dato">Selector de dato</h5>
+<p>Establece el parámetro a través del cual se realizará la búsqueda. Es decir, podemos especificar la búsqueda de registros por Id, Nombre, Apellido, Usuario, Perfil, Email, Cédula legal, Número empleado y Foto.</p>
+<h5 id="buscador">Buscador</h5>
+<p>Dentro de esta barra se coloca el dato que se quiere conseguir en los registros. Se debe tomar en cuenta el parámetro establecido en el <em>selector de dato</em>.</p>
+<h5 id="selector-de-cantidad-de-registros">Selector de cantidad de registros</h5>
+<p>Para la comodidad del usuario en las vista de los registros, este selector permite establecer el número de filas que desea visualizar en la tabla de contenido.</p>
+<h3 id="tabla-de-contenido">Tabla de contenido</h3>
+<p>Dentro de la <em>tabla de contenido</em> se despliega la información
+correspondiente a los datos configurados del módulo. La información expuesta variará de acuerdo a la ejecución, que haga el usuario, de cada botón. Para el caso de la vista general se muestra la información con base en los siguientes campos:</p>
+<p><img alt="Texto alternativo" src="../img/06-system/02-user/tabla-contenido.jpg" /></p>
+<p><strong><center> Figura 6 - Tabla de Contenido </center></strong></p>
+<h4 id="id">Id</h4>
+<p>Identificador que se incremente automáticamente al crear un
+nuevo registro, y sirve para identificar cada dato existente.</p>
+<h4 id="nombre_1">Nombre</h4>
+<p>Indica el nombre real del usuario existente o creado.</p>
+<h4 id="apellido">Apellido</h4>
+<p>Indica el apellido real del usuario.</p>
+<h4 id="usuario">Usuario</h4>
+<p>Indica el nombre de usuario para iniciar sesión en el sistema.</p>
+<h4 id="perfil">Perfil</h4>
+<p>Indica el perfil asociado al usuario. Los 
+perfiles disponibles son:</p>
+<ul>
+<li>
+<p>Admin: El usuario admin tiene la posibilidad de gestionar la totalidad del sistema.</p>
+</li>
+<li>
+<p>System: El usuario system únicamente tiene acceso al módulo de sistema y a los módulos generales (reportes,dashboard, display).</p>
+</li>
+<li>
+<p>Config: El usuario config únicamente tiene acceso al módulo de configuración y a los módulos generales (reportes, dashboard, display).</p>
+</li>
+<li>
+<p>User: El usuario user únicamente tiene acceso a los módulos generales (reportes, dashboard y display).</p>
+</li>
+</ul>
+<h4 id="email">Email</h4>
+<p>Indica la dirección de correo del usuario.</p>
+<h4 id="cedula-legal">Cédula legal</h4>
+<p>Indica la identificación legal nacional del usuario.</p>
+<h4 id="numero-empleado">Número empleado</h4>
+<p>Indica el número o código de identificación interna laboral.</p>
+<h4 id="foto">Foto</h4>
+<p>Indica la fotografía del usuario.</p>
+<h3 id="pulsar-registro-en-la-tabla-de-contenido">Pulsar registro en la tabla de contenido</h3>
+<p>Al pulsar un registro de la tabla usted puede ahora hacer visibles dos
+nuevos botones los cuales sirven para ejecutar las siguientes actividades:</p>
+<p><img alt="Texto alternativo" src="../img/06-system/02-user/pulsar-registro.jpg" /></p>
+<p><strong><center> Figura 7 - Pulsar registro en la tabla de contenido </center></strong></p>
+<h4 id="detalles">Detalles</h4>
+<p>Esta opción le permite al usuario tener una especificación
+de las horas creadas, es decir podrá ver al detalle todos los datos
+referentes al registro previamente seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/06-system/02-user/detail.jpg" /></p>
+<p><strong><center> Figura 8 - Detalles </center></strong></p>
+<h4 id="editar">Editar</h4>
+<p>Con este botón se desĺegará un formulario que permite editar la mayoría de los campos del registro seleccionado.</p>
+<p><img alt="Texto alternativo" src="../img/06-system/02-user/edit.jpg" /></p>
+<p><strong><center> Figura 9 - Editar </center></strong></p>
+<p>A través de este botón, se puede también eliminar el registro.</p>
+<p></justify></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../usuario/" class="btn btn-neutral float-right" title="Usuario">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../configuracion/" class="btn btn-neutral" title="Configuracion"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../configuracion/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../usuario/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
